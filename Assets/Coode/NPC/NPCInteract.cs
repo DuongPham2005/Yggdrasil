@@ -1,14 +1,121 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine.UI;
+using TMPro;
 
-
-public class NPCInteract : MonoBehaviour
+public class NPCInteract : MonoBehaviour, IInteractable
 {
-    
+    public NPCDialogue dialogueData;
+    public GameObject dialoguePanel;
+    public TMP_Text dialogueText, nameText;
+    public Image portraitImage;
+
+    private int dialogueIndex;
+    private bool isTying, isDialogueActive;
+
+    public bool CanIneract()
+    {
+        return !isDialogueActive;
+    }
     public void Interact()
     {
-        Debug.Log("Interact");
+        //neu ko dialogue data hoac game dang paused va khong dialogue dang hoat dong
+        if (dialoguePanel != null || (PauseController.IsGamePaused && !isDialogueActive))
+        {
+            return;
+        }
 
+        if (isDialogueActive)
+        {
+            NextLine();
+
+        }
+        else
+        {
+            StartDialogue();
+        }
     }
+    void StartDialogue()
+    {
+        isDialogueActive = true;
+        dialogueIndex = 0;
+
+        nameText.SetText(dialogueData.NPCname);
+        portraitImage.sprite = dialogueData.npcPortrait;
+
+        dialoguePanel.SetActive(true);
+        PauseController.SetPause(true);
+
+        StartCoroutine(TypeLine());
+    }
+
+    //////Line chay tiep theo
+    public void NextLine()
+    {
+        if (isTying)
+        {
+            //bo qua animation va hien het line
+            StopAllCoroutines();
+            dialogueText.SetText(dialogueData.dialogueLines[dialogueIndex]);
+            isTying = false;
+
+        }
+        else if (++dialogueIndex < dialogueData.dialogueLines.Length)
+        {
+            //neu co dong tiep theo, chay tiep
+            StartCoroutine(TypeLine());
+
+        }
+        else
+        {
+            EndDialogue();
+        }
+    }
+    IEnumerator TypeLine()
+    {
+        isTying = true;
+        dialogueText.SetText("");
+
+        foreach (char letter in dialogueData.dialogueLines[dialogueIndex])
+        {
+            dialogueText.text += letter;
+            yield return new WaitForSeconds(dialogueData.typingSpeed);
+        }
+
+        isTying = false;
+
+        if (dialogueData.autoProgressLines.Length > dialogueIndex && dialogueData.autoProgressLines[dialogueIndex])
+        {
+            yield return new WaitForSeconds(dialogueData.autoProgressDelay);
+
+            NextLine();
+
+        }
+    }
+
+    public void EndDialogue()
+    {
+        StopAllCoroutines();
+        isDialogueActive = false;
+        dialogueText.SetText("");
+        dialoguePanel.SetActive(false);
+        PauseController.SetPause(false);
+    }
+    
+    ///
+    public static class PauseController
+    {
+        private static bool isPaused = false;
+
+        public static bool IsGamePaused => isPaused;
+
+        public static void SetPause(bool pause)
+        {
+            isPaused = pause;
+            Time.timeScale = pause ? 0 : 1;
+        }
+    }
+
 }
