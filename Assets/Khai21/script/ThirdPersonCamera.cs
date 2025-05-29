@@ -2,8 +2,10 @@
 
 public class ThirdPersonCamera : MonoBehaviour
 {
-    public NPCInteraction vachamnayno; // Script khác điều khiển việc bật chuột
+    [Header("Reference to NPC Script")]
+    public NPCInteraction vachamnayno; // Script điều khiển chuột từ NPC hoặc va chạm
 
+    [Header("Camera Settings")]
     public Transform target;
     public Vector3 offset = new Vector3(0, 2, -4);
     public float sensitivity = 3f;
@@ -12,8 +14,8 @@ public class ThirdPersonCamera : MonoBehaviour
 
     private float rotX, rotY;
 
-    [Header("UI Elements")]
-    public GameObject[] uiElements;
+    [Header("UI Panels (con của Canvas)")]
+    public GameObject[] uiElements; // Các panel UI cần kiểm tra
 
     private bool userWantsMouse = false;
 
@@ -28,20 +30,21 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void Update()
     {
+        // Toggle bằng ESC
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             userWantsMouse = !userWantsMouse;
-            UpdateCursorState();
         }
 
-        // Luôn cập nhật theo trạng thái từ script khác
+        // Luôn cập nhật trạng thái chuột mỗi frame
         UpdateCursorState();
     }
 
     void LateUpdate()
     {
-        if (AnyUIActive() || userWantsMouse || (vachamnayno != null && vachamnayno)) return;
+        if (ShouldShowMouse()) return; // Nếu cần hiện chuột thì không điều khiển camera
 
+        // Điều khiển camera góc nhìn thứ 3
         float mouseX = Input.GetAxis("Mouse X") * sensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * sensitivity;
 
@@ -59,7 +62,7 @@ public class ThirdPersonCamera : MonoBehaviour
 
     void UpdateCursorState()
     {
-        if (AnyUIActive() || userWantsMouse || (vachamnayno != null && vachamnayno))
+        if (ShouldShowMouse())
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
@@ -71,6 +74,13 @@ public class ThirdPersonCamera : MonoBehaviour
         }
     }
 
+    // Điều kiện để hiện chuột
+    bool ShouldShowMouse()
+    {
+        return AnyUIActive() || userWantsMouse || (vachamnayno != null && vachamnayno.vachamnayno);
+    }
+
+    // Kiểm tra các panel trong Canvas có đang bật không
     bool AnyUIActive()
     {
         foreach (GameObject element in uiElements)

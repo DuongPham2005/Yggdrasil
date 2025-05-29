@@ -3,13 +3,15 @@ using TMPro; // DÙNG CHO TextMeshPro
 
 public class NPCInteraction : MonoBehaviour
 {
-    public bool vachamnayno =false; 
+
+    public bool  vachamnayno = false; 
     public GameObject dialoguePanel;
     public TMP_Text dialogueText; // Đã đổi từ UnityEngine.UI.Text → TMP_Text
-
+    
     public GameObject questPanel;
     public GameObject questProgressPanel;
     public TMP_Text questProgressText; // THÊM để hiển thị tiến trình
+    public GameObject thanksPanel; 
 
     private bool isPlayerNear = false;
     private bool questAccepted = false;
@@ -60,17 +62,14 @@ public class NPCInteraction : MonoBehaviour
             Debug.LogError("questProgressText chưa được gán trong Inspector.");
         }
 
-        if (itemsCollected >= totalItemsNeeded)
-        {
-            if (dialoguePanel != null && dialogueText != null)
-            {
-                dialoguePanel.SetActive(true);
-                dialogueText.text = "Cảm ơn bạn! Nhiệm vụ hoàn thành!";
-                questProgressPanel.SetActive(false);
-            }
-        }
+      
+
     }
 
+    public void done()
+    {
+        thanksPanel.SetActive(false); 
+    }
     public void CollectItem()
     {
         if (questAccepted && itemsCollected < totalItemsNeeded)
@@ -90,6 +89,11 @@ public class NPCInteraction : MonoBehaviour
             isPlayerNear = true;
         }
 
+        if (itemsCollected >= totalItemsNeeded)
+        {
+            thanksPanel.SetActive(true);
+            questProgressPanel.SetActive(false);
+        }
     }
 
     private void OnTriggerExit(Collider other)
