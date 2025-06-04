@@ -1522,7 +1522,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1919255740
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 1552948413}
   dialogueText: {fileID: 918654372}
   nameText: {fileID: 1658781421}
-  portraitImage: {fileID: 0}
+  portraitImage: {fileID: 236977559}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

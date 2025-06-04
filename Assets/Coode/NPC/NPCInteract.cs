@@ -22,7 +22,7 @@ public class NPCInteract : MonoBehaviour, IInteractable
     public void Interact()
     {
         //neu ko dialogue data hoac game dang paused va khong dialogue dang hoat dong
-        if (dialoguePanel != null || (PauseController.IsGamePaused && !isDialogueActive))
+        if (dialoguePanel == null || (PauseController.IsGamePaused && !isDialogueActive))
         {
             return;
         }
@@ -44,6 +44,11 @@ public class NPCInteract : MonoBehaviour, IInteractable
 
         nameText.SetText(dialogueData.NPCname);
         portraitImage.sprite = dialogueData.npcPortrait;
+        // if (dialogueData == null)
+        //     Debug.LogError("dialogueData is NULL!");
+
+        // if (nameText == null)
+        //     Debug.LogError("nameText is NULL!");
 
         dialoguePanel.SetActive(true);
         PauseController.SetPause(true);
