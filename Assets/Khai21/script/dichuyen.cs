@@ -13,7 +13,20 @@ public class dichuyen : MonoBehaviour
 
     private bool isGrounded;
     private int jumpCount = 0;
-    public int maxJumps = 2; // 1 nhảy thường + 1 nhảy giữa không
+    public int maxJumps = 2;
+
+    // Tham chiếu tới UIheart
+    public UIheart uiHeart;
+    public int damageAmount = 1;
+
+    // (Tùy chọn) Thời gian miễn nhiễm
+    public float invincibleTime = 1f;
+    private float lastHitTime = -999f;
+
+    //mana
+    public UIMana uiMana;
+    public float manaUsePerJump = 20f;
+
 
     void Start()
     {
@@ -22,32 +35,41 @@ public class dichuyen : MonoBehaviour
 
     void Update()
     {
-        // Kiểm tra chạm đất bằng raycast
         isGrounded = Physics.Raycast(transform.position, Vector3.down, controller.height / 2 + groundCheckDistance);
 
-        // Nếu chạm đất, reset số lần nhảy và rơi nhẹ
         if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
-            jumpCount = 0; // Reset double jump
+            jumpCount = 0;
         }
 
-        // Nhận input WASD
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
         Vector3 move = transform.right * x + transform.forward * z;
-
         controller.Move(move * moveSpeed * Time.deltaTime);
 
-        // Xử lý nhảy: chỉ được nhảy nếu còn lượt
-        if (Input.GetButtonDown("Jump") && jumpCount < maxJumps)
+        if (Input.GetButtonDown("Jump") && jumpCount < maxJumps && uiMana.currentMana >= manaUsePerJump)
         {
             velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
             jumpCount++;
+            uiMana.UseMana(manaUsePerJump);
         }
 
-        // Áp dụng trọng lực
+
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+
+    }
+
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+
+        {
+
+            uiHeart.TakeDamage(1);
+        }
     }
 }
