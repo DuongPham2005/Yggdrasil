@@ -8,6 +8,9 @@ using TMPro;
 public class NPCInteract : MonoBehaviour, IInteractable
 {
     public NPCDialogue dialogueData;
+    public Quest questToGive;
+    public bool autoGiveQuestAfterDialogue = true;
+
     public GameObject dialoguePanel;
     public TMP_Text dialogueText, nameText;
     public Image portraitImage;
@@ -17,7 +20,7 @@ public class NPCInteract : MonoBehaviour, IInteractable
 
     public bool CanIneract()
     {
-        return !isDialogueActive;
+        return !PauseController.IsGamePaused || isDialogueActive;
     }
     public void Interact()
     {
@@ -96,7 +99,6 @@ public class NPCInteract : MonoBehaviour, IInteractable
         {
             yield return new WaitForSecondsRealtime(dialogueData.autoProgressDelay);
 
-
             NextLine();
 
         }
@@ -109,7 +111,26 @@ public class NPCInteract : MonoBehaviour, IInteractable
         dialogueText.SetText("");
         dialoguePanel.SetActive(false);
         PauseController.SetPause(false);
+
+        if (autoGiveQuestAfterDialogue && questToGive != null && !questToGive.isCompleted)
+        {
+            GiveQuestToPlayer();
+        }
     }
+    public void GiveQuestToPlayer()
+    {
+        Debug.Log($"Requested Mission {(questToGive.questType == QuestType.Main ? "Main" : "Side")}: {questToGive.questName}");
+
+         // Cộng thưởng ngay nếu bạn muốn (hoặc đợi khi người chơi hoàn thành)
+        if (questToGive.rewardItem != null)
+        {
+            Inventory.Instance.AddItem(questToGive.rewardItem);
+            Debug.Log($"Collected Item: {questToGive.rewardItem.itemName}");
+        }
+
+        questToGive.isCompleted = true;
+    }
+
     
     ///
     public static class PauseController
