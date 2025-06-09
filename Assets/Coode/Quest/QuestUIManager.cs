@@ -8,8 +8,20 @@ public class QuestUIManager : MonoBehaviour
     public GameObject questPanel;
     public GameObject questEntryPrefab;
     public Transform questListContainer;
+    public static QuestUIManager Instance;
 
     public List<Quest> currentQuests = new List<Quest>();
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+        DontDestroyOnLoad(gameObject); // Nếu bạn cần giữ khi chuyển scene
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
@@ -42,4 +54,5 @@ public class QuestUIManager : MonoBehaviour
             text.text = $"{quest.questName} [{quest.questType}] - {(quest.isCompleted ? "✔️ Hoàn thành" : "⏳ Chưa xong")}";
         }
     }
+
 }

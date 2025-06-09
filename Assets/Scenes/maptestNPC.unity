@@ -1098,9 +1098,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7e20d4c8b485a944aca08c1167cd9f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questPanel: {fileID: 0}
-  questEntryPrefab: {fileID: 0}
-  questListContainer: {fileID: 0}
+  questPanel: {fileID: 707472592}
+  questEntryPrefab: {fileID: 5686275140875859747, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
+  questListContainer: {fileID: 24696996}
   currentQuests: []
 --- !u!114 &707472595
 MonoBehaviour:
@@ -1228,7 +1228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1216387434}
-  - component: {fileID: 1216387433}
+  - component: {fileID: 1216387435}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -1236,20 +1236,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1216387433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1216387432}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: afde4c0348a9d934cb337ea06d02257e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  quest: {fileID: 0}
-  questType: 0
 --- !u!4 &1216387434
 Transform:
   m_ObjectHideFlags: 0
@@ -1262,9 +1248,24 @@ Transform:
   m_LocalPosition: {x: -0.15549648, y: -0.8399999, z: 5.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2138881511}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1216387435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216387432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afde4c0348a9d934cb337ea06d02257e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest: {fileID: 11400000, guid: 7a9eec1e299959a4392db5c1114fdba6, type: 2}
+  questType: 0
 --- !u!1 &1232850657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1650,7 +1651,7 @@ GameObject:
   - component: {fileID: 1705902876}
   - component: {fileID: 1705902875}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: DialogueCanva
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2692,11 +2693,11 @@ Transform:
   m_GameObject: {fileID: 2138881507}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.15549648, y: -0.8399999, z: 5.49}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1216387434}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2138881512
 MonoBehaviour:
@@ -2729,6 +2730,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: QuestEntryPrefab
       objectReference: {fileID: 0}
+    - target: {fileID: 5827878825252076216, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
+      propertyPath: m_text
+      value: Destroy the boss [Main] - Doing
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827878825252076216, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
+      propertyPath: m_fontSize
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 5827878825252076216, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2739,7 +2752,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_AnchorMax.y
@@ -2747,7 +2760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_AnchorMin.y
@@ -2759,7 +2772,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 50
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2791,11 +2804,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 196.0022
+      value: -840
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 164.33173
+      value: 280
       objectReference: {fileID: 0}
     - target: {fileID: 6416254267864884904, guid: 4b0cc9a704162c24eb2e2d7690c42ee1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2823,6 +2836,5 @@ SceneRoots:
   - {fileID: 1797670286}
   - {fileID: 1451184140}
   - {fileID: 1671018575}
-  - {fileID: 2138881511}
   - {fileID: 1216387434}
   - {fileID: 1958520123}

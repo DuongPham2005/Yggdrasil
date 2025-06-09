@@ -40,6 +40,7 @@ public class NPCInteract : MonoBehaviour, IInteractable
             StartDialogue();
         }
     }
+    // chay hoi thoai
     void StartDialogue()
     {
         isDialogueActive = true;
@@ -103,7 +104,7 @@ public class NPCInteract : MonoBehaviour, IInteractable
 
         }
     }
-
+        // ket thuc hoi thoai
     public void EndDialogue()
     {
         StopAllCoroutines();
@@ -119,8 +120,15 @@ public class NPCInteract : MonoBehaviour, IInteractable
     }
     public void GiveQuestToPlayer()
     {
-        Debug.Log($"Requested Mission {(questToGive.questType == QuestType.Main ? "Main" : "Side")}: {questToGive.questName}");
-
+        //Debug.Log($"Requested Mission {(questToGive.questType == QuestType.Main ? "Main" : "Side")}: {questToGive.questName}");
+        
+        Debug.Log($"Requested Mission {questToGive.questType}: {questToGive.questName}");
+            // Thêm quest vào hệ thống UI (nếu chưa có)
+        if (QuestUIManager.Instance != null)
+        {
+            QuestUIManager.Instance.AddQuest(questToGive);
+            QuestUIManager.Instance.ToggleQuestPanel(); // Mở bảng nhiệm vụ luôn
+        }   
          // Cộng thưởng ngay nếu bạn muốn (hoặc đợi khi người chơi hoàn thành)
         if (questToGive.rewardItem != null)
         {
