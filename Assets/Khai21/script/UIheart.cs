@@ -1,4 +1,5 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement; // Để load lại scene hoặc chuyển scene khác
 using UnityEngine.UI;
 using System.Collections.Generic;
 
@@ -8,10 +9,10 @@ public class UIheart : MonoBehaviour
     public Sprite emptyHeart;
     public List<Image> hearts;
 
-    
     public int currentHealth = 5;
     public int maxHealth = 5;
-   
+
+    public GameObject gameOverUI; // ← Gán UI Game Over trong Inspector
 
     public void UpdateHearts()
     {
@@ -22,9 +23,14 @@ public class UIheart : MonoBehaviour
             else
                 hearts[i].sprite = emptyHeart;
         }
+
+        if (currentHealth <= 0)
+        {
+            GameOver();
+        }
     }
 
-    public void TakeDamage(int damage )
+    public void TakeDamage(int damage)
     {
         Debug.Log("vachammatmau");
         currentHealth -= damage;
@@ -37,5 +43,16 @@ public class UIheart : MonoBehaviour
         currentHealth += amount;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         UpdateHearts();
+    }
+
+    void GameOver()
+    {
+        Debug.Log("Game Over");
+        if (gameOverUI != null)
+        {
+            gameOverUI.SetActive(true); // Hiện UI Game Over nếu có
+        }
+        Time.timeScale = 0f; // Dừng game
+        // Hoặc dùng: SceneManager.LoadScene("GameOverScene");
     }
 }
