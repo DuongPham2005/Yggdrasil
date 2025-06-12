@@ -22,6 +22,10 @@ public class QuestUIManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject); // Nếu bạn cần giữ khi chuyển scene
     }
+    private void Start()
+    {
+        questPanel.SetActive(false);
+    }
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q))
