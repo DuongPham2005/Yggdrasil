@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 00000000000000000000000000000000
+  productGUID: 9e70c29fb6e0ed0418e695220956364b
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -995,7 +995,7 @@ PlayerSettings:
   cloudProjectId: 93922ab6-0c2f-4f80-bb6b-4551047eee48
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
+  projectName: Yggdrasil
   organizationId: chunoppo92
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
