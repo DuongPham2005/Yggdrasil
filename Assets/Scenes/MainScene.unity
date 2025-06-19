@@ -10711,6 +10711,7 @@ GameObject:
   - component: {fileID: 1357225997}
   - component: {fileID: 1357225996}
   - component: {fileID: 1357225995}
+  - component: {fileID: 1357225998}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -10793,6 +10794,40 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1357225998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1357225994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6af2d410bf489d842a543a60d605af5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  terrains:
+  - {fileID: 1357225996}
+  splatmapResolution: 1024
+  colorMapResolution: 1024
+  layerSettings:
+  - enabled: 1
+    layer: {fileID: 8574412962073106934, guid: eb742adf8ec7a8b4684109a139de6019, type: 2}
+    modifierStack:
+    - {fileID: 1735961963}
+  - enabled: 1
+    layer: {fileID: 8574412962073106934, guid: 69debc15b685aef4aa7bb2783ddd8a2b, type: 2}
+    modifierStack:
+    - {fileID: 1384816365}
+  - enabled: 1
+    layer: {fileID: 8574412962073106934, guid: acd1f91ae4732f140ab38f18ebfaa16c, type: 2}
+    modifierStack: []
+  autoRepaint: 0
+  terrainListeners: []
+  bounds:
+    m_Center: {x: 1500, y: 90, z: 1500}
+    m_Extent: {x: 1500, y: 90, z: 1500}
+  filterShader: {fileID: 4800000, guid: 0f44df78e3d64d9cb2616cac3d84cb77, type: 3}
 --- !u!1001 &1361324590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10929,6 +10964,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 18909760996641151, guid: c863f656782d099438e2f1ba789301c8, type: 3}
   m_PrefabInstance: {fileID: 1364866685}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1384816365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1d046e3917e4d8580903c69758b6558, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 1
+  label: Height
+  blendMode: 0
+  opacity: 100
+  passIndex: 0
+  min: 75.7
+  minFalloff: 1
+  max: 2000
+  maxFalloff: 1
 --- !u!1001 &1390618526
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15063,6 +15119,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7849315416770486702, guid: 17e881b8e9ac70642bcd5aa72e2546f0, type: 3}
   m_PrefabInstance: {fileID: 1727225653}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1735961963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2562637f396e4c10acd3fa9926b53a12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enabled: 1
+  label: Slope
+  blendMode: 0
+  opacity: 100
+  passIndex: 1
+  minMax: {x: 15.378649, y: 90}
+  minFalloff: 18.8
+  maxFalloff: 57.4
 --- !u!1001 &1740630759
 PrefabInstance:
   m_ObjectHideFlags: 0
