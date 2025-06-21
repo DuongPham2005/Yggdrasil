@@ -5,36 +5,54 @@ namespace Retro.ThirdPersonCharacter
     public class Orbit : MonoBehaviour
     {
         public Transform target;
-        public float distance;
-        public float rotationSpeed;
+        public float distance = 3f;
+        public float rotationSpeed = 3f;
         public Vector3 targetOffcet;
-        public bool lockCursor = true;
-
-        private Vector3 TargetPostion => target.position + targetOffcet;
         
+        private Vector3 TargetPostion => target.position + targetOffcet;
+        private bool isCursorLocked = true;
+
         private void Start()
         {
-            transform.position = transform.forward * distance + target.position;
-            Cursor.lockState = CursorLockMode.Locked;
+            LockCursor(true); // Khóa chuột khi vào game
         }
+
+        private void Update()
+        {
+            // Nhấn giữ Alt để mở chuột
+            if (Input.GetKeyDown(KeyCode.LeftAlt))
+            {
+                LockCursor(false);
+
+            }
+            else if (Input.GetKeyUp(KeyCode.LeftAlt))
+            { 
+                LockCursor(true);
         
+            }
+        }
+
         private void LateUpdate()
         {
-            float xAngle = Input.GetAxis("Mouse X") * rotationSpeed;
-        
-            float yAngle = -Input.GetAxis("Mouse Y") * rotationSpeed;
-        
-            Quaternion xRotation = Quaternion.AngleAxis(xAngle, target.up);
-        
-            Quaternion yRotation = Quaternion.AngleAxis(yAngle, target.right);
-        
-            Quaternion newRotation = transform.rotation * xRotation * yRotation;
-        
-            transform.rotation = transform.rotation * xRotation * yRotation;
-        
-            transform.position = transform.forward * (-distance) + TargetPostion;
+            if (isCursorLocked)
+            {
+                float xAngle = Input.GetAxis("Mouse X") * rotationSpeed;
+                float yAngle = -Input.GetAxis("Mouse Y") * rotationSpeed;
 
+                Quaternion xRotation = Quaternion.AngleAxis(xAngle, target.up);
+                Quaternion yRotation = Quaternion.AngleAxis(yAngle, target.right);
+                transform.rotation *= xRotation * yRotation;
+            }
+
+            transform.position = transform.forward * (-distance) + TargetPostion;
             transform.LookAt(TargetPostion);
+        }
+
+        private void LockCursor(bool shouldLock)
+        {
+            isCursorLocked = shouldLock;
+            Cursor.visible = !shouldLock;
+            Cursor.lockState = shouldLock ? CursorLockMode.Locked : CursorLockMode.None;
         }
     }
 }
