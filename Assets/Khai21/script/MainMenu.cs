@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    
     public void Play()
     {
         SceneManager.LoadScene("Khai21");
+      
     }
 
     public void Quit()
