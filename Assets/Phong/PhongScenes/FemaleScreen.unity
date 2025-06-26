@@ -1108,10 +1108,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1015210680}
     - target: {fileID: 6102168432905421708, guid: 15f9a6dab4c749943af11a085056ea56, type: 3}
-      propertyPath: gravity
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6102168432905421708, guid: 15f9a6dab4c749943af11a085056ea56, type: 3}
       propertyPath: MaxSpeed
       value: 3.44
       objectReference: {fileID: 0}
@@ -1691,7 +1687,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1942159664}
-  - component: {fileID: 1942159665}
   m_Layer: 0
   m_Name: ObjectBasiccode
   m_TagString: Untagged
@@ -1715,18 +1710,6 @@ Transform:
   - {fileID: 1182832694}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1942159665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1942159662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e13671037f46c24ea72dacd6be2274e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2096019354
 GameObject:
   m_ObjectHideFlags: 0
