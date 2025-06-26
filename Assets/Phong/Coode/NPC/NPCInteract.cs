@@ -55,7 +55,7 @@ public class NPCInteract : MonoBehaviour, IInteractable
         //     Debug.LogError("nameText is NULL!");
 
         dialoguePanel.SetActive(true);
-        PauseController.SetPause(true);
+        PauseController.SetPause(false);
 
         StartCoroutine(TypeLine());
     }
@@ -151,6 +151,8 @@ public class NPCInteract : MonoBehaviour, IInteractable
         {
             isPaused = pause;
             Time.timeScale = pause ? 0 : 1;
+
+            Debug.Log("Pause state: " + isPaused);
         }
     }
 
