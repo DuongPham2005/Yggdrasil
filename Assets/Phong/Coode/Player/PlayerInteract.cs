@@ -8,7 +8,7 @@ public class PlayerInteract : MonoBehaviour
 {
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.F)){
+        if (Input.GetKeyDown(KeyCode.T)){
             float interactRange = 2f;
             Collider[] colliderArray = Physics.OverlapSphere(transform.position, interactRange);
             foreach(Collider collider in colliderArray){

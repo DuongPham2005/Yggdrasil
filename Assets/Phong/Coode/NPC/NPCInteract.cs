@@ -112,8 +112,8 @@ public class NPCInteract : MonoBehaviour, IInteractable
         dialogueText.SetText("");
         dialoguePanel.SetActive(false);
         PauseController.SetPause(false);
-
         if (autoGiveQuestAfterDialogue && questToGive != null && !questToGive.isCompleted)
+
         {
             GiveQuestToPlayer();
         }
