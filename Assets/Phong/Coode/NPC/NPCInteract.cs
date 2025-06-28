@@ -136,7 +136,7 @@ public class NPCInteract : MonoBehaviour, IInteractable
             Debug.Log($"Collected Item: {questToGive.rewardItem.itemName}");
         }
 
-        questToGive.isCompleted = true;
+      //  questToGive.isCompleted = true;
     }
 
     

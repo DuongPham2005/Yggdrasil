@@ -3,10 +3,6 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.EventSystems;
 
-using System.Collections;
-using System.Collections.Generic;
-
-
 public class QuestPopupManager : MonoBehaviour
 {
     public static QuestPopupManager Instance;
@@ -52,7 +48,6 @@ public class QuestPopupManager : MonoBehaviour
 
     public void OnAcceptQuest()
     {
-
         if (pendingQuest != null)
         {
             QuestTracker.Instance.AddQuest(pendingQuest);
@@ -67,28 +62,3 @@ public class QuestPopupManager : MonoBehaviour
         popupPanel.SetActive(false);
     }
 }
-    // public void ShowQuest(Quest quest)
-    // {
-    //     pendingQuest = quest;
-    //     questNameText.text = quest.questName;
-    //     questDescriptionText.text = quest.description;
-    //     popupPanel.SetActive(false);
-    // }
-
-    // public void OnAcceptQuest()
-    // {
-    //     if (pendingQuest != null)
-    //     {
-    //         QuestUIManager.Instance.AddQuest(pendingQuest);
-    //         Debug.Log($"Quest Accepted: {pendingQuest.questName}");
-    //     }
-    //     pendingQuest = null;
-    //     popupPanel.SetActive(false);
-    // }
-
-    // public void OnDeclineQuest()
-    // {
-    //     Debug.Log("Quest Declined");
-    //     pendingQuest = null;
-    //     popupPanel.SetActive(false);
-    // }

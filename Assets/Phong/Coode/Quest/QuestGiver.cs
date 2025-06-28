@@ -12,9 +12,10 @@ public class QuestGiver : MonoBehaviour, IInteractable
     {
         if (!questToGive.isCompleted)
         {
-            Debug.Log("Requested Mission: " + questToGive.questName);
-            Inventory.Instance.AddItem(questToGive.rewardItem);
-            questToGive.isCompleted = true;
+            // Debug.Log("Requested Mission: " + questToGive.questName);
+            // Inventory.Instance.AddItem(questToGive.rewardItem);
+            // questToGive.isCompleted = true;
+            QuestPopupManager.Instance.ShowQuest(questToGive);
         }
     }
 }

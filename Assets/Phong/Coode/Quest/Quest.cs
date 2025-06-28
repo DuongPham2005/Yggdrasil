@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
-
 [CreateAssetMenu(fileName = "Quest", menuName = "Yggdrasil/Quest")]
 public class Quest : ScriptableObject
 {
@@ -10,6 +9,9 @@ public class Quest : ScriptableObject
     public string description;
     public QuestType questType;
     public Item rewardItem;
-    public bool isCompleted;
-    
+    public int requiredEnemyKills;
+    public int currentEnemyKills;
+
+    public bool isCompleted => currentEnemyKills >= requiredEnemyKills;
+
 }
