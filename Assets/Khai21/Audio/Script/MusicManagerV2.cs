@@ -1,9 +1,9 @@
-using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections; // << BẮT BUỘC CÓ DÒNG NÀY
 
-public class MusicManager : MonoBehaviour
+public class MusicManagerV2 : MonoBehaviour
 {
-    public static MusicManager Instance;
+    public static MusicManagerV2 Instance;
 
     [SerializeField]
     private MusicLibrary musicLibrary;
@@ -33,7 +33,7 @@ public class MusicManager : MonoBehaviour
         float percent = 0;
         while (percent < 1)
         {
-            percent += Time.deltaTime * 1 / fadeDuration;
+            percent += Time.deltaTime / fadeDuration;
             musicSource.volume = Mathf.Lerp(1f, 0, percent);
             yield return null;
         }
@@ -44,7 +44,7 @@ public class MusicManager : MonoBehaviour
         percent = 0;
         while (percent < 1)
         {
-            percent += Time.deltaTime * 1 / fadeDuration;
+            percent += Time.deltaTime / fadeDuration;
             musicSource.volume = Mathf.Lerp(0, 1f, percent);
             yield return null;
         }
