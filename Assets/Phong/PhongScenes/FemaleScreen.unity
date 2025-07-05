@@ -317,6 +317,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RFA_demo_plane_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d39df95f248e8a144b26d35cfad9c671, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -554,6 +558,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RFA_demo_props_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c93e194aa70989749b9705958ee6797f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -789,6 +797,70 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!1 &716845434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716845436}
+  - component: {fileID: 716845435}
+  m_Layer: 0
+  m_Name: NavMesh Surface
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &716845435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716845434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: b84cb2e2c24155b448cc05c3e9203e6a, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!4 &716845436
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716845434}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12.317954, y: 1.2949861, z: 6.6736364}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &729437707
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -848,6 +920,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: c93e194aa70989749b9705958ee6797f, type: 3}
       propertyPath: m_Name
       value: RFA_demo_props_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c93e194aa70989749b9705958ee6797f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1313,6 +1389,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GruntHP
       objectReference: {fileID: 0}
+    - target: {fileID: 100050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 400050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: 8.216008
@@ -1363,6 +1443,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1655483217}
+    - targetCorrespondingSourceObject: {fileID: 100050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1655483220}
+    - targetCorrespondingSourceObject: {fileID: 100050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1655483219}
   m_SourcePrefab: {fileID: 100100000, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
 --- !u!1001 &1015210679
 PrefabInstance:
@@ -1902,6 +1988,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 6371762711005851316, guid: a8353cfe224326c4b87d4a6bb8d7baa7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6865989921097334984, guid: a8353cfe224326c4b87d4a6bb8d7baa7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 196
@@ -2101,6 +2191,10 @@ PrefabInstance:
     - target: {fileID: 7711581158442736250, guid: ebfe2c964cca64b4c913c86f377f039c, type: 3}
       propertyPath: m_Name
       value: Dialogue
+      objectReference: {fileID: 0}
+    - target: {fileID: 7711581158442736250, guid: ebfe2c964cca64b4c913c86f377f039c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2480,6 +2574,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GruntPBR
       objectReference: {fileID: 0}
+    - target: {fileID: 3155058319838657794, guid: 176299a76ecfc7544b22a66fae200ac7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5304911586177118974, guid: 176299a76ecfc7544b22a66fae200ac7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.962369
@@ -2587,6 +2685,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RFA_demo_props_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2df21ad9dbfafe84e97d1dd2cdfba130, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9179297566622539444, guid: 2df21ad9dbfafe84e97d1dd2cdfba130, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -2662,6 +2764,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
   m_PrefabInstance: {fileID: 993293164}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1655483215 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
+  m_PrefabInstance: {fileID: 993293164}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1655483216 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400050, guid: aad05534a7ba0dd49b8c54ce188308ec, type: 3}
@@ -2717,6 +2824,46 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!195 &1655483219
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655483214}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!114 &1655483220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655483214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e950120cc86d33849afdee5425a791a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1655483219}
+  player: {fileID: 1182832694}
+  anim: {fileID: 1655483215}
+  range: 0
+  timeRandomMin: 1
+  timeRandomMax: 0
 --- !u!1 &1690090327
 GameObject:
   m_ObjectHideFlags: 0
@@ -2897,6 +3044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RFA_demo_props_01
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: c93e194aa70989749b9705958ee6797f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2976,6 +3127,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GruntPolyart
       objectReference: {fileID: 0}
+    - target: {fileID: 388476414, guid: 7df524699deb44341b3693c8538df185, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 388476416, guid: 7df524699deb44341b3693c8538df185, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.892123
@@ -3045,7 +3200,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2096019355
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3149,7 +3304,6 @@ SceneRoots:
   - {fileID: 933330499}
   - {fileID: 1634622710}
   - {fileID: 705507995}
-  - {fileID: 195087963}
   - {fileID: 1873681057}
   - {fileID: 729437707}
   - {fileID: 1535301974}
@@ -3159,3 +3313,5 @@ SceneRoots:
   - {fileID: 1252964041}
   - {fileID: 1164841631}
   - {fileID: 927457206}
+  - {fileID: 716845436}
+  - {fileID: 195087963}
