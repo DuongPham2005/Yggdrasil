@@ -27,6 +27,10 @@ public class dichuyen : MonoBehaviour
     public UIMana uiMana;
     public float manaUsePerJump = 20f;
 
+    //PlayerHealth
+    public PlayerHealth Playerhealth;
+    
+    
 
     void Start()
     {
@@ -68,7 +72,7 @@ public class dichuyen : MonoBehaviour
         if (other.CompareTag("Enemy"))
 
         {
-
+            Playerhealth.TakeDamage(20);
             uiHeart.TakeDamage(1);
         }
     }
