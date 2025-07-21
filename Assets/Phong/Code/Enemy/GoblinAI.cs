@@ -37,12 +37,10 @@ public class GoblinAI : MonoBehaviour
 
             animator.SetBool("isWalking", false);
             animator.SetBool("isRunning", false);
-            animator.SetInteger("AttackTree", attackType);
 
-            if (attackType == 1)
-                animator.SetBool("isAttack", true);
-            else
-                animator.SetBool("isAttack2", true);
+            // Thay vì dùng isAttack, ta điều khiển Blend
+            animator.SetFloat("Blend", attackType == 1 ? 0f : 1f);
+            animator.SetTrigger("Attack"); // Nếu muốn kích hoạt lại mỗi lần
         }
         else if (distance < detectionRange)
         {
@@ -53,27 +51,15 @@ public class GoblinAI : MonoBehaviour
             animator.SetBool("isWalking", speed > 0.1f && speed < 3f);
             animator.SetBool("isRunning", speed >= 3f);
 
-            animator.SetBool("isAttack", false);
-            animator.SetBool("isAttack2", false);
+            // Dừng Attack khi đuổi theo
+            animator.ResetTrigger("Attack");
         }
         else
         {
             agent.isStopped = true;
             animator.SetBool("isWalking", false);
             animator.SetBool("isRunning", false);
-            animator.SetBool("isAttack", false);
-            animator.SetBool("isAttack2", false);
-        }
-    }
-
-    public void TakeDamage(int damage)
-    {
-        hp -= damage;
-        animator.SetTrigger("GetHit");
-
-        if (hp <= 0)
-        {
-            animator.SetTrigger("Die");
+            animator.ResetTrigger("Attack");
         }
     }
 }
