@@ -48,6 +48,19 @@ public class NPCInteract : MonoBehaviour, IInteractable
 
         nameText.SetText(dialogueData.NPCname);
         portraitImage.sprite = dialogueData.npcPortrait;
+
+
+        if (dialogueData == null) 
+            Debug.LogError("dialogueData is NULL!");
+        if (nameText == null) 
+            Debug.LogError("nameText is NULL!");
+        if (portraitImage == null) 
+            Debug.LogError("portraitImage is NULL!");
+        if (dialogueText == null) 
+            Debug.LogError("dialogueText is NULL!");
+        if (dialoguePanel == null) 
+            Debug.LogError("dialoguePanel is NULL!");
+
         // if (dialogueData == null)
         //     Debug.LogError("dialogueData is NULL!");
 
