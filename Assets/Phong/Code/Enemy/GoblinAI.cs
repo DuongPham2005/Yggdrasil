@@ -12,6 +12,9 @@ public class GoblinAI : MonoBehaviour
     private NavMeshAgent agent;
     private Animator animator;
 
+    public float attackDamage = 10f;
+
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -38,10 +41,17 @@ public class GoblinAI : MonoBehaviour
             animator.SetBool("isWalking", false);
             animator.SetBool("isRunning", false);
 
-            // Thay vì dùng isAttack, ta điều khiển Blend
             animator.SetFloat("Blend", attackType == 1 ? 0f : 1f);
-            animator.SetTrigger("Attack"); // Nếu muốn kích hoạt lại mỗi lần
+            animator.SetTrigger("Attack");
+
+            // Gây sát thương mỗi lần tấn công (dễ gây bug đánh quá nhiều)
+            PlayerHealth ph = player.GetComponent<PlayerHealth>();
+            if (ph != null)
+            {
+                ph.TakeDamage(10);  // ⚠️ Điều này sẽ gọi liên tục trong mỗi frame!
+            }
         }
+
         else if (distance < detectionRange)
         {
             agent.isStopped = false;
@@ -62,5 +72,18 @@ public class GoblinAI : MonoBehaviour
             animator.ResetTrigger("Attack");
         }
     }
+    public void DealDamage()
+    {
+        float distance = Vector3.Distance(transform.position, player.position);
+        if (distance <= attackRange)
+        {
+            PlayerHealth ph = player.GetComponent<PlayerHealth>();
+            if (ph != null)
+            {
+                ph.TakeDamage(attackDamage);
+            }
+        }
+    }
+
 }
 
