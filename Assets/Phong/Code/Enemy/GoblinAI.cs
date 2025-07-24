@@ -44,12 +44,12 @@ public class GoblinAI : MonoBehaviour
             animator.SetFloat("Blend", attackType == 1 ? 0f : 1f);
             animator.SetTrigger("Attack");
 
-            // Gây sát thương mỗi lần tấn công (dễ gây bug đánh quá nhiều)
-            PlayerHealth ph = player.GetComponent<PlayerHealth>();
-            if (ph != null)
-            {
-                ph.TakeDamage(10);  // ⚠️ Điều này sẽ gọi liên tục trong mỗi frame!
-            }
+            //// Gây sát thương mỗi lần tấn công (dễ gây bug đánh quá nhiều)
+            //PlayerHealth ph = player.GetComponent<PlayerHealth>();
+            //if (ph != null)
+            //{
+            //    ph.TakeDamage(10);  // ⚠️ Điều này sẽ gọi liên tục trong mỗi frame!
+            //}
         }
 
         else if (distance < detectionRange)
