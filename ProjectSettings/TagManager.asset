@@ -12,8 +12,7 @@ TagManager:
   - CameraLevel2
   - Volumes
   - FreeCamVolume
-  - Ground
-  - Stone
+  - Enemy
   layers:
   - Default
   - TransparentFX
