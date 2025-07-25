@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Loader.unity
-    guid: a2bcfd0088dab57498427eb47330d215
+    path: Assets/khai/Menu.unity
+    guid: a747c94b7b2374444a4515c717cf2b3f
   - enabled: 1
-    path: Assets/Scenes/Demo.unity
-    guid: 23d8661265deed742959416ea58475f7
+    path: Assets/khai/Khai21.unity
+    guid: 621569fbe8c153349a5d827d770513dd
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
