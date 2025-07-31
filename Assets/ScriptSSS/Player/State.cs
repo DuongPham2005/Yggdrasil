@@ -15,6 +15,8 @@ public class State
     public InputAction jumpAction;
     public InputAction crouchAction;
     public InputAction sprintAction;
+    public InputAction drawWeaponAction;
+    public InputAction attackAction;
 
     public State(Character _character, StateMachine _stateMachine)
     {
@@ -26,12 +28,15 @@ public class State
         jumpAction = character.playerInput.actions["Jump"];
         crouchAction = character.playerInput.actions["Crouch"];
         sprintAction = character.playerInput.actions["Sprint"];
+        drawWeaponAction = character.playerInput.actions["DrawWeapon"];
+        attackAction = character.playerInput.actions["Attack"];
 
     }
 
     public virtual void Enter()
     {
-        Debug.Log("enter state: " + this.ToString());
+        //StateUI.instance.SetStateText(this.ToString());
+        Debug.Log("Enter State: " + this.ToString());
     }
 
     public virtual void HandleInput()

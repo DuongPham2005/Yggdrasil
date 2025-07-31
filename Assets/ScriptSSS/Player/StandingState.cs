@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class StandingState : State
 {
-
     float gravityValue;
     bool jump;
     bool crouch;
@@ -10,6 +9,7 @@ public class StandingState : State
     bool grounded;
     bool sprint;
     float playerSpeed;
+    bool drawWeapon;
 
     Vector3 cVelocity;
 
@@ -26,11 +26,13 @@ public class StandingState : State
         jump = false;
         crouch = false;
         sprint = false;
+        drawWeapon = false;
         input = Vector2.zero;
-        velocity = Vector3.zero;
+
         currentVelocity = Vector3.zero;
         gravityVelocity.y = 0;
 
+        velocity = character.playerVelocity;
         playerSpeed = character.playerSpeed;
         grounded = character.controller.isGrounded;
         gravityValue = character.gravityValue;
@@ -51,6 +53,11 @@ public class StandingState : State
         if (sprintAction.triggered)
         {
             sprint = true;
+        }
+
+        if (drawWeaponAction.triggered)
+        {
+            drawWeapon = true;
         }
 
         input = moveAction.ReadValue<Vector2>();
@@ -79,7 +86,11 @@ public class StandingState : State
         {
             stateMachine.ChangeState(character.crouching);
         }
-
+        if (drawWeapon)
+        {
+            stateMachine.ChangeState(character.combatting);
+            character.animator.SetTrigger("drawWeapon");
+        }
     }
 
     public override void PhysicsUpdate()
