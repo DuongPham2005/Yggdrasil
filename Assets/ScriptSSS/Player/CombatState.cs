@@ -69,7 +69,7 @@ public class CombatState : State
         if (attack)
         {
             character.animator.SetTrigger("attack");
-//            stateMachine.ChangeState(character.attacking);
+            stateMachine.ChangeState(character.attacking);
         }
     }
 

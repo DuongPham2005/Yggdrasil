@@ -26,9 +26,9 @@ TagManager:
   - 
   - 
   - RaycastOnly
-  - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Ragdoll
   - 
   - 
   - 
