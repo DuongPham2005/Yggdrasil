@@ -24,11 +24,11 @@ TagManager:
   - UI
   - NPC
   - Ground
-  - 
-  - 
-  - RaycastOnly
   - Player
   - Enemy
+  - RaycastOnly
+  - 
+  - 
   - Ragdoll
   - 
   - 
