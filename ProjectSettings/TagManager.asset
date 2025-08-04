@@ -15,6 +15,7 @@ TagManager:
   - Enemy
   - Ground
   - Stone
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -24,12 +25,12 @@ TagManager:
   - UI
   - NPC
   - Ground
-  - 
-  - 
+  - Player
+  - Enemy
   - RaycastOnly
   - 
   - 
-  - 
+  - Ragdoll
   - 
   - 
   - 
