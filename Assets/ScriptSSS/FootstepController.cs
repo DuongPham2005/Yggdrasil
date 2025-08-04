@@ -8,13 +8,15 @@ public class FootstepController : MonoBehaviour
 
     private CharacterController characterController;
     private string currentSurface = "";
+    private float stepTimer = 0f;
+    public float stepInterval = 0.4f; // Thời gian giữa các bước chân (giây)
 
     void Start()
     {
         if (audioSource == null)
             audioSource = GetComponent<AudioSource>();
         characterController = GetComponent<CharacterController>();
-        audioSource.loop = true;
+        audioSource.loop = false; // Không lặp lại âm thanh
         audioSource.playOnAwake = false;
     }
 
@@ -24,6 +26,7 @@ public class FootstepController : MonoBehaviour
 
         if (isMoving)
         {
+            stepTimer += Time.deltaTime;
             RaycastHit hit;
             if (Physics.Raycast(transform.position, Vector3.down, out hit, 2f))
             {
@@ -33,27 +36,28 @@ public class FootstepController : MonoBehaviour
                 else if (hit.collider.CompareTag("Ground"))
                     surface = "Ground";
 
-                // Nếu đổi bề mặt hoặc chưa phát thì đổi clip và phát lại
-                if (surface != currentSurface || !audioSource.isPlaying)
+                if (surface != currentSurface)
                 {
                     currentSurface = surface;
-                    if (surface == "Stone" && stoneStepLoop != null)
-                        audioSource.clip = stoneStepLoop;
-                    else if (surface == "Ground" && groundStepLoop != null)
-                        audioSource.clip = groundStepLoop;
-                    else
-                        audioSource.clip = groundStepLoop;
+                }
 
-                    audioSource.Play();
+                if (stepTimer >= stepInterval)
+                {
+                    if (surface == "Stone" && stoneStepLoop != null)
+                        audioSource.PlayOneShot(stoneStepLoop);
+                    else if (surface == "Ground" && groundStepLoop != null)
+                        audioSource.PlayOneShot(groundStepLoop);
+                    else
+                        audioSource.PlayOneShot(groundStepLoop);
+                    stepTimer = 0f;
                 }
             }
         }
         else
         {
-            // Nếu player dừng lại thì dừng âm thanh
-            if (audioSource.isPlaying)
-                audioSource.Stop();
+            stepTimer = stepInterval; // Reset để phát ngay khi di chuyển lại
             currentSurface = "";
+            audioSource.Stop(); // Dừng mọi âm thanh đang phát
         }
     }
 }
