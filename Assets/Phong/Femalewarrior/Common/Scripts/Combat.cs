@@ -33,15 +33,48 @@ namespace Retro.ThirdPersonCharacter
             }
         }
 
-        private void SetAttackStart()
+        public void SetAttackStart()
         {
             AttackInProgress = true;
+
+            // Bật hitbox nếu cần
+            var weapon = GetComponentInChildren<WeaponActivator>();
+            if (weapon != null)
+            {
+                weapon.EnableHitbox();
+            }
         }
 
-        private void SetAttackEnd()
+        public void SetAttackEnd()
         {
             AttackInProgress = false;
+
+            // Tắt hitbox
+            var weapon = GetComponentInChildren<WeaponActivator>();
+            if (weapon != null)
+            {
+                weapon.DisableHitbox();
+            }
         }
+
+        public void EnableHitbox()
+        {
+            var weapon = GetComponentInChildren<WeaponActivator>();
+            if (weapon != null)
+            {
+                weapon.EnableHitbox();
+            }
+        }
+
+        public void DisableHitbox()
+        {
+            var weapon = GetComponentInChildren<WeaponActivator>();
+            if (weapon != null)
+            {
+                weapon.DisableHitbox();
+            }
+        }
+
 
         private void Attack()
         {

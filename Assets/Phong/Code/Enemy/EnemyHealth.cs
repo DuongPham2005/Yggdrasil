@@ -1,21 +1,42 @@
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int health = 100;
+    public float health = 100f;
 
-    public void TakeDamage(int amount)
+    private Animator animator;
+    private NavMeshAgent agent;
+    private GoblinAI goblinAI;
+
+    private void Start()
     {
-        health -= amount;
-        if (health <= 0)
-        {
-            Die();
-        }
+        animator = GetComponent<Animator>();
+        agent = GetComponent<NavMeshAgent>();
+        goblinAI = GetComponent<GoblinAI>();
     }
 
-    private void Die()
+    public void TakeDamage(float amount)
     {
-        QuestTracker.Instance.EnemyKilled();
-        Destroy(gameObject);
+        health -= amount;
+
+        if (health > 0)
+        {
+            animator.SetTrigger("GetHit"); // ✅ Gọi animation GetHit
+        }
+
+        if (health <= 0)
+        {
+            // Gọi chết
+            animator.SetTrigger("Die");
+
+            if (goblinAI != null)
+                goblinAI.enabled = false;
+
+            if (agent != null)
+                agent.isStopped = true;
+
+            Destroy(gameObject, 2f); // Xoá quái sau 2 giây
+        }
     }
 }
