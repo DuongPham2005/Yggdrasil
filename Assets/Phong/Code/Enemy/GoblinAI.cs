@@ -80,7 +80,7 @@ public class GoblinAI : MonoBehaviour
             PlayerHealth ph = player.GetComponent<PlayerHealth>();
             if (ph != null)
             {
-                ph.TakeDamage(attackDamage);
+                //ph.TakeDamage(attackDamage);
             }
         }
     }
