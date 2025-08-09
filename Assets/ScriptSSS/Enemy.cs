@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using ScriptSSS.Quests; // added
 
 public class Enemy : MonoBehaviour
 {
@@ -13,6 +14,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] float attackCD = 3f;
     [SerializeField] float attackRange = 1f;
     [SerializeField] float aggroRange = 4f;
+
+    [Header("Quest")] 
+    [SerializeField] string questTargetId = "skeleton"; // emit on death
 
     GameObject player;
     NavMeshAgent agent;
@@ -67,6 +71,11 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        // Raise quest event before destroy
+        if (!string.IsNullOrEmpty(questTargetId))
+        {
+            QuestEvents.RaiseEnemyKilled(questTargetId);
+        }
         Instantiate(ragdoll, transform.position, transform.rotation);
         Destroy(this.gameObject);
     }
