@@ -8,6 +8,7 @@ namespace ScriptSSS.Quests
     {
         public string questId;
         public Dictionary<string, int> counters = new Dictionary<string, int>();
-        public bool completed;
+        public bool completed;   // đạt yêu cầu
+        public bool turnedIn;    // đã quay lại NPC để trả
     }
 }

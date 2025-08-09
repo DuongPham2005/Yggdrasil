@@ -36,6 +36,35 @@ namespace ScriptSSS.Quests
             return true;
         }
 
+        public bool CanTurnIn(QuestSO quest)
+        {
+            if (quest == null || !active.TryGetValue(quest.questId, out var progress)) return false;
+            return progress.completed && !progress.turnedIn;
+        }
+
+        public bool TurnIn(QuestSO quest)
+        {
+            if (!CanTurnIn(quest)) return false;
+            var progress = active[quest.questId];
+            progress.turnedIn = true;
+
+            // Reward hooks
+            if (quest.goldReward > 0)
+            {
+                // TODO: tích hợp ví/túi tiền của bạn ở đây
+                Debug.Log($"Reward gold +{quest.goldReward}");
+            }
+            if (quest.expReward > 0)
+            {
+                // TODO: tích hợp EXP ở đây
+                Debug.Log($"Reward exp +{quest.expReward}");
+            }
+
+            // Nếu muốn, có thể xóa khỏi active sau khi turn-in
+            // active.Remove(quest.questId);
+            return true;
+        }
+
         private void OnEnemyKilled(string targetId)
         {
             if (string.IsNullOrEmpty(targetId)) return;
@@ -61,7 +90,7 @@ namespace ScriptSSS.Quests
                 }
                 if (changed)
                 {
-                    // Optionally: check completion
+                    // check completion
                     progress.completed = CheckCompleted(quest, progress);
                 }
             }

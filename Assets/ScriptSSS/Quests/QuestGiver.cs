@@ -5,7 +5,8 @@ namespace ScriptSSS.Quests
     public class QuestGiver : MonoBehaviour
     {
         public QuestSO quest;
-        public KeyCode interactKey = KeyCode.F;
+        public KeyCode interactKey = KeyCode.F;   // nhận nhiệm vụ
+        public KeyCode turnInKey = KeyCode.G;     // trả nhiệm vụ
         public string playerTag = "Player";
 
         private QuestManager questManager;
@@ -29,9 +30,18 @@ namespace ScriptSSS.Quests
         private void Update()
         {
             if (!playerInside || questManager == null || quest == null) return;
+
             if (Input.GetKeyDown(interactKey))
             {
                 questManager.AcceptQuest(quest);
+            }
+
+            if (Input.GetKeyDown(turnInKey))
+            {
+                if (questManager.CanTurnIn(quest))
+                {
+                    questManager.TurnIn(quest);
+                }
             }
         }
     }
