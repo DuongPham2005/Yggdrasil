@@ -4,15 +4,15 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour
 {
     [Header("UI References")]
-    public GameObject menuPanel;    // panel chứa menu (bao gồm background nếu bạn đặt chung)
-    public GameObject background;   // nếu background tách ra, gán vào đây
+    public GameObject menuPanel;    
+    public GameObject background;   
     public bool pauseGameWhenOpen = true;
 
     private bool isPaused = false;
 
     void Start()
     {
-        // đảm bảo trạng thái khởi tạo
+ 
         if (menuPanel != null) menuPanel.SetActive(false);
         if (background != null) background.SetActive(false);
         Time.timeScale = 1f;
@@ -54,19 +54,19 @@ public class MenuManager : MonoBehaviour
         isPaused = false;
     }
 
-    // --- Compatibility alias: giữ tên CloseMenu() để code cũ không lỗi
+   
     public void CloseMenu()
     {
         ResumeGame();
     }
 
-    // Continue gọi Resume
+   
     public void ContinueGame()
     {
         ResumeGame();
     }
 
-    // Restart / Quit helper (thay tên/nội dung nếu cần)
+    
     public void RestartGame(string sceneName = "Test2")
     {
         Time.timeScale = 1f;

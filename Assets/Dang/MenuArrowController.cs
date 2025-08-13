@@ -2,8 +2,8 @@
 
 public class MenuArrowController : MonoBehaviour
 {
-    public RectTransform arrow;            // Image arrow RectTransform
-    public RectTransform[] menuButtons;    // gán Continue, Restart, Quit
+    public RectTransform arrow;           
+    public RectTransform[] menuButtons;    
     public float moveSpeed = 10f;
     public float pulseSpeed = 5f;
     public float pulseAmount = 6f;
@@ -22,14 +22,14 @@ public class MenuArrowController : MonoBehaviour
 
     void Update()
     {
-        // Dùng unscaled để animation vẫn chạy khi Time.timeScale = 0
+      
         arrow.localPosition = Vector3.Lerp(arrow.localPosition, targetPos, Time.unscaledDeltaTime * moveSpeed);
 
         float offsetX = Mathf.Sin(Time.unscaledTime * pulseSpeed) * pulseAmount;
         arrow.localPosition = new Vector3(arrow.localPosition.x + offsetX, arrow.localPosition.y, arrow.localPosition.z);
     }
 
-    // instant = true để nhảy ngay (k tween) khi mở menu
+ 
     public void MoveArrowToButton(RectTransform button, bool instant = false)
     {
         if (button == null) return;

@@ -4,7 +4,7 @@ using UnityEngine.EventSystems;
 public class ArrowHover : MonoBehaviour, IPointerEnterHandler
 {
     public MenuArrowController arrowController;
-    public RectTransform target; // gán RectTransform của chính nút này
+    public RectTransform target; 
 
     public void OnPointerEnter(PointerEventData eventData)
     {
