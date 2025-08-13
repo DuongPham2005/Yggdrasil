@@ -6,6 +6,8 @@ public class Interactor : MonoBehaviour
 {
     [SerializeField] float maxInteractingDistance = 10;
     [SerializeField] float interactingRadius = 1;
+    [SerializeField] LayerMask detectionLayers; // optional override; if 0 -> all layers
+    [SerializeField] KeyCode fallbackInteractKey = KeyCode.E; // fallback if PlayerInput/Action missing
 
     LayerMask layerMask;
     Transform cameraTransform;
@@ -23,10 +25,34 @@ public class Interactor : MonoBehaviour
     void Start()
     {
         cameraTransform = Camera.main.transform;
-        layerMask = LayerMask.GetMask("Interactable", "Enemy", "NPC");
+        layerMask = detectionLayers.value == 0 ? ~0 : detectionLayers; // default: all layers, filter by component later
 
-        interactAction = GetComponent<PlayerInput>().actions["Interact"];
-        interactAction.performed += Interact;
+        var playerInput = GetComponent<PlayerInput>();
+        if (playerInput != null)
+        {
+            var actionAsset = playerInput.actions;
+            if (actionAsset != null)
+            {
+                var action = actionAsset.FindAction("Interact", throwIfNotFound: false);
+                if (action != null)
+                {
+                    interactAction = action;
+                    interactAction.performed += Interact;
+                }
+                else
+                {
+                    Debug.LogWarning("InputAction 'Interact' not found in PlayerInput actions. Fallback to KeyCode.E.");
+                }
+            }
+            else
+            {
+                Debug.LogWarning("PlayerInput has no actions asset. Fallback to KeyCode.E.");
+            }
+        }
+        else
+        {
+            Debug.LogWarning("PlayerInput component not found. Fallback to KeyCode.E.");
+        }
     }
     // Update is called once per frame
     void Update()
@@ -49,8 +75,19 @@ public class Interactor : MonoBehaviour
             interactableTarget.TargetOff();
             interactableTarget = null;
         }
+
+        // Fallback key support
+        if (Input.GetKeyDown(fallbackInteractKey))
+        {
+            PerformInteract();
+        }
     }
     private void Interact(InputAction.CallbackContext obj)
+    {
+        PerformInteract();
+    }
+
+    private void PerformInteract()
     {
         if (interactableTarget != null)
         {
@@ -61,7 +98,8 @@ public class Interactor : MonoBehaviour
         }
         else
         {
-            print("nothing to interact!");
+            // Optional debug
+            // print("nothing to interact!");
         }
     }
     private void OnDrawGizmos()
