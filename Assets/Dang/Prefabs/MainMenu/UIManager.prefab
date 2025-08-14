@@ -45,8 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1bd4b020db54f443b07b88818b124b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuPanel: {fileID: 0}
-  background: {fileID: 0}
+  menuPanel: {fileID: 2687781778063088467, guid: 614ab8d59e217644286fb59ab388e588, type: 3}
+  background: {fileID: 1699621235851904437, guid: f9b4f9c4669c24b4ca0668ca6dc13645, type: 3}
   pauseGameWhenOpen: 1
 --- !u!114 &8723772570721620303
 MonoBehaviour:
@@ -60,11 +60,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d27a158e4e2fc454cbc78063d53cd770, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  arrow: {fileID: 0}
+  arrow: {fileID: 7055368893611568416, guid: 3f1bdf31687be9b4cbfedd57abfb9fbe, type: 3}
   menuButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 3466360241686846832, guid: a3f145d5240b15745aa2e3f4f4f14378, type: 3}
+  - {fileID: 3632904538167427384, guid: d78a2455436caf345a8295450474bad7, type: 3}
+  - {fileID: 7150159616865632726, guid: c10cf87701ac6324b8caf9be866901aa, type: 3}
   moveSpeed: 10
   pulseSpeed: 5
-  pulseAmount: 6
+  pulseAmount: 4
