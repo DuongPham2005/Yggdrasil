@@ -85,6 +85,19 @@ public class HealthSystem : MonoBehaviour
         
         Debug.Log($"Player healed {amount} HP. Current HP: {health}");
     }
+
+    // Save/Load helpers
+    public void SetHealth(float newHealth, float? newMaxHealth = null)
+    {
+        if (newMaxHealth.HasValue)
+        {
+            maxHealth = Mathf.Max(1f, newMaxHealth.Value);
+        }
+        health = Mathf.Clamp(newHealth, 0f, maxHealth);
+        isDead = health <= 0f;
+        OnHealthChanged?.Invoke(health);
+        UpdateHealthUI();
+    }
     
     private void RegenerateHealth()
     {

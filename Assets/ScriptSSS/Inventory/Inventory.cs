@@ -71,7 +71,7 @@ namespace ScriptSSS.InventorySystem
                     s.quantity -= take;
                     amount -= take;
                     if (s.quantity <= 0) s.Clear();
-                }
+            }
             }
 
             bool success = amount == 0;
@@ -90,5 +90,41 @@ namespace ScriptSSS.InventorySystem
             }
             return total;
         }
+
+		// Save/Load helpers
+		public void ClearAll()
+		{
+			if (slots == null) return;
+			for (int i = 0; i < slots.Count; i++)
+			{
+				slots[i].Clear();
+			}
+			OnChanged?.Invoke();
+		}
+
+		public void SetSlot(int index, ItemSO item, int quantity)
+		{
+			if (slots == null || index < 0 || index >= slots.Count) return;
+			slots[index].item = item;
+			slots[index].quantity = Mathf.Max(0, quantity);
+			if (slots[index].quantity == 0) slots[index].Clear();
+			OnChanged?.Invoke();
+		}
+
+		public void EnsureCapacity(int desiredCapacity)
+		{
+			if (desiredCapacity < 1) desiredCapacity = 1;
+			if (slots == null) slots = new List<InventorySlot>();
+			capacity = desiredCapacity;
+			if (slots.Count < capacity)
+			{
+				for (int i = slots.Count; i < capacity; i++) slots.Add(new InventorySlot());
+			}
+			else if (slots.Count > capacity)
+			{
+				slots.RemoveRange(capacity, slots.Count - capacity);
+			}
+			OnChanged?.Invoke();
+		}
     }
 }
