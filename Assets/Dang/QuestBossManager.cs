@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using TMPro;
+using ScriptSSS.SaveLoad;
 
 namespace Unity.FantasyKingdom
 {
@@ -8,6 +9,8 @@ namespace Unity.FantasyKingdom
     {
         public GameObject questPanel;
         public TextMeshProUGUI questText;
+        [Header("After Boss Defeated")]
+        [SerializeField] private SaveLoadMenu saveLoadMenu;
 
         private bool questActive = false;
         private bool bossDefeated = false;
@@ -32,6 +35,10 @@ namespace Unity.FantasyKingdom
             {
                 bossDefeated = true;
                 questText.text = "Tiêu diệt Veigar 1/1 (Hoàn thành)";
+                if (saveLoadMenu != null)
+                {
+                    saveLoadMenu.Open();
+                }
             }
         }
     }
