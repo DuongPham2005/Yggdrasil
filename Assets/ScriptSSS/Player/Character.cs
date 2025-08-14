@@ -45,7 +45,11 @@ public class Character : MonoBehaviour
     public Animator animator;
     [HideInInspector]
     public Vector3 playerVelocity;
-
+    
+    [HideInInspector]
+    public HealthSystem playerHealth;
+    [HideInInspector]
+    public PlayerStamina playerStamina;
 
     // Start is called before the first frame update
     private void Start()
@@ -54,6 +58,10 @@ public class Character : MonoBehaviour
         animator = GetComponent<Animator>();
         playerInput = GetComponent<PlayerInput>();
         cameraTransform = Camera.main.transform;
+        
+        // Get health and stamina components
+        playerHealth = GetComponent<HealthSystem>();
+        playerStamina = GetComponent<PlayerStamina>();
 
         movementSM = new StateMachine();
         standing = new StandingState(this, movementSM);
@@ -73,13 +81,24 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
+        // Don't update movement if player is dead
+        if (playerHealth != null && playerHealth.IsDead)
+        {
+            return;
+        }
+        
         movementSM.currentState.HandleInput();
-
         movementSM.currentState.LogicUpdate();
     }
 
     private void FixedUpdate()
     {
+        // Don't update physics if player is dead
+        if (playerHealth != null && playerHealth.IsDead)
+        {
+            return;
+        }
+        
         movementSM.currentState.PhysicsUpdate();
     }
 }
