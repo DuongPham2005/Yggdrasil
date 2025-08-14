@@ -2,58 +2,73 @@ using UnityEngine;
 
 public class FootstepController : MonoBehaviour
 {
+    [Header("Audio")]
     public AudioSource audioSource;
-    public AudioClip stoneStepLoop;
-    public AudioClip groundStepLoop;
+    public AudioClip moveLoop; // chỉ 1 âm thanh duy nhất cho di chuyển
+
+    [Header("Playback Settings")]
+    public bool onlyWhenRunning = false; // true: chỉ phát khi chạy nhanh
+    public float minWalkSpeed = 0.2f;    // ngưỡng bắt đầu phát khi đi bộ
+    public float runSpeedThreshold = 4.0f; // ngưỡng xem là chạy
+    public float pitchAtWalk = 1.0f;     // cao độ khi đi
+    public float pitchAtRun = 1.1f;      // cao độ khi chạy
+    public float volumeAtWalk = 0.6f;    // âm lượng khi đi
+    public float volumeAtRun = 1.0f;     // âm lượng khi chạy
+    public float smoothTime = 0.05f;     // mượt thay đổi volume/pitch tránh giật hoặc delay cảm giác
 
     private CharacterController characterController;
-    private string currentSurface = "";
+    private float volumeVel;
+    private float pitchVel;
 
     void Start()
     {
-        if (audioSource == null)
-            audioSource = GetComponent<AudioSource>();
+        if (audioSource == null) audioSource = GetComponent<AudioSource>();
         characterController = GetComponent<CharacterController>();
-        audioSource.loop = true;
-        audioSource.playOnAwake = false;
+        if (audioSource != null)
+        {
+            audioSource.loop = true;
+            audioSource.playOnAwake = false;
+            audioSource.clip = moveLoop;
+            audioSource.volume = 0f;
+            audioSource.pitch = pitchAtWalk;
+        }
     }
 
     void Update()
     {
-        bool isMoving = characterController != null && characterController.isGrounded && characterController.velocity.magnitude > 0.2f;
+        if (audioSource == null || characterController == null || moveLoop == null) return;
 
-        if (isMoving)
+        // Tốc độ ngang
+        Vector3 v = characterController.velocity; v.y = 0f;
+        float speed = v.magnitude;
+        bool grounded = characterController.isGrounded;
+
+        bool shouldPlay;
+        if (onlyWhenRunning)
+            shouldPlay = grounded && speed >= runSpeedThreshold;
+        else
+            shouldPlay = grounded && speed >= minWalkSpeed;
+
+        if (shouldPlay)
         {
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, Vector3.down, out hit, 2f))
-            {
-                string surface = "Ground";
-                if (hit.collider.CompareTag("Stone"))
-                    surface = "Stone";
-                else if (hit.collider.CompareTag("Ground"))
-                    surface = "Ground";
+            if (!audioSource.isPlaying) audioSource.Play();
 
-                // Nếu đổi bề mặt hoặc chưa phát thì đổi clip và phát lại
-                if (surface != currentSurface || !audioSource.isPlaying)
-                {
-                    currentSurface = surface;
-                    if (surface == "Stone" && stoneStepLoop != null)
-                        audioSource.clip = stoneStepLoop;
-                    else if (surface == "Ground" && groundStepLoop != null)
-                        audioSource.clip = groundStepLoop;
-                    else
-                        audioSource.clip = groundStepLoop;
-
-                    audioSource.Play();
-                }
-            }
+            // Blend volume/pitch theo tốc độ để nghe tự nhiên, không lệ thuộc nhịp bước -> không bị trễ
+            float t = Mathf.InverseLerp(minWalkSpeed, runSpeedThreshold, speed);
+            float targetVol = Mathf.Lerp(volumeAtWalk, volumeAtRun, t);
+            float targetPitch = Mathf.Lerp(pitchAtWalk, pitchAtRun, t);
+            audioSource.volume = Mathf.SmoothDamp(audioSource.volume, targetVol, ref volumeVel, smoothTime);
+            audioSource.pitch = Mathf.SmoothDamp(audioSource.pitch, targetPitch, ref pitchVel, smoothTime);
         }
         else
         {
-            // Nếu player dừng lại thì dừng âm thanh
-            if (audioSource.isPlaying)
+            // Fade out nhanh rồi dừng để tránh click và cảm giác trễ
+            audioSource.volume = Mathf.SmoothDamp(audioSource.volume, 0f, ref volumeVel, smoothTime);
+            if (audioSource.volume <= 0.01f && audioSource.isPlaying)
+            {
                 audioSource.Stop();
-            currentSurface = "";
+                audioSource.pitch = pitchAtWalk;
+            }
         }
     }
 }
