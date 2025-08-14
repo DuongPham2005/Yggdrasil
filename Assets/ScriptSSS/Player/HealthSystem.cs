@@ -10,6 +10,7 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] float health = 100f;
     [SerializeField] float healthRegenRate = 5f; // HP per second
     [SerializeField] float healthRegenDelay = 3f; // Delay before regen starts after taking damage
+    [SerializeField] bool autoRegenEnabled = false; // allow toggling regen (disabled by request)
     
     [Header("UI References")]
     public UnityEngine.UI.Slider healthSlider;
@@ -45,7 +46,7 @@ public class HealthSystem : MonoBehaviour
     
     void Update()
     {
-        if (!isDead && health < maxHealth)
+        if (autoRegenEnabled && !isDead && health < maxHealth)
         {
             // Check if enough time has passed since last damage
             if (Time.time - lastDamageTime >= healthRegenDelay)

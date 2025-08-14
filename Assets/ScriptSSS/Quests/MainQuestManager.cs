@@ -30,6 +30,7 @@ namespace ScriptSSS.Quests
 		[Header("State (runtime)")]
 		[SerializeField] MainQuestStage currentStage = MainQuestStage.LeaveDungeon;
 		[SerializeField] int skeletonKilled;
+		[SerializeField] QuestPingUI pingUI;
 
 		public MainQuestStage CurrentStage => currentStage;
 		public int SkeletonKilled => skeletonKilled;
@@ -43,6 +44,12 @@ namespace ScriptSSS.Quests
 				return;
 			}
 			Instance = this;
+		}
+
+		void Start()
+		{
+			if (pingUI == null) pingUI = FindObjectOfType<QuestPingUI>();
+			UpdatePings();
 		}
 
 		void OnEnable()
@@ -141,6 +148,45 @@ namespace ScriptSSS.Quests
 			if (next == MainQuestStage.KillSkeletons)
 			{
 				skeletonKilled = 0;
+			}
+			UpdatePings();
+		}
+
+		void UpdatePings()
+		{
+			if (pingUI == null) return;
+			switch (currentStage)
+			{
+				case MainQuestStage.LeaveDungeon:
+					pingUI.SetTargets("dungeon_exit");
+					break;
+				case MainQuestStage.TalkToVillageNPC:
+					pingUI.SetTargets("village_npc");
+					break;
+				case MainQuestStage.KillSkeletons:
+					pingUI.SetTargets(); // no specific ping for kills
+					break;
+				case MainQuestStage.ReturnToVillageNPC:
+					pingUI.SetTargets("village_npc");
+					break;
+				case MainQuestStage.GoToCastle:
+					pingUI.SetTargets("castle_gate");
+					break;
+				case MainQuestStage.TalkToCastleNPC:
+					pingUI.SetTargets("castle_npc");
+					break;
+				case MainQuestStage.KillBoss:
+					pingUI.SetTargets();
+					break;
+				case MainQuestStage.ReturnToCastleNPC:
+					pingUI.SetTargets("castle_npc");
+					break;
+				case MainQuestStage.KillMainBoss:
+					pingUI.SetTargets();
+					break;
+				case MainQuestStage.Completed:
+					pingUI.SetTargets();
+					break;
 			}
 		}
 
