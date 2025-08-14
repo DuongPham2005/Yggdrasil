@@ -8,9 +8,6 @@ public class DamageDealer : MonoBehaviour
 
     [SerializeField] float weaponLength;
     [SerializeField] float weaponDamage;
-    [Header("Audio")]
-    [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip hitEnemyClip;
     void Start()
     {
         canDealDamage = false;
@@ -30,7 +27,6 @@ public class DamageDealer : MonoBehaviour
                 {
                     enemy.TakeDamage(weaponDamage);
                     enemy.HitVFX(hit.point);
-                    PlayHitSound();
                     hasDealtDamage.Add(hit.transform.gameObject);
                 }
             }
@@ -50,18 +46,5 @@ public class DamageDealer : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(transform.position, transform.position - transform.up * weaponLength);
-    }
-
-    private void PlayHitSound()
-    {
-        if (hitEnemyClip == null) return;
-        if (audioSource == null) audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-        {
-            // play one-shot at point if no AudioSource attached
-            AudioSource.PlayClipAtPoint(hitEnemyClip, transform.position, 1f);
-            return;
-        }
-        audioSource.PlayOneShot(hitEnemyClip);
     }
 }
