@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2e8959da4ee3e14a83f2594c435297b, type: 3}
   m_Name: Gem_Red
   m_EditorClassIdentifier: 
-  id: 2
+  id: ruby
   displayName: Ruby
   description: 50 gold
-  icon: {fileID: 21300000, guid: f59401c5c79564fd1ae3bfb0876455a7, type: 3}
+  icon: {fileID: 21300000, guid: 1200fd4c89ff9654483fdc0805358f5e, type: 3}
   stackable: 1
   maxStack: 99

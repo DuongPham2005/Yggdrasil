@@ -152,6 +152,19 @@ public class PlayerStamina : MonoBehaviour
             isStaminaDepleted = false;
         }
     }
+
+    // Save/Load helpers
+    public void SetStamina(float newStamina, float? newMaxStamina = null)
+    {
+        if (newMaxStamina.HasValue)
+        {
+            maxStamina = Mathf.Max(1f, newMaxStamina.Value);
+        }
+        currentStamina = Mathf.Clamp(newStamina, 0f, maxStamina);
+        isStaminaDepleted = currentStamina <= 0f;
+        OnStaminaChanged?.Invoke(currentStamina);
+        UpdateStaminaUI();
+    }
     
     private void RegenerateStamina()
     {

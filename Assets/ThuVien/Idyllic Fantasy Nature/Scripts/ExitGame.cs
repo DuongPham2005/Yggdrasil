@@ -4,10 +4,12 @@ namespace IdyllicFantasyNature
 {
     public class ExitGame : MonoBehaviour
     {
+        [SerializeField] private KeyCode quitKey = KeyCode.F10;
+
         void Update()
         {
-            // If you press the ESC key in the game, the application will be closed
-            if (Input.GetKey(KeyCode.Escape))
+            // Only quit when a dedicated key is pressed, to avoid conflicts with settings menu
+            if (Input.GetKeyDown(quitKey))
             {
                 Application.Quit();
             }

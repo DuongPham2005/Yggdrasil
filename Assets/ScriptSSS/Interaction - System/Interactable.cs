@@ -15,19 +15,33 @@ public class Interactable : MonoBehaviour
 
     public virtual void Start()
     {
-        interactableNameCanvas = GameObject.FindGameObjectWithTag("Canvas");
-        interactableNameText = interactableNameCanvas.GetComponentInChildren<InteractableNameText>();
+		interactableNameCanvas = GameObject.FindGameObjectWithTag("Canvas");
+		if (interactableNameCanvas != null)
+		{
+			interactableNameText = interactableNameCanvas.GetComponentInChildren<InteractableNameText>();
+		}
+		// Fallback: tìm trực tiếp trong scene nếu Canvas không gắn tag hoặc không có component
+		if (interactableNameText == null)
+		{
+			interactableNameText = FindObjectOfType<InteractableNameText>();
+		}
+		if (interactableNameText == null)
+		{
+			Debug.LogWarning("InteractableNameText not found in scene. Please place it under a Canvas and tag the Canvas as 'Canvas'.");
+		}
     }
 
     public void TargetOn()
     {
-        interactableNameText.ShowText(this);
-        interactableNameText.SetInteractableNamePosition(this);
+		if (interactableNameText == null) return;
+		interactableNameText.ShowText(this);
+		interactableNameText.SetInteractableNamePosition(this);
     }
 
     public void TargetOff()
     {
-        interactableNameText.HideText();
+		if (interactableNameText == null) return;
+		interactableNameText.HideText();
     }
 
     public void Interact()
