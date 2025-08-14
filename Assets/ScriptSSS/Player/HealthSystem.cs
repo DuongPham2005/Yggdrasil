@@ -26,6 +26,8 @@ public class HealthSystem : MonoBehaviour
     [Header("Events")]
     public UnityEvent<float> OnHealthChanged;
     public UnityEvent OnPlayerDied;
+    [Header("Death UI Hooks")]
+    [SerializeField] ScriptSSS.SaveLoad.SaveLoadMenu saveLoadMenuOnDeath;
     
     private Animator animator;
     private float lastDamageTime;
@@ -130,8 +132,11 @@ public class HealthSystem : MonoBehaviour
             Instantiate(ragdoll, transform.position, transform.rotation);
         }
         
-        // Destroy player or disable movement
-        // Destroy(this.gameObject);
+        // Show Save/Load menu instead of respawning
+        if (saveLoadMenuOnDeath != null)
+        {
+            saveLoadMenuOnDeath.Open();
+        }
     }
     
     public void Revive(float healthAmount = -1)

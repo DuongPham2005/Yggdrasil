@@ -11,6 +11,7 @@ namespace ScriptSSS.SaveLoad
 		[SerializeField] private Button loadButton;
 		[SerializeField] private GameObject panel;
 		[SerializeField] private KeyCode toggleKey = KeyCode.Tab;
+		[SerializeField] private bool closeOnLoad = true;
 
 		private enum ToggleMode { SetActive, CanvasGroup }
 		private ToggleMode toggleMode = ToggleMode.SetActive;
@@ -20,8 +21,8 @@ namespace ScriptSSS.SaveLoad
 
 		private void Awake()
 		{
-			if (saveButton != null) saveButton.onClick.AddListener(() => saveManager.SaveGame(slotName));
-			if (loadButton != null) loadButton.onClick.AddListener(() => saveManager.LoadGame(slotName));
+			if (saveButton != null) saveButton.onClick.AddListener(OnClickSave);
+			if (loadButton != null) loadButton.onClick.AddListener(OnClickLoad);
 		}
 
 		private void Start()
@@ -46,6 +47,23 @@ namespace ScriptSSS.SaveLoad
 			if (Input.GetKeyDown(toggleKey))
 			{
 				SetVisible(!IsVisible());
+			}
+		}
+
+		public void Open() => SetVisible(true);
+		public void Close() => SetVisible(false);
+
+		private void OnClickSave()
+		{
+			if (saveManager != null) saveManager.SaveGame(slotName);
+		}
+
+		private void OnClickLoad()
+		{
+			if (saveManager != null)
+			{
+				bool loaded = saveManager.LoadGame(slotName);
+				if (loaded && closeOnLoad) SetVisible(false);
 			}
 		}
 
