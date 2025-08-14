@@ -2,23 +2,44 @@ using UnityEngine;
 
 public class CursorLockTest : MonoBehaviour
 {
+    [SerializeField] private KeyCode holdKey = KeyCode.BackQuote; // ~ key
+    [SerializeField] private MonoBehaviour[] behavioursToDisableWhileFree; // e.g., camera/mouse look scripts
+
+    private bool freeCursorActive;
+
+    public static bool IsFreeCursorActive { get; private set; }
+
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+        ApplyLock(true);
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.BackQuote))
+        bool wantFreeCursor = Input.GetKey(holdKey);
+        if (wantFreeCursor != freeCursorActive)
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            freeCursorActive = wantFreeCursor;
+            IsFreeCursorActive = freeCursorActive;
+            ApplyLock(!freeCursorActive);
+            SetBehavioursEnabled(!freeCursorActive);
         }
-        if (Input.GetKeyUp(KeyCode.BackQuote))
+    }
+
+    private void ApplyLock(bool locked)
+    {
+        Cursor.lockState = locked ? CursorLockMode.Locked : CursorLockMode.None;
+        Cursor.visible = !locked;
+    }
+
+    private void SetBehavioursEnabled(bool enabled)
+    {
+        if (behavioursToDisableWhileFree == null) return;
+        for (int i = 0; i < behavioursToDisableWhileFree.Length; i++)
         {
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            var b = behavioursToDisableWhileFree[i];
+            if (b == null) continue;
+            b.enabled = enabled;
         }
     }
 }
