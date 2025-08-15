@@ -1,645 +1,1920 @@
 fileFormatVersion: 2
 guid: 6410824e15a6c504aab3193095581c80
+AssetOrigin:
+  serializedVersion: 1
+  productId: 141423
+  packageName: Necromancer low
+  packageVersion: 1.0
+  assetPath: Assets/Necromanser/Animations/Necromancer@atack1.fbx
+  uploadId: 298344
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    100002: Necromancer_chain_left_1
-    100004: Necromancer_chain_left_2
-    100006: Necromancer_chain_left_3
-    100008: Necromancer_chain_left_4
-    100010: Necromancer_chain_left_5
-    100012: Necromancer_chain_left_6
-    100014: Necromancer_chain_left_7
-    100016: Necromancer_chain_left_long_1
-    100018: Necromancer_chain_left_long_10
-    100020: Necromancer_chain_left_long_11
-    100022: Necromancer_chain_left_long_12
-    100024: Necromancer_chain_left_long_13
-    100026: Necromancer_chain_left_long_14
-    100028: Necromancer_chain_left_long_15
-    100030: Necromancer_chain_left_long_16
-    100032: Necromancer_chain_left_long_17
-    100034: Necromancer_chain_left_long_18
-    100036: Necromancer_chain_left_long_19
-    100038: Necromancer_chain_left_long_2
-    100040: Necromancer_chain_left_long_20
-    100042: Necromancer_chain_left_long_21
-    100044: Necromancer_chain_left_long_22
-    100046: Necromancer_chain_left_long_3
-    100048: Necromancer_chain_left_long_4
-    100050: Necromancer_chain_left_long_5
-    100052: Necromancer_chain_left_long_6
-    100054: Necromancer_chain_left_long_7
-    100056: Necromancer_chain_left_long_8
-    100058: Necromancer_chain_left_long_9
-    100060: Necromancer_chain_right_1
-    100062: Necromancer_chain_right_2
-    100064: Necromancer_chain_right_3
-    100066: Necromancer_chain_right_4
-    100068: Necromancer_chain_right_5
-    100070: Necromancer_chain_right_6
-    100072: Necromancer_chain_right_7
-    100074: Necromancer_chain_right_long_1
-    100076: Necromancer_chain_right_long_10
-    100078: Necromancer_chain_right_long_11
-    100080: Necromancer_chain_right_long_12
-    100082: Necromancer_chain_right_long_13
-    100084: Necromancer_chain_right_long_14
-    100086: Necromancer_chain_right_long_15
-    100088: Necromancer_chain_right_long_16
-    100090: Necromancer_chain_right_long_17
-    100092: Necromancer_chain_right_long_18
-    100094: Necromancer_chain_right_long_19
-    100096: Necromancer_chain_right_long_2
-    100098: Necromancer_chain_right_long_20
-    100100: Necromancer_chain_right_long_21
-    100102: Necromancer_chain_right_long_22
-    100104: Necromancer_chain_right_long_3
-    100106: Necromancer_chain_right_long_4
-    100108: Necromancer_chain_right_long_5
-    100110: Necromancer_chain_right_long_6
-    100112: Necromancer_chain_right_long_7
-    100114: Necromancer_chain_right_long_8
-    100116: Necromancer_chain_right_long_9
-    100118: Necromancer_chain_scull_left_1
-    100120: Necromancer_chain_scull_left_10
-    100122: Necromancer_chain_scull_left_11
-    100124: Necromancer_chain_scull_left_12
-    100126: Necromancer_chain_scull_left_13
-    100128: Necromancer_chain_scull_left_14
-    100130: Necromancer_chain_scull_left_15
-    100132: Necromancer_chain_scull_left_16
-    100134: Necromancer_chain_scull_left_17
-    100136: Necromancer_chain_scull_left_2
-    100138: Necromancer_chain_scull_left_3
-    100140: Necromancer_chain_scull_left_4
-    100142: Necromancer_chain_scull_left_5
-    100144: Necromancer_chain_scull_left_6
-    100146: Necromancer_chain_scull_left_7
-    100148: Necromancer_chain_scull_left_8
-    100150: Necromancer_chain_scull_left_9
-    100152: Necromancer_chain_scull_right_1
-    100154: Necromancer_chain_scull_right_10
-    100156: Necromancer_chain_scull_right_11
-    100158: Necromancer_chain_scull_right_12
-    100160: Necromancer_chain_scull_right_13
-    100162: Necromancer_chain_scull_right_14
-    100164: Necromancer_chain_scull_right_15
-    100166: Necromancer_chain_scull_right_16
-    100168: Necromancer_chain_scull_right_2
-    100170: Necromancer_chain_scull_right_3
-    100172: Necromancer_chain_scull_right_4
-    100174: Necromancer_chain_scull_right_5
-    100176: Necromancer_chain_scull_right_6
-    100178: Necromancer_chain_scull_right_7
-    100180: Necromancer_chain_scull_right_8
-    100182: Necromancer_chain_scull_right_9
-    100184: Necromancer_Ctrl_ChestEndEffector
-    100186: Necromancer_Ctrl_ChestOriginEffector
-    100188: Necromancer_Ctrl_Head
-    100190: Necromancer_Ctrl_HeadEffector
-    100192: Necromancer_Ctrl_Hips
-    100194: Necromancer_Ctrl_HipsEffector
-    100196: Necromancer_Ctrl_LeftAnkleEffector
-    100198: Necromancer_Ctrl_LeftArm
-    100200: Necromancer_Ctrl_LeftElbowEffector
-    100202: Necromancer_Ctrl_LeftFoot
-    100204: Necromancer_Ctrl_LeftFootEffector
-    100206: Necromancer_Ctrl_LeftForeArm
-    100208: Necromancer_Ctrl_LeftHand
-    100210: Necromancer_Ctrl_LeftHandIndex1
-    100212: Necromancer_Ctrl_LeftHandIndex2
-    100214: Necromancer_Ctrl_LeftHandIndex3
-    100216: Necromancer_Ctrl_LeftHandIndex4
-    100218: Necromancer_Ctrl_LeftHandIndexEffector
-    100220: Necromancer_Ctrl_LeftHandMiddle1
-    100222: Necromancer_Ctrl_LeftHandMiddle2
-    100224: Necromancer_Ctrl_LeftHandMiddle3
-    100226: Necromancer_Ctrl_LeftHandMiddle4
-    100228: Necromancer_Ctrl_LeftHandMiddleEffector
-    100230: Necromancer_Ctrl_LeftHandPinky1
-    100232: Necromancer_Ctrl_LeftHandPinky2
-    100234: Necromancer_Ctrl_LeftHandPinky3
-    100236: Necromancer_Ctrl_LeftHandPinky4
-    100238: Necromancer_Ctrl_LeftHandPinkyEffector
-    100240: Necromancer_Ctrl_LeftHandRing1
-    100242: Necromancer_Ctrl_LeftHandRing2
-    100244: Necromancer_Ctrl_LeftHandRing3
-    100246: Necromancer_Ctrl_LeftHandRing4
-    100248: Necromancer_Ctrl_LeftHandRingEffector
-    100250: Necromancer_Ctrl_LeftHandThumb1
-    100252: Necromancer_Ctrl_LeftHandThumb2
-    100254: Necromancer_Ctrl_LeftHandThumb3
-    100256: Necromancer_Ctrl_LeftHandThumb4
-    100258: Necromancer_Ctrl_LeftHandThumbEffector
-    100260: Necromancer_Ctrl_LeftHipEffector
-    100262: Necromancer_Ctrl_LeftKneeEffector
-    100264: Necromancer_Ctrl_LeftLeg
-    100266: Necromancer_Ctrl_LeftShoulder
-    100268: Necromancer_Ctrl_LeftShoulderEffector
-    100270: Necromancer_Ctrl_LeftToeBase
-    100272: Necromancer_Ctrl_LeftUpLeg
-    100274: Necromancer_Ctrl_LeftWristEffector
-    100276: Necromancer_Ctrl_Neck
-    100278: Necromancer_Ctrl_Reference
-    100280: Necromancer_Ctrl_RightAnkleEffector
-    100282: Necromancer_Ctrl_RightArm
-    100284: Necromancer_Ctrl_RightElbowEffector
-    100286: Necromancer_Ctrl_RightFoot
-    100288: Necromancer_Ctrl_RightFootEffector
-    100290: Necromancer_Ctrl_RightForeArm
-    100292: Necromancer_Ctrl_RightHand
-    100294: Necromancer_Ctrl_RightHandIndex1
-    100296: Necromancer_Ctrl_RightHandIndex2
-    100298: Necromancer_Ctrl_RightHandIndex3
-    100300: Necromancer_Ctrl_RightHandIndex4
-    100302: Necromancer_Ctrl_RightHandIndexEffector
-    100304: Necromancer_Ctrl_RightHandMiddle1
-    100306: Necromancer_Ctrl_RightHandMiddle2
-    100308: Necromancer_Ctrl_RightHandMiddle3
-    100310: Necromancer_Ctrl_RightHandMiddle4
-    100312: Necromancer_Ctrl_RightHandMiddleEffector
-    100314: Necromancer_Ctrl_RightHandPinky1
-    100316: Necromancer_Ctrl_RightHandPinky2
-    100318: Necromancer_Ctrl_RightHandPinky3
-    100320: Necromancer_Ctrl_RightHandPinky4
-    100322: Necromancer_Ctrl_RightHandPinkyEffector
-    100324: Necromancer_Ctrl_RightHandRing1
-    100326: Necromancer_Ctrl_RightHandRing2
-    100328: Necromancer_Ctrl_RightHandRing3
-    100330: Necromancer_Ctrl_RightHandRing4
-    100332: Necromancer_Ctrl_RightHandRingEffector
-    100334: Necromancer_Ctrl_RightHandThumb1
-    100336: Necromancer_Ctrl_RightHandThumb2
-    100338: Necromancer_Ctrl_RightHandThumb3
-    100340: Necromancer_Ctrl_RightHandThumb4
-    100342: Necromancer_Ctrl_RightHandThumbEffector
-    100344: Necromancer_Ctrl_RightHipEffector
-    100346: Necromancer_Ctrl_RightKneeEffector
-    100348: Necromancer_Ctrl_RightLeg
-    100350: Necromancer_Ctrl_RightShoulder
-    100352: Necromancer_Ctrl_RightShoulderEffector
-    100354: Necromancer_Ctrl_RightToeBase
-    100356: Necromancer_Ctrl_RightUpLeg
-    100358: Necromancer_Ctrl_RightWristEffector
-    100360: Necromancer_Ctrl_Spine
-    100362: Necromancer_Ctrl_Spine1
-    100364: Necromancer_Ctrl_Spine2
-    100366: Necromancer_front_shield_1
-    100368: Necromancer_front_shield_2
-    100370: Necromancer_Head
-    100372: Necromancer_Head_back_colchuga_1
-    100374: Necromancer_Head_back_colchuga_2
-    100376: Necromancer_Head_back_colchuga_3
-    100378: Necromancer_Head_left_colchuga_1
-    100380: Necromancer_Head_left_colchuga_2
-    100382: Necromancer_Head_left_colchuga_3
-    100384: Necromancer_Head_right_colchuga_1
-    100386: Necromancer_Head_right_colchuga_2
-    100388: Necromancer_Head_right_colchuga_3
-    100390: Necromancer_Head_sceleton_1
-    100392: Necromancer_Head_sceleton_10
-    100394: Necromancer_Head_sceleton_11
-    100396: Necromancer_Head_sceleton_12
-    100398: Necromancer_Head_sceleton_13
-    100400: Necromancer_Head_sceleton_14
-    100402: Necromancer_Head_sceleton_15
-    100404: Necromancer_Head_sceleton_16
-    100406: Necromancer_Head_sceleton_17
-    100408: Necromancer_Head_sceleton_18
-    100410: Necromancer_Head_sceleton_19
-    100412: Necromancer_Head_sceleton_2
-    100414: Necromancer_Head_sceleton_20
-    100416: Necromancer_Head_sceleton_21
-    100418: Necromancer_Head_sceleton_3
-    100420: Necromancer_Head_sceleton_4
-    100422: Necromancer_Head_sceleton_5
-    100424: Necromancer_Head_sceleton_6
-    100426: Necromancer_Head_sceleton_7
-    100428: Necromancer_Head_sceleton_8
-    100430: Necromancer_Head_sceleton_9
-    100432: Necromancer_Hips
-    100434: Necromancer_LeftArm
-    100436: Necromancer_LeftFoot
-    100438: Necromancer_LeftForeArm
-    100440: Necromancer_LeftHand
-    100442: Necromancer_LeftHandIndex1
-    100444: Necromancer_LeftHandIndex2
-    100446: Necromancer_LeftHandIndex3
-    100448: Necromancer_LeftHandIndex4
-    100450: Necromancer_LeftHandMiddle1
-    100452: Necromancer_LeftHandMiddle2
-    100454: Necromancer_LeftHandMiddle3
-    100456: Necromancer_LeftHandMiddle4
-    100458: Necromancer_LeftHandPinky1
-    100460: Necromancer_LeftHandPinky2
-    100462: Necromancer_LeftHandPinky3
-    100464: Necromancer_LeftHandPinky4
-    100466: Necromancer_LeftHandRing1
-    100468: Necromancer_LeftHandRing2
-    100470: Necromancer_LeftHandRing3
-    100472: Necromancer_LeftHandRing4
-    100474: Necromancer_LeftHandThumb1
-    100476: Necromancer_LeftHandThumb2
-    100478: Necromancer_LeftHandThumb3
-    100480: Necromancer_LeftHandThumb4
-    100482: Necromancer_LeftLeg
-    100484: Necromancer_LeftShoulder
-    100486: Necromancer_LeftToeBase
-    100488: Necromancer_LeftUpLeg
-    100490: Necromancer_Neck
-    100492: Necromancer_Reference
-    100494: Necromancer_RightArm
-    100496: Necromancer_RightFoot
-    100498: Necromancer_RightForeArm
-    100500: Necromancer_RightHand
-    100502: Necromancer_RightHandIndex1
-    100504: Necromancer_RightHandIndex2
-    100506: Necromancer_RightHandIndex3
-    100508: Necromancer_RightHandIndex4
-    100510: Necromancer_RightHandMiddle1
-    100512: Necromancer_RightHandMiddle2
-    100514: Necromancer_RightHandMiddle3
-    100516: Necromancer_RightHandMiddle4
-    100518: Necromancer_RightHandPinky1
-    100520: Necromancer_RightHandPinky2
-    100522: Necromancer_RightHandPinky3
-    100524: Necromancer_RightHandPinky4
-    100526: Necromancer_RightHandRing1
-    100528: Necromancer_RightHandRing2
-    100530: Necromancer_RightHandRing3
-    100532: Necromancer_RightHandRing4
-    100534: Necromancer_RightHandThumb1
-    100536: Necromancer_RightHandThumb2
-    100538: Necromancer_RightHandThumb3
-    100540: Necromancer_RightHandThumb4
-    100542: Necromancer_RightLeg
-    100544: Necromancer_RightShoulder
-    100546: Necromancer_RightToeBase
-    100548: Necromancer_RightUpLeg
-    100550: Necromancer_scull_left_1
-    100552: Necromancer_scull_left_2
-    100554: Necromancer_scull_mid_1
-    100556: Necromancer_scull_mid_2
-    100558: Necromancer_scull_right_1
-    100560: Necromancer_scull_right_2
-    100562: Necromancer_shtandart_centre
-    100564: Necromancer_shtandart_left
-    100566: Necromancer_shtandart_right
-    100568: Necromancer_Spine
-    100570: Necromancer_Spine1
-    100572: Necromancer_Spine2
-    100574: Necromancer_toga_centre_back_1
-    100576: Necromancer_toga_centre_back_2
-    100578: Necromancer_toga_centre_back_3
-    100580: Necromancer_toga_front_1
-    100582: Necromancer_toga_front_2
-    100584: Necromancer_toga_front_3
-    100586: Necromancer_toga_left_1
-    100588: Necromancer_toga_left_2
-    100590: Necromancer_toga_left_3
-    100592: Necromancer_toga_left_4
-    100594: Necromancer_toga_left_back_1
-    100596: Necromancer_toga_left_back_2
-    100598: Necromancer_toga_left_back_3
-    100600: Necromancer_toga_left_back_4
-    100602: Necromancer_toga_left_front_1
-    100604: Necromancer_toga_left_front_2
-    100606: Necromancer_toga_left_front_3
-    100608: Necromancer_toga_right_1
-    100610: Necromancer_toga_right_2
-    100612: Necromancer_toga_right_3
-    100614: Necromancer_toga_right_back_1
-    100616: Necromancer_toga_right_back_2
-    100618: Necromancer_toga_right_back_3
-    100620: Necromancer_toga_right_front_1
-    100622: Necromancer_toga_right_front_2
-    100624: Necromancer_toga_right_front_3
-    100626: scythe_1
-    100628: scythe_2
-    100630: transform1
-    400000: //RootNode
-    400002: Necromancer_chain_left_1
-    400004: Necromancer_chain_left_2
-    400006: Necromancer_chain_left_3
-    400008: Necromancer_chain_left_4
-    400010: Necromancer_chain_left_5
-    400012: Necromancer_chain_left_6
-    400014: Necromancer_chain_left_7
-    400016: Necromancer_chain_left_long_1
-    400018: Necromancer_chain_left_long_10
-    400020: Necromancer_chain_left_long_11
-    400022: Necromancer_chain_left_long_12
-    400024: Necromancer_chain_left_long_13
-    400026: Necromancer_chain_left_long_14
-    400028: Necromancer_chain_left_long_15
-    400030: Necromancer_chain_left_long_16
-    400032: Necromancer_chain_left_long_17
-    400034: Necromancer_chain_left_long_18
-    400036: Necromancer_chain_left_long_19
-    400038: Necromancer_chain_left_long_2
-    400040: Necromancer_chain_left_long_20
-    400042: Necromancer_chain_left_long_21
-    400044: Necromancer_chain_left_long_22
-    400046: Necromancer_chain_left_long_3
-    400048: Necromancer_chain_left_long_4
-    400050: Necromancer_chain_left_long_5
-    400052: Necromancer_chain_left_long_6
-    400054: Necromancer_chain_left_long_7
-    400056: Necromancer_chain_left_long_8
-    400058: Necromancer_chain_left_long_9
-    400060: Necromancer_chain_right_1
-    400062: Necromancer_chain_right_2
-    400064: Necromancer_chain_right_3
-    400066: Necromancer_chain_right_4
-    400068: Necromancer_chain_right_5
-    400070: Necromancer_chain_right_6
-    400072: Necromancer_chain_right_7
-    400074: Necromancer_chain_right_long_1
-    400076: Necromancer_chain_right_long_10
-    400078: Necromancer_chain_right_long_11
-    400080: Necromancer_chain_right_long_12
-    400082: Necromancer_chain_right_long_13
-    400084: Necromancer_chain_right_long_14
-    400086: Necromancer_chain_right_long_15
-    400088: Necromancer_chain_right_long_16
-    400090: Necromancer_chain_right_long_17
-    400092: Necromancer_chain_right_long_18
-    400094: Necromancer_chain_right_long_19
-    400096: Necromancer_chain_right_long_2
-    400098: Necromancer_chain_right_long_20
-    400100: Necromancer_chain_right_long_21
-    400102: Necromancer_chain_right_long_22
-    400104: Necromancer_chain_right_long_3
-    400106: Necromancer_chain_right_long_4
-    400108: Necromancer_chain_right_long_5
-    400110: Necromancer_chain_right_long_6
-    400112: Necromancer_chain_right_long_7
-    400114: Necromancer_chain_right_long_8
-    400116: Necromancer_chain_right_long_9
-    400118: Necromancer_chain_scull_left_1
-    400120: Necromancer_chain_scull_left_10
-    400122: Necromancer_chain_scull_left_11
-    400124: Necromancer_chain_scull_left_12
-    400126: Necromancer_chain_scull_left_13
-    400128: Necromancer_chain_scull_left_14
-    400130: Necromancer_chain_scull_left_15
-    400132: Necromancer_chain_scull_left_16
-    400134: Necromancer_chain_scull_left_17
-    400136: Necromancer_chain_scull_left_2
-    400138: Necromancer_chain_scull_left_3
-    400140: Necromancer_chain_scull_left_4
-    400142: Necromancer_chain_scull_left_5
-    400144: Necromancer_chain_scull_left_6
-    400146: Necromancer_chain_scull_left_7
-    400148: Necromancer_chain_scull_left_8
-    400150: Necromancer_chain_scull_left_9
-    400152: Necromancer_chain_scull_right_1
-    400154: Necromancer_chain_scull_right_10
-    400156: Necromancer_chain_scull_right_11
-    400158: Necromancer_chain_scull_right_12
-    400160: Necromancer_chain_scull_right_13
-    400162: Necromancer_chain_scull_right_14
-    400164: Necromancer_chain_scull_right_15
-    400166: Necromancer_chain_scull_right_16
-    400168: Necromancer_chain_scull_right_2
-    400170: Necromancer_chain_scull_right_3
-    400172: Necromancer_chain_scull_right_4
-    400174: Necromancer_chain_scull_right_5
-    400176: Necromancer_chain_scull_right_6
-    400178: Necromancer_chain_scull_right_7
-    400180: Necromancer_chain_scull_right_8
-    400182: Necromancer_chain_scull_right_9
-    400184: Necromancer_Ctrl_ChestEndEffector
-    400186: Necromancer_Ctrl_ChestOriginEffector
-    400188: Necromancer_Ctrl_Head
-    400190: Necromancer_Ctrl_HeadEffector
-    400192: Necromancer_Ctrl_Hips
-    400194: Necromancer_Ctrl_HipsEffector
-    400196: Necromancer_Ctrl_LeftAnkleEffector
-    400198: Necromancer_Ctrl_LeftArm
-    400200: Necromancer_Ctrl_LeftElbowEffector
-    400202: Necromancer_Ctrl_LeftFoot
-    400204: Necromancer_Ctrl_LeftFootEffector
-    400206: Necromancer_Ctrl_LeftForeArm
-    400208: Necromancer_Ctrl_LeftHand
-    400210: Necromancer_Ctrl_LeftHandIndex1
-    400212: Necromancer_Ctrl_LeftHandIndex2
-    400214: Necromancer_Ctrl_LeftHandIndex3
-    400216: Necromancer_Ctrl_LeftHandIndex4
-    400218: Necromancer_Ctrl_LeftHandIndexEffector
-    400220: Necromancer_Ctrl_LeftHandMiddle1
-    400222: Necromancer_Ctrl_LeftHandMiddle2
-    400224: Necromancer_Ctrl_LeftHandMiddle3
-    400226: Necromancer_Ctrl_LeftHandMiddle4
-    400228: Necromancer_Ctrl_LeftHandMiddleEffector
-    400230: Necromancer_Ctrl_LeftHandPinky1
-    400232: Necromancer_Ctrl_LeftHandPinky2
-    400234: Necromancer_Ctrl_LeftHandPinky3
-    400236: Necromancer_Ctrl_LeftHandPinky4
-    400238: Necromancer_Ctrl_LeftHandPinkyEffector
-    400240: Necromancer_Ctrl_LeftHandRing1
-    400242: Necromancer_Ctrl_LeftHandRing2
-    400244: Necromancer_Ctrl_LeftHandRing3
-    400246: Necromancer_Ctrl_LeftHandRing4
-    400248: Necromancer_Ctrl_LeftHandRingEffector
-    400250: Necromancer_Ctrl_LeftHandThumb1
-    400252: Necromancer_Ctrl_LeftHandThumb2
-    400254: Necromancer_Ctrl_LeftHandThumb3
-    400256: Necromancer_Ctrl_LeftHandThumb4
-    400258: Necromancer_Ctrl_LeftHandThumbEffector
-    400260: Necromancer_Ctrl_LeftHipEffector
-    400262: Necromancer_Ctrl_LeftKneeEffector
-    400264: Necromancer_Ctrl_LeftLeg
-    400266: Necromancer_Ctrl_LeftShoulder
-    400268: Necromancer_Ctrl_LeftShoulderEffector
-    400270: Necromancer_Ctrl_LeftToeBase
-    400272: Necromancer_Ctrl_LeftUpLeg
-    400274: Necromancer_Ctrl_LeftWristEffector
-    400276: Necromancer_Ctrl_Neck
-    400278: Necromancer_Ctrl_Reference
-    400280: Necromancer_Ctrl_RightAnkleEffector
-    400282: Necromancer_Ctrl_RightArm
-    400284: Necromancer_Ctrl_RightElbowEffector
-    400286: Necromancer_Ctrl_RightFoot
-    400288: Necromancer_Ctrl_RightFootEffector
-    400290: Necromancer_Ctrl_RightForeArm
-    400292: Necromancer_Ctrl_RightHand
-    400294: Necromancer_Ctrl_RightHandIndex1
-    400296: Necromancer_Ctrl_RightHandIndex2
-    400298: Necromancer_Ctrl_RightHandIndex3
-    400300: Necromancer_Ctrl_RightHandIndex4
-    400302: Necromancer_Ctrl_RightHandIndexEffector
-    400304: Necromancer_Ctrl_RightHandMiddle1
-    400306: Necromancer_Ctrl_RightHandMiddle2
-    400308: Necromancer_Ctrl_RightHandMiddle3
-    400310: Necromancer_Ctrl_RightHandMiddle4
-    400312: Necromancer_Ctrl_RightHandMiddleEffector
-    400314: Necromancer_Ctrl_RightHandPinky1
-    400316: Necromancer_Ctrl_RightHandPinky2
-    400318: Necromancer_Ctrl_RightHandPinky3
-    400320: Necromancer_Ctrl_RightHandPinky4
-    400322: Necromancer_Ctrl_RightHandPinkyEffector
-    400324: Necromancer_Ctrl_RightHandRing1
-    400326: Necromancer_Ctrl_RightHandRing2
-    400328: Necromancer_Ctrl_RightHandRing3
-    400330: Necromancer_Ctrl_RightHandRing4
-    400332: Necromancer_Ctrl_RightHandRingEffector
-    400334: Necromancer_Ctrl_RightHandThumb1
-    400336: Necromancer_Ctrl_RightHandThumb2
-    400338: Necromancer_Ctrl_RightHandThumb3
-    400340: Necromancer_Ctrl_RightHandThumb4
-    400342: Necromancer_Ctrl_RightHandThumbEffector
-    400344: Necromancer_Ctrl_RightHipEffector
-    400346: Necromancer_Ctrl_RightKneeEffector
-    400348: Necromancer_Ctrl_RightLeg
-    400350: Necromancer_Ctrl_RightShoulder
-    400352: Necromancer_Ctrl_RightShoulderEffector
-    400354: Necromancer_Ctrl_RightToeBase
-    400356: Necromancer_Ctrl_RightUpLeg
-    400358: Necromancer_Ctrl_RightWristEffector
-    400360: Necromancer_Ctrl_Spine
-    400362: Necromancer_Ctrl_Spine1
-    400364: Necromancer_Ctrl_Spine2
-    400366: Necromancer_front_shield_1
-    400368: Necromancer_front_shield_2
-    400370: Necromancer_Head
-    400372: Necromancer_Head_back_colchuga_1
-    400374: Necromancer_Head_back_colchuga_2
-    400376: Necromancer_Head_back_colchuga_3
-    400378: Necromancer_Head_left_colchuga_1
-    400380: Necromancer_Head_left_colchuga_2
-    400382: Necromancer_Head_left_colchuga_3
-    400384: Necromancer_Head_right_colchuga_1
-    400386: Necromancer_Head_right_colchuga_2
-    400388: Necromancer_Head_right_colchuga_3
-    400390: Necromancer_Head_sceleton_1
-    400392: Necromancer_Head_sceleton_10
-    400394: Necromancer_Head_sceleton_11
-    400396: Necromancer_Head_sceleton_12
-    400398: Necromancer_Head_sceleton_13
-    400400: Necromancer_Head_sceleton_14
-    400402: Necromancer_Head_sceleton_15
-    400404: Necromancer_Head_sceleton_16
-    400406: Necromancer_Head_sceleton_17
-    400408: Necromancer_Head_sceleton_18
-    400410: Necromancer_Head_sceleton_19
-    400412: Necromancer_Head_sceleton_2
-    400414: Necromancer_Head_sceleton_20
-    400416: Necromancer_Head_sceleton_21
-    400418: Necromancer_Head_sceleton_3
-    400420: Necromancer_Head_sceleton_4
-    400422: Necromancer_Head_sceleton_5
-    400424: Necromancer_Head_sceleton_6
-    400426: Necromancer_Head_sceleton_7
-    400428: Necromancer_Head_sceleton_8
-    400430: Necromancer_Head_sceleton_9
-    400432: Necromancer_Hips
-    400434: Necromancer_LeftArm
-    400436: Necromancer_LeftFoot
-    400438: Necromancer_LeftForeArm
-    400440: Necromancer_LeftHand
-    400442: Necromancer_LeftHandIndex1
-    400444: Necromancer_LeftHandIndex2
-    400446: Necromancer_LeftHandIndex3
-    400448: Necromancer_LeftHandIndex4
-    400450: Necromancer_LeftHandMiddle1
-    400452: Necromancer_LeftHandMiddle2
-    400454: Necromancer_LeftHandMiddle3
-    400456: Necromancer_LeftHandMiddle4
-    400458: Necromancer_LeftHandPinky1
-    400460: Necromancer_LeftHandPinky2
-    400462: Necromancer_LeftHandPinky3
-    400464: Necromancer_LeftHandPinky4
-    400466: Necromancer_LeftHandRing1
-    400468: Necromancer_LeftHandRing2
-    400470: Necromancer_LeftHandRing3
-    400472: Necromancer_LeftHandRing4
-    400474: Necromancer_LeftHandThumb1
-    400476: Necromancer_LeftHandThumb2
-    400478: Necromancer_LeftHandThumb3
-    400480: Necromancer_LeftHandThumb4
-    400482: Necromancer_LeftLeg
-    400484: Necromancer_LeftShoulder
-    400486: Necromancer_LeftToeBase
-    400488: Necromancer_LeftUpLeg
-    400490: Necromancer_Neck
-    400492: Necromancer_Reference
-    400494: Necromancer_RightArm
-    400496: Necromancer_RightFoot
-    400498: Necromancer_RightForeArm
-    400500: Necromancer_RightHand
-    400502: Necromancer_RightHandIndex1
-    400504: Necromancer_RightHandIndex2
-    400506: Necromancer_RightHandIndex3
-    400508: Necromancer_RightHandIndex4
-    400510: Necromancer_RightHandMiddle1
-    400512: Necromancer_RightHandMiddle2
-    400514: Necromancer_RightHandMiddle3
-    400516: Necromancer_RightHandMiddle4
-    400518: Necromancer_RightHandPinky1
-    400520: Necromancer_RightHandPinky2
-    400522: Necromancer_RightHandPinky3
-    400524: Necromancer_RightHandPinky4
-    400526: Necromancer_RightHandRing1
-    400528: Necromancer_RightHandRing2
-    400530: Necromancer_RightHandRing3
-    400532: Necromancer_RightHandRing4
-    400534: Necromancer_RightHandThumb1
-    400536: Necromancer_RightHandThumb2
-    400538: Necromancer_RightHandThumb3
-    400540: Necromancer_RightHandThumb4
-    400542: Necromancer_RightLeg
-    400544: Necromancer_RightShoulder
-    400546: Necromancer_RightToeBase
-    400548: Necromancer_RightUpLeg
-    400550: Necromancer_scull_left_1
-    400552: Necromancer_scull_left_2
-    400554: Necromancer_scull_mid_1
-    400556: Necromancer_scull_mid_2
-    400558: Necromancer_scull_right_1
-    400560: Necromancer_scull_right_2
-    400562: Necromancer_shtandart_centre
-    400564: Necromancer_shtandart_left
-    400566: Necromancer_shtandart_right
-    400568: Necromancer_Spine
-    400570: Necromancer_Spine1
-    400572: Necromancer_Spine2
-    400574: Necromancer_toga_centre_back_1
-    400576: Necromancer_toga_centre_back_2
-    400578: Necromancer_toga_centre_back_3
-    400580: Necromancer_toga_front_1
-    400582: Necromancer_toga_front_2
-    400584: Necromancer_toga_front_3
-    400586: Necromancer_toga_left_1
-    400588: Necromancer_toga_left_2
-    400590: Necromancer_toga_left_3
-    400592: Necromancer_toga_left_4
-    400594: Necromancer_toga_left_back_1
-    400596: Necromancer_toga_left_back_2
-    400598: Necromancer_toga_left_back_3
-    400600: Necromancer_toga_left_back_4
-    400602: Necromancer_toga_left_front_1
-    400604: Necromancer_toga_left_front_2
-    400606: Necromancer_toga_left_front_3
-    400608: Necromancer_toga_right_1
-    400610: Necromancer_toga_right_2
-    400612: Necromancer_toga_right_3
-    400614: Necromancer_toga_right_back_1
-    400616: Necromancer_toga_right_back_2
-    400618: Necromancer_toga_right_back_3
-    400620: Necromancer_toga_right_front_1
-    400622: Necromancer_toga_right_front_2
-    400624: Necromancer_toga_right_front_3
-    400626: scythe_1
-    400628: scythe_2
-    400630: transform1
-    7400000: Take 001
-    9500000: //RootNode
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: //RootNode
+  - first:
+      1: 100002
+    second: Necromancer_chain_left_1
+  - first:
+      1: 100004
+    second: Necromancer_chain_left_2
+  - first:
+      1: 100006
+    second: Necromancer_chain_left_3
+  - first:
+      1: 100008
+    second: Necromancer_chain_left_4
+  - first:
+      1: 100010
+    second: Necromancer_chain_left_5
+  - first:
+      1: 100012
+    second: Necromancer_chain_left_6
+  - first:
+      1: 100014
+    second: Necromancer_chain_left_7
+  - first:
+      1: 100016
+    second: Necromancer_chain_left_long_1
+  - first:
+      1: 100018
+    second: Necromancer_chain_left_long_10
+  - first:
+      1: 100020
+    second: Necromancer_chain_left_long_11
+  - first:
+      1: 100022
+    second: Necromancer_chain_left_long_12
+  - first:
+      1: 100024
+    second: Necromancer_chain_left_long_13
+  - first:
+      1: 100026
+    second: Necromancer_chain_left_long_14
+  - first:
+      1: 100028
+    second: Necromancer_chain_left_long_15
+  - first:
+      1: 100030
+    second: Necromancer_chain_left_long_16
+  - first:
+      1: 100032
+    second: Necromancer_chain_left_long_17
+  - first:
+      1: 100034
+    second: Necromancer_chain_left_long_18
+  - first:
+      1: 100036
+    second: Necromancer_chain_left_long_19
+  - first:
+      1: 100038
+    second: Necromancer_chain_left_long_2
+  - first:
+      1: 100040
+    second: Necromancer_chain_left_long_20
+  - first:
+      1: 100042
+    second: Necromancer_chain_left_long_21
+  - first:
+      1: 100044
+    second: Necromancer_chain_left_long_22
+  - first:
+      1: 100046
+    second: Necromancer_chain_left_long_3
+  - first:
+      1: 100048
+    second: Necromancer_chain_left_long_4
+  - first:
+      1: 100050
+    second: Necromancer_chain_left_long_5
+  - first:
+      1: 100052
+    second: Necromancer_chain_left_long_6
+  - first:
+      1: 100054
+    second: Necromancer_chain_left_long_7
+  - first:
+      1: 100056
+    second: Necromancer_chain_left_long_8
+  - first:
+      1: 100058
+    second: Necromancer_chain_left_long_9
+  - first:
+      1: 100060
+    second: Necromancer_chain_right_1
+  - first:
+      1: 100062
+    second: Necromancer_chain_right_2
+  - first:
+      1: 100064
+    second: Necromancer_chain_right_3
+  - first:
+      1: 100066
+    second: Necromancer_chain_right_4
+  - first:
+      1: 100068
+    second: Necromancer_chain_right_5
+  - first:
+      1: 100070
+    second: Necromancer_chain_right_6
+  - first:
+      1: 100072
+    second: Necromancer_chain_right_7
+  - first:
+      1: 100074
+    second: Necromancer_chain_right_long_1
+  - first:
+      1: 100076
+    second: Necromancer_chain_right_long_10
+  - first:
+      1: 100078
+    second: Necromancer_chain_right_long_11
+  - first:
+      1: 100080
+    second: Necromancer_chain_right_long_12
+  - first:
+      1: 100082
+    second: Necromancer_chain_right_long_13
+  - first:
+      1: 100084
+    second: Necromancer_chain_right_long_14
+  - first:
+      1: 100086
+    second: Necromancer_chain_right_long_15
+  - first:
+      1: 100088
+    second: Necromancer_chain_right_long_16
+  - first:
+      1: 100090
+    second: Necromancer_chain_right_long_17
+  - first:
+      1: 100092
+    second: Necromancer_chain_right_long_18
+  - first:
+      1: 100094
+    second: Necromancer_chain_right_long_19
+  - first:
+      1: 100096
+    second: Necromancer_chain_right_long_2
+  - first:
+      1: 100098
+    second: Necromancer_chain_right_long_20
+  - first:
+      1: 100100
+    second: Necromancer_chain_right_long_21
+  - first:
+      1: 100102
+    second: Necromancer_chain_right_long_22
+  - first:
+      1: 100104
+    second: Necromancer_chain_right_long_3
+  - first:
+      1: 100106
+    second: Necromancer_chain_right_long_4
+  - first:
+      1: 100108
+    second: Necromancer_chain_right_long_5
+  - first:
+      1: 100110
+    second: Necromancer_chain_right_long_6
+  - first:
+      1: 100112
+    second: Necromancer_chain_right_long_7
+  - first:
+      1: 100114
+    second: Necromancer_chain_right_long_8
+  - first:
+      1: 100116
+    second: Necromancer_chain_right_long_9
+  - first:
+      1: 100118
+    second: Necromancer_chain_scull_left_1
+  - first:
+      1: 100120
+    second: Necromancer_chain_scull_left_10
+  - first:
+      1: 100122
+    second: Necromancer_chain_scull_left_11
+  - first:
+      1: 100124
+    second: Necromancer_chain_scull_left_12
+  - first:
+      1: 100126
+    second: Necromancer_chain_scull_left_13
+  - first:
+      1: 100128
+    second: Necromancer_chain_scull_left_14
+  - first:
+      1: 100130
+    second: Necromancer_chain_scull_left_15
+  - first:
+      1: 100132
+    second: Necromancer_chain_scull_left_16
+  - first:
+      1: 100134
+    second: Necromancer_chain_scull_left_17
+  - first:
+      1: 100136
+    second: Necromancer_chain_scull_left_2
+  - first:
+      1: 100138
+    second: Necromancer_chain_scull_left_3
+  - first:
+      1: 100140
+    second: Necromancer_chain_scull_left_4
+  - first:
+      1: 100142
+    second: Necromancer_chain_scull_left_5
+  - first:
+      1: 100144
+    second: Necromancer_chain_scull_left_6
+  - first:
+      1: 100146
+    second: Necromancer_chain_scull_left_7
+  - first:
+      1: 100148
+    second: Necromancer_chain_scull_left_8
+  - first:
+      1: 100150
+    second: Necromancer_chain_scull_left_9
+  - first:
+      1: 100152
+    second: Necromancer_chain_scull_right_1
+  - first:
+      1: 100154
+    second: Necromancer_chain_scull_right_10
+  - first:
+      1: 100156
+    second: Necromancer_chain_scull_right_11
+  - first:
+      1: 100158
+    second: Necromancer_chain_scull_right_12
+  - first:
+      1: 100160
+    second: Necromancer_chain_scull_right_13
+  - first:
+      1: 100162
+    second: Necromancer_chain_scull_right_14
+  - first:
+      1: 100164
+    second: Necromancer_chain_scull_right_15
+  - first:
+      1: 100166
+    second: Necromancer_chain_scull_right_16
+  - first:
+      1: 100168
+    second: Necromancer_chain_scull_right_2
+  - first:
+      1: 100170
+    second: Necromancer_chain_scull_right_3
+  - first:
+      1: 100172
+    second: Necromancer_chain_scull_right_4
+  - first:
+      1: 100174
+    second: Necromancer_chain_scull_right_5
+  - first:
+      1: 100176
+    second: Necromancer_chain_scull_right_6
+  - first:
+      1: 100178
+    second: Necromancer_chain_scull_right_7
+  - first:
+      1: 100180
+    second: Necromancer_chain_scull_right_8
+  - first:
+      1: 100182
+    second: Necromancer_chain_scull_right_9
+  - first:
+      1: 100184
+    second: Necromancer_Ctrl_ChestEndEffector
+  - first:
+      1: 100186
+    second: Necromancer_Ctrl_ChestOriginEffector
+  - first:
+      1: 100188
+    second: Necromancer_Ctrl_Head
+  - first:
+      1: 100190
+    second: Necromancer_Ctrl_HeadEffector
+  - first:
+      1: 100192
+    second: Necromancer_Ctrl_Hips
+  - first:
+      1: 100194
+    second: Necromancer_Ctrl_HipsEffector
+  - first:
+      1: 100196
+    second: Necromancer_Ctrl_LeftAnkleEffector
+  - first:
+      1: 100198
+    second: Necromancer_Ctrl_LeftArm
+  - first:
+      1: 100200
+    second: Necromancer_Ctrl_LeftElbowEffector
+  - first:
+      1: 100202
+    second: Necromancer_Ctrl_LeftFoot
+  - first:
+      1: 100204
+    second: Necromancer_Ctrl_LeftFootEffector
+  - first:
+      1: 100206
+    second: Necromancer_Ctrl_LeftForeArm
+  - first:
+      1: 100208
+    second: Necromancer_Ctrl_LeftHand
+  - first:
+      1: 100210
+    second: Necromancer_Ctrl_LeftHandIndex1
+  - first:
+      1: 100212
+    second: Necromancer_Ctrl_LeftHandIndex2
+  - first:
+      1: 100214
+    second: Necromancer_Ctrl_LeftHandIndex3
+  - first:
+      1: 100216
+    second: Necromancer_Ctrl_LeftHandIndex4
+  - first:
+      1: 100218
+    second: Necromancer_Ctrl_LeftHandIndexEffector
+  - first:
+      1: 100220
+    second: Necromancer_Ctrl_LeftHandMiddle1
+  - first:
+      1: 100222
+    second: Necromancer_Ctrl_LeftHandMiddle2
+  - first:
+      1: 100224
+    second: Necromancer_Ctrl_LeftHandMiddle3
+  - first:
+      1: 100226
+    second: Necromancer_Ctrl_LeftHandMiddle4
+  - first:
+      1: 100228
+    second: Necromancer_Ctrl_LeftHandMiddleEffector
+  - first:
+      1: 100230
+    second: Necromancer_Ctrl_LeftHandPinky1
+  - first:
+      1: 100232
+    second: Necromancer_Ctrl_LeftHandPinky2
+  - first:
+      1: 100234
+    second: Necromancer_Ctrl_LeftHandPinky3
+  - first:
+      1: 100236
+    second: Necromancer_Ctrl_LeftHandPinky4
+  - first:
+      1: 100238
+    second: Necromancer_Ctrl_LeftHandPinkyEffector
+  - first:
+      1: 100240
+    second: Necromancer_Ctrl_LeftHandRing1
+  - first:
+      1: 100242
+    second: Necromancer_Ctrl_LeftHandRing2
+  - first:
+      1: 100244
+    second: Necromancer_Ctrl_LeftHandRing3
+  - first:
+      1: 100246
+    second: Necromancer_Ctrl_LeftHandRing4
+  - first:
+      1: 100248
+    second: Necromancer_Ctrl_LeftHandRingEffector
+  - first:
+      1: 100250
+    second: Necromancer_Ctrl_LeftHandThumb1
+  - first:
+      1: 100252
+    second: Necromancer_Ctrl_LeftHandThumb2
+  - first:
+      1: 100254
+    second: Necromancer_Ctrl_LeftHandThumb3
+  - first:
+      1: 100256
+    second: Necromancer_Ctrl_LeftHandThumb4
+  - first:
+      1: 100258
+    second: Necromancer_Ctrl_LeftHandThumbEffector
+  - first:
+      1: 100260
+    second: Necromancer_Ctrl_LeftHipEffector
+  - first:
+      1: 100262
+    second: Necromancer_Ctrl_LeftKneeEffector
+  - first:
+      1: 100264
+    second: Necromancer_Ctrl_LeftLeg
+  - first:
+      1: 100266
+    second: Necromancer_Ctrl_LeftShoulder
+  - first:
+      1: 100268
+    second: Necromancer_Ctrl_LeftShoulderEffector
+  - first:
+      1: 100270
+    second: Necromancer_Ctrl_LeftToeBase
+  - first:
+      1: 100272
+    second: Necromancer_Ctrl_LeftUpLeg
+  - first:
+      1: 100274
+    second: Necromancer_Ctrl_LeftWristEffector
+  - first:
+      1: 100276
+    second: Necromancer_Ctrl_Neck
+  - first:
+      1: 100278
+    second: Necromancer_Ctrl_Reference
+  - first:
+      1: 100280
+    second: Necromancer_Ctrl_RightAnkleEffector
+  - first:
+      1: 100282
+    second: Necromancer_Ctrl_RightArm
+  - first:
+      1: 100284
+    second: Necromancer_Ctrl_RightElbowEffector
+  - first:
+      1: 100286
+    second: Necromancer_Ctrl_RightFoot
+  - first:
+      1: 100288
+    second: Necromancer_Ctrl_RightFootEffector
+  - first:
+      1: 100290
+    second: Necromancer_Ctrl_RightForeArm
+  - first:
+      1: 100292
+    second: Necromancer_Ctrl_RightHand
+  - first:
+      1: 100294
+    second: Necromancer_Ctrl_RightHandIndex1
+  - first:
+      1: 100296
+    second: Necromancer_Ctrl_RightHandIndex2
+  - first:
+      1: 100298
+    second: Necromancer_Ctrl_RightHandIndex3
+  - first:
+      1: 100300
+    second: Necromancer_Ctrl_RightHandIndex4
+  - first:
+      1: 100302
+    second: Necromancer_Ctrl_RightHandIndexEffector
+  - first:
+      1: 100304
+    second: Necromancer_Ctrl_RightHandMiddle1
+  - first:
+      1: 100306
+    second: Necromancer_Ctrl_RightHandMiddle2
+  - first:
+      1: 100308
+    second: Necromancer_Ctrl_RightHandMiddle3
+  - first:
+      1: 100310
+    second: Necromancer_Ctrl_RightHandMiddle4
+  - first:
+      1: 100312
+    second: Necromancer_Ctrl_RightHandMiddleEffector
+  - first:
+      1: 100314
+    second: Necromancer_Ctrl_RightHandPinky1
+  - first:
+      1: 100316
+    second: Necromancer_Ctrl_RightHandPinky2
+  - first:
+      1: 100318
+    second: Necromancer_Ctrl_RightHandPinky3
+  - first:
+      1: 100320
+    second: Necromancer_Ctrl_RightHandPinky4
+  - first:
+      1: 100322
+    second: Necromancer_Ctrl_RightHandPinkyEffector
+  - first:
+      1: 100324
+    second: Necromancer_Ctrl_RightHandRing1
+  - first:
+      1: 100326
+    second: Necromancer_Ctrl_RightHandRing2
+  - first:
+      1: 100328
+    second: Necromancer_Ctrl_RightHandRing3
+  - first:
+      1: 100330
+    second: Necromancer_Ctrl_RightHandRing4
+  - first:
+      1: 100332
+    second: Necromancer_Ctrl_RightHandRingEffector
+  - first:
+      1: 100334
+    second: Necromancer_Ctrl_RightHandThumb1
+  - first:
+      1: 100336
+    second: Necromancer_Ctrl_RightHandThumb2
+  - first:
+      1: 100338
+    second: Necromancer_Ctrl_RightHandThumb3
+  - first:
+      1: 100340
+    second: Necromancer_Ctrl_RightHandThumb4
+  - first:
+      1: 100342
+    second: Necromancer_Ctrl_RightHandThumbEffector
+  - first:
+      1: 100344
+    second: Necromancer_Ctrl_RightHipEffector
+  - first:
+      1: 100346
+    second: Necromancer_Ctrl_RightKneeEffector
+  - first:
+      1: 100348
+    second: Necromancer_Ctrl_RightLeg
+  - first:
+      1: 100350
+    second: Necromancer_Ctrl_RightShoulder
+  - first:
+      1: 100352
+    second: Necromancer_Ctrl_RightShoulderEffector
+  - first:
+      1: 100354
+    second: Necromancer_Ctrl_RightToeBase
+  - first:
+      1: 100356
+    second: Necromancer_Ctrl_RightUpLeg
+  - first:
+      1: 100358
+    second: Necromancer_Ctrl_RightWristEffector
+  - first:
+      1: 100360
+    second: Necromancer_Ctrl_Spine
+  - first:
+      1: 100362
+    second: Necromancer_Ctrl_Spine1
+  - first:
+      1: 100364
+    second: Necromancer_Ctrl_Spine2
+  - first:
+      1: 100366
+    second: Necromancer_front_shield_1
+  - first:
+      1: 100368
+    second: Necromancer_front_shield_2
+  - first:
+      1: 100370
+    second: Necromancer_Head
+  - first:
+      1: 100372
+    second: Necromancer_Head_back_colchuga_1
+  - first:
+      1: 100374
+    second: Necromancer_Head_back_colchuga_2
+  - first:
+      1: 100376
+    second: Necromancer_Head_back_colchuga_3
+  - first:
+      1: 100378
+    second: Necromancer_Head_left_colchuga_1
+  - first:
+      1: 100380
+    second: Necromancer_Head_left_colchuga_2
+  - first:
+      1: 100382
+    second: Necromancer_Head_left_colchuga_3
+  - first:
+      1: 100384
+    second: Necromancer_Head_right_colchuga_1
+  - first:
+      1: 100386
+    second: Necromancer_Head_right_colchuga_2
+  - first:
+      1: 100388
+    second: Necromancer_Head_right_colchuga_3
+  - first:
+      1: 100390
+    second: Necromancer_Head_sceleton_1
+  - first:
+      1: 100392
+    second: Necromancer_Head_sceleton_10
+  - first:
+      1: 100394
+    second: Necromancer_Head_sceleton_11
+  - first:
+      1: 100396
+    second: Necromancer_Head_sceleton_12
+  - first:
+      1: 100398
+    second: Necromancer_Head_sceleton_13
+  - first:
+      1: 100400
+    second: Necromancer_Head_sceleton_14
+  - first:
+      1: 100402
+    second: Necromancer_Head_sceleton_15
+  - first:
+      1: 100404
+    second: Necromancer_Head_sceleton_16
+  - first:
+      1: 100406
+    second: Necromancer_Head_sceleton_17
+  - first:
+      1: 100408
+    second: Necromancer_Head_sceleton_18
+  - first:
+      1: 100410
+    second: Necromancer_Head_sceleton_19
+  - first:
+      1: 100412
+    second: Necromancer_Head_sceleton_2
+  - first:
+      1: 100414
+    second: Necromancer_Head_sceleton_20
+  - first:
+      1: 100416
+    second: Necromancer_Head_sceleton_21
+  - first:
+      1: 100418
+    second: Necromancer_Head_sceleton_3
+  - first:
+      1: 100420
+    second: Necromancer_Head_sceleton_4
+  - first:
+      1: 100422
+    second: Necromancer_Head_sceleton_5
+  - first:
+      1: 100424
+    second: Necromancer_Head_sceleton_6
+  - first:
+      1: 100426
+    second: Necromancer_Head_sceleton_7
+  - first:
+      1: 100428
+    second: Necromancer_Head_sceleton_8
+  - first:
+      1: 100430
+    second: Necromancer_Head_sceleton_9
+  - first:
+      1: 100432
+    second: Necromancer_Hips
+  - first:
+      1: 100434
+    second: Necromancer_LeftArm
+  - first:
+      1: 100436
+    second: Necromancer_LeftFoot
+  - first:
+      1: 100438
+    second: Necromancer_LeftForeArm
+  - first:
+      1: 100440
+    second: Necromancer_LeftHand
+  - first:
+      1: 100442
+    second: Necromancer_LeftHandIndex1
+  - first:
+      1: 100444
+    second: Necromancer_LeftHandIndex2
+  - first:
+      1: 100446
+    second: Necromancer_LeftHandIndex3
+  - first:
+      1: 100448
+    second: Necromancer_LeftHandIndex4
+  - first:
+      1: 100450
+    second: Necromancer_LeftHandMiddle1
+  - first:
+      1: 100452
+    second: Necromancer_LeftHandMiddle2
+  - first:
+      1: 100454
+    second: Necromancer_LeftHandMiddle3
+  - first:
+      1: 100456
+    second: Necromancer_LeftHandMiddle4
+  - first:
+      1: 100458
+    second: Necromancer_LeftHandPinky1
+  - first:
+      1: 100460
+    second: Necromancer_LeftHandPinky2
+  - first:
+      1: 100462
+    second: Necromancer_LeftHandPinky3
+  - first:
+      1: 100464
+    second: Necromancer_LeftHandPinky4
+  - first:
+      1: 100466
+    second: Necromancer_LeftHandRing1
+  - first:
+      1: 100468
+    second: Necromancer_LeftHandRing2
+  - first:
+      1: 100470
+    second: Necromancer_LeftHandRing3
+  - first:
+      1: 100472
+    second: Necromancer_LeftHandRing4
+  - first:
+      1: 100474
+    second: Necromancer_LeftHandThumb1
+  - first:
+      1: 100476
+    second: Necromancer_LeftHandThumb2
+  - first:
+      1: 100478
+    second: Necromancer_LeftHandThumb3
+  - first:
+      1: 100480
+    second: Necromancer_LeftHandThumb4
+  - first:
+      1: 100482
+    second: Necromancer_LeftLeg
+  - first:
+      1: 100484
+    second: Necromancer_LeftShoulder
+  - first:
+      1: 100486
+    second: Necromancer_LeftToeBase
+  - first:
+      1: 100488
+    second: Necromancer_LeftUpLeg
+  - first:
+      1: 100490
+    second: Necromancer_Neck
+  - first:
+      1: 100492
+    second: Necromancer_Reference
+  - first:
+      1: 100494
+    second: Necromancer_RightArm
+  - first:
+      1: 100496
+    second: Necromancer_RightFoot
+  - first:
+      1: 100498
+    second: Necromancer_RightForeArm
+  - first:
+      1: 100500
+    second: Necromancer_RightHand
+  - first:
+      1: 100502
+    second: Necromancer_RightHandIndex1
+  - first:
+      1: 100504
+    second: Necromancer_RightHandIndex2
+  - first:
+      1: 100506
+    second: Necromancer_RightHandIndex3
+  - first:
+      1: 100508
+    second: Necromancer_RightHandIndex4
+  - first:
+      1: 100510
+    second: Necromancer_RightHandMiddle1
+  - first:
+      1: 100512
+    second: Necromancer_RightHandMiddle2
+  - first:
+      1: 100514
+    second: Necromancer_RightHandMiddle3
+  - first:
+      1: 100516
+    second: Necromancer_RightHandMiddle4
+  - first:
+      1: 100518
+    second: Necromancer_RightHandPinky1
+  - first:
+      1: 100520
+    second: Necromancer_RightHandPinky2
+  - first:
+      1: 100522
+    second: Necromancer_RightHandPinky3
+  - first:
+      1: 100524
+    second: Necromancer_RightHandPinky4
+  - first:
+      1: 100526
+    second: Necromancer_RightHandRing1
+  - first:
+      1: 100528
+    second: Necromancer_RightHandRing2
+  - first:
+      1: 100530
+    second: Necromancer_RightHandRing3
+  - first:
+      1: 100532
+    second: Necromancer_RightHandRing4
+  - first:
+      1: 100534
+    second: Necromancer_RightHandThumb1
+  - first:
+      1: 100536
+    second: Necromancer_RightHandThumb2
+  - first:
+      1: 100538
+    second: Necromancer_RightHandThumb3
+  - first:
+      1: 100540
+    second: Necromancer_RightHandThumb4
+  - first:
+      1: 100542
+    second: Necromancer_RightLeg
+  - first:
+      1: 100544
+    second: Necromancer_RightShoulder
+  - first:
+      1: 100546
+    second: Necromancer_RightToeBase
+  - first:
+      1: 100548
+    second: Necromancer_RightUpLeg
+  - first:
+      1: 100550
+    second: Necromancer_scull_left_1
+  - first:
+      1: 100552
+    second: Necromancer_scull_left_2
+  - first:
+      1: 100554
+    second: Necromancer_scull_mid_1
+  - first:
+      1: 100556
+    second: Necromancer_scull_mid_2
+  - first:
+      1: 100558
+    second: Necromancer_scull_right_1
+  - first:
+      1: 100560
+    second: Necromancer_scull_right_2
+  - first:
+      1: 100562
+    second: Necromancer_shtandart_centre
+  - first:
+      1: 100564
+    second: Necromancer_shtandart_left
+  - first:
+      1: 100566
+    second: Necromancer_shtandart_right
+  - first:
+      1: 100568
+    second: Necromancer_Spine
+  - first:
+      1: 100570
+    second: Necromancer_Spine1
+  - first:
+      1: 100572
+    second: Necromancer_Spine2
+  - first:
+      1: 100574
+    second: Necromancer_toga_centre_back_1
+  - first:
+      1: 100576
+    second: Necromancer_toga_centre_back_2
+  - first:
+      1: 100578
+    second: Necromancer_toga_centre_back_3
+  - first:
+      1: 100580
+    second: Necromancer_toga_front_1
+  - first:
+      1: 100582
+    second: Necromancer_toga_front_2
+  - first:
+      1: 100584
+    second: Necromancer_toga_front_3
+  - first:
+      1: 100586
+    second: Necromancer_toga_left_1
+  - first:
+      1: 100588
+    second: Necromancer_toga_left_2
+  - first:
+      1: 100590
+    second: Necromancer_toga_left_3
+  - first:
+      1: 100592
+    second: Necromancer_toga_left_4
+  - first:
+      1: 100594
+    second: Necromancer_toga_left_back_1
+  - first:
+      1: 100596
+    second: Necromancer_toga_left_back_2
+  - first:
+      1: 100598
+    second: Necromancer_toga_left_back_3
+  - first:
+      1: 100600
+    second: Necromancer_toga_left_back_4
+  - first:
+      1: 100602
+    second: Necromancer_toga_left_front_1
+  - first:
+      1: 100604
+    second: Necromancer_toga_left_front_2
+  - first:
+      1: 100606
+    second: Necromancer_toga_left_front_3
+  - first:
+      1: 100608
+    second: Necromancer_toga_right_1
+  - first:
+      1: 100610
+    second: Necromancer_toga_right_2
+  - first:
+      1: 100612
+    second: Necromancer_toga_right_3
+  - first:
+      1: 100614
+    second: Necromancer_toga_right_back_1
+  - first:
+      1: 100616
+    second: Necromancer_toga_right_back_2
+  - first:
+      1: 100618
+    second: Necromancer_toga_right_back_3
+  - first:
+      1: 100620
+    second: Necromancer_toga_right_front_1
+  - first:
+      1: 100622
+    second: Necromancer_toga_right_front_2
+  - first:
+      1: 100624
+    second: Necromancer_toga_right_front_3
+  - first:
+      1: 100626
+    second: scythe_1
+  - first:
+      1: 100628
+    second: scythe_2
+  - first:
+      1: 100630
+    second: transform1
+  - first:
+      4: 400000
+    second: //RootNode
+  - first:
+      4: 400002
+    second: Necromancer_chain_left_1
+  - first:
+      4: 400004
+    second: Necromancer_chain_left_2
+  - first:
+      4: 400006
+    second: Necromancer_chain_left_3
+  - first:
+      4: 400008
+    second: Necromancer_chain_left_4
+  - first:
+      4: 400010
+    second: Necromancer_chain_left_5
+  - first:
+      4: 400012
+    second: Necromancer_chain_left_6
+  - first:
+      4: 400014
+    second: Necromancer_chain_left_7
+  - first:
+      4: 400016
+    second: Necromancer_chain_left_long_1
+  - first:
+      4: 400018
+    second: Necromancer_chain_left_long_10
+  - first:
+      4: 400020
+    second: Necromancer_chain_left_long_11
+  - first:
+      4: 400022
+    second: Necromancer_chain_left_long_12
+  - first:
+      4: 400024
+    second: Necromancer_chain_left_long_13
+  - first:
+      4: 400026
+    second: Necromancer_chain_left_long_14
+  - first:
+      4: 400028
+    second: Necromancer_chain_left_long_15
+  - first:
+      4: 400030
+    second: Necromancer_chain_left_long_16
+  - first:
+      4: 400032
+    second: Necromancer_chain_left_long_17
+  - first:
+      4: 400034
+    second: Necromancer_chain_left_long_18
+  - first:
+      4: 400036
+    second: Necromancer_chain_left_long_19
+  - first:
+      4: 400038
+    second: Necromancer_chain_left_long_2
+  - first:
+      4: 400040
+    second: Necromancer_chain_left_long_20
+  - first:
+      4: 400042
+    second: Necromancer_chain_left_long_21
+  - first:
+      4: 400044
+    second: Necromancer_chain_left_long_22
+  - first:
+      4: 400046
+    second: Necromancer_chain_left_long_3
+  - first:
+      4: 400048
+    second: Necromancer_chain_left_long_4
+  - first:
+      4: 400050
+    second: Necromancer_chain_left_long_5
+  - first:
+      4: 400052
+    second: Necromancer_chain_left_long_6
+  - first:
+      4: 400054
+    second: Necromancer_chain_left_long_7
+  - first:
+      4: 400056
+    second: Necromancer_chain_left_long_8
+  - first:
+      4: 400058
+    second: Necromancer_chain_left_long_9
+  - first:
+      4: 400060
+    second: Necromancer_chain_right_1
+  - first:
+      4: 400062
+    second: Necromancer_chain_right_2
+  - first:
+      4: 400064
+    second: Necromancer_chain_right_3
+  - first:
+      4: 400066
+    second: Necromancer_chain_right_4
+  - first:
+      4: 400068
+    second: Necromancer_chain_right_5
+  - first:
+      4: 400070
+    second: Necromancer_chain_right_6
+  - first:
+      4: 400072
+    second: Necromancer_chain_right_7
+  - first:
+      4: 400074
+    second: Necromancer_chain_right_long_1
+  - first:
+      4: 400076
+    second: Necromancer_chain_right_long_10
+  - first:
+      4: 400078
+    second: Necromancer_chain_right_long_11
+  - first:
+      4: 400080
+    second: Necromancer_chain_right_long_12
+  - first:
+      4: 400082
+    second: Necromancer_chain_right_long_13
+  - first:
+      4: 400084
+    second: Necromancer_chain_right_long_14
+  - first:
+      4: 400086
+    second: Necromancer_chain_right_long_15
+  - first:
+      4: 400088
+    second: Necromancer_chain_right_long_16
+  - first:
+      4: 400090
+    second: Necromancer_chain_right_long_17
+  - first:
+      4: 400092
+    second: Necromancer_chain_right_long_18
+  - first:
+      4: 400094
+    second: Necromancer_chain_right_long_19
+  - first:
+      4: 400096
+    second: Necromancer_chain_right_long_2
+  - first:
+      4: 400098
+    second: Necromancer_chain_right_long_20
+  - first:
+      4: 400100
+    second: Necromancer_chain_right_long_21
+  - first:
+      4: 400102
+    second: Necromancer_chain_right_long_22
+  - first:
+      4: 400104
+    second: Necromancer_chain_right_long_3
+  - first:
+      4: 400106
+    second: Necromancer_chain_right_long_4
+  - first:
+      4: 400108
+    second: Necromancer_chain_right_long_5
+  - first:
+      4: 400110
+    second: Necromancer_chain_right_long_6
+  - first:
+      4: 400112
+    second: Necromancer_chain_right_long_7
+  - first:
+      4: 400114
+    second: Necromancer_chain_right_long_8
+  - first:
+      4: 400116
+    second: Necromancer_chain_right_long_9
+  - first:
+      4: 400118
+    second: Necromancer_chain_scull_left_1
+  - first:
+      4: 400120
+    second: Necromancer_chain_scull_left_10
+  - first:
+      4: 400122
+    second: Necromancer_chain_scull_left_11
+  - first:
+      4: 400124
+    second: Necromancer_chain_scull_left_12
+  - first:
+      4: 400126
+    second: Necromancer_chain_scull_left_13
+  - first:
+      4: 400128
+    second: Necromancer_chain_scull_left_14
+  - first:
+      4: 400130
+    second: Necromancer_chain_scull_left_15
+  - first:
+      4: 400132
+    second: Necromancer_chain_scull_left_16
+  - first:
+      4: 400134
+    second: Necromancer_chain_scull_left_17
+  - first:
+      4: 400136
+    second: Necromancer_chain_scull_left_2
+  - first:
+      4: 400138
+    second: Necromancer_chain_scull_left_3
+  - first:
+      4: 400140
+    second: Necromancer_chain_scull_left_4
+  - first:
+      4: 400142
+    second: Necromancer_chain_scull_left_5
+  - first:
+      4: 400144
+    second: Necromancer_chain_scull_left_6
+  - first:
+      4: 400146
+    second: Necromancer_chain_scull_left_7
+  - first:
+      4: 400148
+    second: Necromancer_chain_scull_left_8
+  - first:
+      4: 400150
+    second: Necromancer_chain_scull_left_9
+  - first:
+      4: 400152
+    second: Necromancer_chain_scull_right_1
+  - first:
+      4: 400154
+    second: Necromancer_chain_scull_right_10
+  - first:
+      4: 400156
+    second: Necromancer_chain_scull_right_11
+  - first:
+      4: 400158
+    second: Necromancer_chain_scull_right_12
+  - first:
+      4: 400160
+    second: Necromancer_chain_scull_right_13
+  - first:
+      4: 400162
+    second: Necromancer_chain_scull_right_14
+  - first:
+      4: 400164
+    second: Necromancer_chain_scull_right_15
+  - first:
+      4: 400166
+    second: Necromancer_chain_scull_right_16
+  - first:
+      4: 400168
+    second: Necromancer_chain_scull_right_2
+  - first:
+      4: 400170
+    second: Necromancer_chain_scull_right_3
+  - first:
+      4: 400172
+    second: Necromancer_chain_scull_right_4
+  - first:
+      4: 400174
+    second: Necromancer_chain_scull_right_5
+  - first:
+      4: 400176
+    second: Necromancer_chain_scull_right_6
+  - first:
+      4: 400178
+    second: Necromancer_chain_scull_right_7
+  - first:
+      4: 400180
+    second: Necromancer_chain_scull_right_8
+  - first:
+      4: 400182
+    second: Necromancer_chain_scull_right_9
+  - first:
+      4: 400184
+    second: Necromancer_Ctrl_ChestEndEffector
+  - first:
+      4: 400186
+    second: Necromancer_Ctrl_ChestOriginEffector
+  - first:
+      4: 400188
+    second: Necromancer_Ctrl_Head
+  - first:
+      4: 400190
+    second: Necromancer_Ctrl_HeadEffector
+  - first:
+      4: 400192
+    second: Necromancer_Ctrl_Hips
+  - first:
+      4: 400194
+    second: Necromancer_Ctrl_HipsEffector
+  - first:
+      4: 400196
+    second: Necromancer_Ctrl_LeftAnkleEffector
+  - first:
+      4: 400198
+    second: Necromancer_Ctrl_LeftArm
+  - first:
+      4: 400200
+    second: Necromancer_Ctrl_LeftElbowEffector
+  - first:
+      4: 400202
+    second: Necromancer_Ctrl_LeftFoot
+  - first:
+      4: 400204
+    second: Necromancer_Ctrl_LeftFootEffector
+  - first:
+      4: 400206
+    second: Necromancer_Ctrl_LeftForeArm
+  - first:
+      4: 400208
+    second: Necromancer_Ctrl_LeftHand
+  - first:
+      4: 400210
+    second: Necromancer_Ctrl_LeftHandIndex1
+  - first:
+      4: 400212
+    second: Necromancer_Ctrl_LeftHandIndex2
+  - first:
+      4: 400214
+    second: Necromancer_Ctrl_LeftHandIndex3
+  - first:
+      4: 400216
+    second: Necromancer_Ctrl_LeftHandIndex4
+  - first:
+      4: 400218
+    second: Necromancer_Ctrl_LeftHandIndexEffector
+  - first:
+      4: 400220
+    second: Necromancer_Ctrl_LeftHandMiddle1
+  - first:
+      4: 400222
+    second: Necromancer_Ctrl_LeftHandMiddle2
+  - first:
+      4: 400224
+    second: Necromancer_Ctrl_LeftHandMiddle3
+  - first:
+      4: 400226
+    second: Necromancer_Ctrl_LeftHandMiddle4
+  - first:
+      4: 400228
+    second: Necromancer_Ctrl_LeftHandMiddleEffector
+  - first:
+      4: 400230
+    second: Necromancer_Ctrl_LeftHandPinky1
+  - first:
+      4: 400232
+    second: Necromancer_Ctrl_LeftHandPinky2
+  - first:
+      4: 400234
+    second: Necromancer_Ctrl_LeftHandPinky3
+  - first:
+      4: 400236
+    second: Necromancer_Ctrl_LeftHandPinky4
+  - first:
+      4: 400238
+    second: Necromancer_Ctrl_LeftHandPinkyEffector
+  - first:
+      4: 400240
+    second: Necromancer_Ctrl_LeftHandRing1
+  - first:
+      4: 400242
+    second: Necromancer_Ctrl_LeftHandRing2
+  - first:
+      4: 400244
+    second: Necromancer_Ctrl_LeftHandRing3
+  - first:
+      4: 400246
+    second: Necromancer_Ctrl_LeftHandRing4
+  - first:
+      4: 400248
+    second: Necromancer_Ctrl_LeftHandRingEffector
+  - first:
+      4: 400250
+    second: Necromancer_Ctrl_LeftHandThumb1
+  - first:
+      4: 400252
+    second: Necromancer_Ctrl_LeftHandThumb2
+  - first:
+      4: 400254
+    second: Necromancer_Ctrl_LeftHandThumb3
+  - first:
+      4: 400256
+    second: Necromancer_Ctrl_LeftHandThumb4
+  - first:
+      4: 400258
+    second: Necromancer_Ctrl_LeftHandThumbEffector
+  - first:
+      4: 400260
+    second: Necromancer_Ctrl_LeftHipEffector
+  - first:
+      4: 400262
+    second: Necromancer_Ctrl_LeftKneeEffector
+  - first:
+      4: 400264
+    second: Necromancer_Ctrl_LeftLeg
+  - first:
+      4: 400266
+    second: Necromancer_Ctrl_LeftShoulder
+  - first:
+      4: 400268
+    second: Necromancer_Ctrl_LeftShoulderEffector
+  - first:
+      4: 400270
+    second: Necromancer_Ctrl_LeftToeBase
+  - first:
+      4: 400272
+    second: Necromancer_Ctrl_LeftUpLeg
+  - first:
+      4: 400274
+    second: Necromancer_Ctrl_LeftWristEffector
+  - first:
+      4: 400276
+    second: Necromancer_Ctrl_Neck
+  - first:
+      4: 400278
+    second: Necromancer_Ctrl_Reference
+  - first:
+      4: 400280
+    second: Necromancer_Ctrl_RightAnkleEffector
+  - first:
+      4: 400282
+    second: Necromancer_Ctrl_RightArm
+  - first:
+      4: 400284
+    second: Necromancer_Ctrl_RightElbowEffector
+  - first:
+      4: 400286
+    second: Necromancer_Ctrl_RightFoot
+  - first:
+      4: 400288
+    second: Necromancer_Ctrl_RightFootEffector
+  - first:
+      4: 400290
+    second: Necromancer_Ctrl_RightForeArm
+  - first:
+      4: 400292
+    second: Necromancer_Ctrl_RightHand
+  - first:
+      4: 400294
+    second: Necromancer_Ctrl_RightHandIndex1
+  - first:
+      4: 400296
+    second: Necromancer_Ctrl_RightHandIndex2
+  - first:
+      4: 400298
+    second: Necromancer_Ctrl_RightHandIndex3
+  - first:
+      4: 400300
+    second: Necromancer_Ctrl_RightHandIndex4
+  - first:
+      4: 400302
+    second: Necromancer_Ctrl_RightHandIndexEffector
+  - first:
+      4: 400304
+    second: Necromancer_Ctrl_RightHandMiddle1
+  - first:
+      4: 400306
+    second: Necromancer_Ctrl_RightHandMiddle2
+  - first:
+      4: 400308
+    second: Necromancer_Ctrl_RightHandMiddle3
+  - first:
+      4: 400310
+    second: Necromancer_Ctrl_RightHandMiddle4
+  - first:
+      4: 400312
+    second: Necromancer_Ctrl_RightHandMiddleEffector
+  - first:
+      4: 400314
+    second: Necromancer_Ctrl_RightHandPinky1
+  - first:
+      4: 400316
+    second: Necromancer_Ctrl_RightHandPinky2
+  - first:
+      4: 400318
+    second: Necromancer_Ctrl_RightHandPinky3
+  - first:
+      4: 400320
+    second: Necromancer_Ctrl_RightHandPinky4
+  - first:
+      4: 400322
+    second: Necromancer_Ctrl_RightHandPinkyEffector
+  - first:
+      4: 400324
+    second: Necromancer_Ctrl_RightHandRing1
+  - first:
+      4: 400326
+    second: Necromancer_Ctrl_RightHandRing2
+  - first:
+      4: 400328
+    second: Necromancer_Ctrl_RightHandRing3
+  - first:
+      4: 400330
+    second: Necromancer_Ctrl_RightHandRing4
+  - first:
+      4: 400332
+    second: Necromancer_Ctrl_RightHandRingEffector
+  - first:
+      4: 400334
+    second: Necromancer_Ctrl_RightHandThumb1
+  - first:
+      4: 400336
+    second: Necromancer_Ctrl_RightHandThumb2
+  - first:
+      4: 400338
+    second: Necromancer_Ctrl_RightHandThumb3
+  - first:
+      4: 400340
+    second: Necromancer_Ctrl_RightHandThumb4
+  - first:
+      4: 400342
+    second: Necromancer_Ctrl_RightHandThumbEffector
+  - first:
+      4: 400344
+    second: Necromancer_Ctrl_RightHipEffector
+  - first:
+      4: 400346
+    second: Necromancer_Ctrl_RightKneeEffector
+  - first:
+      4: 400348
+    second: Necromancer_Ctrl_RightLeg
+  - first:
+      4: 400350
+    second: Necromancer_Ctrl_RightShoulder
+  - first:
+      4: 400352
+    second: Necromancer_Ctrl_RightShoulderEffector
+  - first:
+      4: 400354
+    second: Necromancer_Ctrl_RightToeBase
+  - first:
+      4: 400356
+    second: Necromancer_Ctrl_RightUpLeg
+  - first:
+      4: 400358
+    second: Necromancer_Ctrl_RightWristEffector
+  - first:
+      4: 400360
+    second: Necromancer_Ctrl_Spine
+  - first:
+      4: 400362
+    second: Necromancer_Ctrl_Spine1
+  - first:
+      4: 400364
+    second: Necromancer_Ctrl_Spine2
+  - first:
+      4: 400366
+    second: Necromancer_front_shield_1
+  - first:
+      4: 400368
+    second: Necromancer_front_shield_2
+  - first:
+      4: 400370
+    second: Necromancer_Head
+  - first:
+      4: 400372
+    second: Necromancer_Head_back_colchuga_1
+  - first:
+      4: 400374
+    second: Necromancer_Head_back_colchuga_2
+  - first:
+      4: 400376
+    second: Necromancer_Head_back_colchuga_3
+  - first:
+      4: 400378
+    second: Necromancer_Head_left_colchuga_1
+  - first:
+      4: 400380
+    second: Necromancer_Head_left_colchuga_2
+  - first:
+      4: 400382
+    second: Necromancer_Head_left_colchuga_3
+  - first:
+      4: 400384
+    second: Necromancer_Head_right_colchuga_1
+  - first:
+      4: 400386
+    second: Necromancer_Head_right_colchuga_2
+  - first:
+      4: 400388
+    second: Necromancer_Head_right_colchuga_3
+  - first:
+      4: 400390
+    second: Necromancer_Head_sceleton_1
+  - first:
+      4: 400392
+    second: Necromancer_Head_sceleton_10
+  - first:
+      4: 400394
+    second: Necromancer_Head_sceleton_11
+  - first:
+      4: 400396
+    second: Necromancer_Head_sceleton_12
+  - first:
+      4: 400398
+    second: Necromancer_Head_sceleton_13
+  - first:
+      4: 400400
+    second: Necromancer_Head_sceleton_14
+  - first:
+      4: 400402
+    second: Necromancer_Head_sceleton_15
+  - first:
+      4: 400404
+    second: Necromancer_Head_sceleton_16
+  - first:
+      4: 400406
+    second: Necromancer_Head_sceleton_17
+  - first:
+      4: 400408
+    second: Necromancer_Head_sceleton_18
+  - first:
+      4: 400410
+    second: Necromancer_Head_sceleton_19
+  - first:
+      4: 400412
+    second: Necromancer_Head_sceleton_2
+  - first:
+      4: 400414
+    second: Necromancer_Head_sceleton_20
+  - first:
+      4: 400416
+    second: Necromancer_Head_sceleton_21
+  - first:
+      4: 400418
+    second: Necromancer_Head_sceleton_3
+  - first:
+      4: 400420
+    second: Necromancer_Head_sceleton_4
+  - first:
+      4: 400422
+    second: Necromancer_Head_sceleton_5
+  - first:
+      4: 400424
+    second: Necromancer_Head_sceleton_6
+  - first:
+      4: 400426
+    second: Necromancer_Head_sceleton_7
+  - first:
+      4: 400428
+    second: Necromancer_Head_sceleton_8
+  - first:
+      4: 400430
+    second: Necromancer_Head_sceleton_9
+  - first:
+      4: 400432
+    second: Necromancer_Hips
+  - first:
+      4: 400434
+    second: Necromancer_LeftArm
+  - first:
+      4: 400436
+    second: Necromancer_LeftFoot
+  - first:
+      4: 400438
+    second: Necromancer_LeftForeArm
+  - first:
+      4: 400440
+    second: Necromancer_LeftHand
+  - first:
+      4: 400442
+    second: Necromancer_LeftHandIndex1
+  - first:
+      4: 400444
+    second: Necromancer_LeftHandIndex2
+  - first:
+      4: 400446
+    second: Necromancer_LeftHandIndex3
+  - first:
+      4: 400448
+    second: Necromancer_LeftHandIndex4
+  - first:
+      4: 400450
+    second: Necromancer_LeftHandMiddle1
+  - first:
+      4: 400452
+    second: Necromancer_LeftHandMiddle2
+  - first:
+      4: 400454
+    second: Necromancer_LeftHandMiddle3
+  - first:
+      4: 400456
+    second: Necromancer_LeftHandMiddle4
+  - first:
+      4: 400458
+    second: Necromancer_LeftHandPinky1
+  - first:
+      4: 400460
+    second: Necromancer_LeftHandPinky2
+  - first:
+      4: 400462
+    second: Necromancer_LeftHandPinky3
+  - first:
+      4: 400464
+    second: Necromancer_LeftHandPinky4
+  - first:
+      4: 400466
+    second: Necromancer_LeftHandRing1
+  - first:
+      4: 400468
+    second: Necromancer_LeftHandRing2
+  - first:
+      4: 400470
+    second: Necromancer_LeftHandRing3
+  - first:
+      4: 400472
+    second: Necromancer_LeftHandRing4
+  - first:
+      4: 400474
+    second: Necromancer_LeftHandThumb1
+  - first:
+      4: 400476
+    second: Necromancer_LeftHandThumb2
+  - first:
+      4: 400478
+    second: Necromancer_LeftHandThumb3
+  - first:
+      4: 400480
+    second: Necromancer_LeftHandThumb4
+  - first:
+      4: 400482
+    second: Necromancer_LeftLeg
+  - first:
+      4: 400484
+    second: Necromancer_LeftShoulder
+  - first:
+      4: 400486
+    second: Necromancer_LeftToeBase
+  - first:
+      4: 400488
+    second: Necromancer_LeftUpLeg
+  - first:
+      4: 400490
+    second: Necromancer_Neck
+  - first:
+      4: 400492
+    second: Necromancer_Reference
+  - first:
+      4: 400494
+    second: Necromancer_RightArm
+  - first:
+      4: 400496
+    second: Necromancer_RightFoot
+  - first:
+      4: 400498
+    second: Necromancer_RightForeArm
+  - first:
+      4: 400500
+    second: Necromancer_RightHand
+  - first:
+      4: 400502
+    second: Necromancer_RightHandIndex1
+  - first:
+      4: 400504
+    second: Necromancer_RightHandIndex2
+  - first:
+      4: 400506
+    second: Necromancer_RightHandIndex3
+  - first:
+      4: 400508
+    second: Necromancer_RightHandIndex4
+  - first:
+      4: 400510
+    second: Necromancer_RightHandMiddle1
+  - first:
+      4: 400512
+    second: Necromancer_RightHandMiddle2
+  - first:
+      4: 400514
+    second: Necromancer_RightHandMiddle3
+  - first:
+      4: 400516
+    second: Necromancer_RightHandMiddle4
+  - first:
+      4: 400518
+    second: Necromancer_RightHandPinky1
+  - first:
+      4: 400520
+    second: Necromancer_RightHandPinky2
+  - first:
+      4: 400522
+    second: Necromancer_RightHandPinky3
+  - first:
+      4: 400524
+    second: Necromancer_RightHandPinky4
+  - first:
+      4: 400526
+    second: Necromancer_RightHandRing1
+  - first:
+      4: 400528
+    second: Necromancer_RightHandRing2
+  - first:
+      4: 400530
+    second: Necromancer_RightHandRing3
+  - first:
+      4: 400532
+    second: Necromancer_RightHandRing4
+  - first:
+      4: 400534
+    second: Necromancer_RightHandThumb1
+  - first:
+      4: 400536
+    second: Necromancer_RightHandThumb2
+  - first:
+      4: 400538
+    second: Necromancer_RightHandThumb3
+  - first:
+      4: 400540
+    second: Necromancer_RightHandThumb4
+  - first:
+      4: 400542
+    second: Necromancer_RightLeg
+  - first:
+      4: 400544
+    second: Necromancer_RightShoulder
+  - first:
+      4: 400546
+    second: Necromancer_RightToeBase
+  - first:
+      4: 400548
+    second: Necromancer_RightUpLeg
+  - first:
+      4: 400550
+    second: Necromancer_scull_left_1
+  - first:
+      4: 400552
+    second: Necromancer_scull_left_2
+  - first:
+      4: 400554
+    second: Necromancer_scull_mid_1
+  - first:
+      4: 400556
+    second: Necromancer_scull_mid_2
+  - first:
+      4: 400558
+    second: Necromancer_scull_right_1
+  - first:
+      4: 400560
+    second: Necromancer_scull_right_2
+  - first:
+      4: 400562
+    second: Necromancer_shtandart_centre
+  - first:
+      4: 400564
+    second: Necromancer_shtandart_left
+  - first:
+      4: 400566
+    second: Necromancer_shtandart_right
+  - first:
+      4: 400568
+    second: Necromancer_Spine
+  - first:
+      4: 400570
+    second: Necromancer_Spine1
+  - first:
+      4: 400572
+    second: Necromancer_Spine2
+  - first:
+      4: 400574
+    second: Necromancer_toga_centre_back_1
+  - first:
+      4: 400576
+    second: Necromancer_toga_centre_back_2
+  - first:
+      4: 400578
+    second: Necromancer_toga_centre_back_3
+  - first:
+      4: 400580
+    second: Necromancer_toga_front_1
+  - first:
+      4: 400582
+    second: Necromancer_toga_front_2
+  - first:
+      4: 400584
+    second: Necromancer_toga_front_3
+  - first:
+      4: 400586
+    second: Necromancer_toga_left_1
+  - first:
+      4: 400588
+    second: Necromancer_toga_left_2
+  - first:
+      4: 400590
+    second: Necromancer_toga_left_3
+  - first:
+      4: 400592
+    second: Necromancer_toga_left_4
+  - first:
+      4: 400594
+    second: Necromancer_toga_left_back_1
+  - first:
+      4: 400596
+    second: Necromancer_toga_left_back_2
+  - first:
+      4: 400598
+    second: Necromancer_toga_left_back_3
+  - first:
+      4: 400600
+    second: Necromancer_toga_left_back_4
+  - first:
+      4: 400602
+    second: Necromancer_toga_left_front_1
+  - first:
+      4: 400604
+    second: Necromancer_toga_left_front_2
+  - first:
+      4: 400606
+    second: Necromancer_toga_left_front_3
+  - first:
+      4: 400608
+    second: Necromancer_toga_right_1
+  - first:
+      4: 400610
+    second: Necromancer_toga_right_2
+  - first:
+      4: 400612
+    second: Necromancer_toga_right_3
+  - first:
+      4: 400614
+    second: Necromancer_toga_right_back_1
+  - first:
+      4: 400616
+    second: Necromancer_toga_right_back_2
+  - first:
+      4: 400618
+    second: Necromancer_toga_right_back_3
+  - first:
+      4: 400620
+    second: Necromancer_toga_right_front_1
+  - first:
+      4: 400622
+    second: Necromancer_toga_right_front_2
+  - first:
+      4: 400624
+    second: Necromancer_toga_right_front_3
+  - first:
+      4: 400626
+    second: scythe_1
+  - first:
+      4: 400628
+    second: scythe_2
+  - first:
+      4: 400630
+    second: transform1
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
   externalObjects: {}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 1
     materialLocation: 1
@@ -648,16 +1923,18 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Take 001' has import animation warnings that
+      might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Necromancer_LeftLeg' has translation animation
+      that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -671,36 +1948,1631 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 0
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Necromancer@atack1(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Reference
+      parentName: Necromancer@atack1(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Hips
+      parentName: Necromancer_Reference
+      position: {x: -0.0038898923, y: 0.97672, z: -0.11189551}
+      rotation: {x: -0.022819746, y: -0.27005583, z: 0.0020659626, w: 0.962572}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000004}
+    - name: Necromancer_LeftUpLeg
+      parentName: Necromancer_Hips
+      position: {x: -0.10467044, y: -0.07178469, z: -0.008633071}
+      rotation: {x: -0.10407399, y: -0.16259266, z: -0.007821552, w: 0.9811581}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000004}
+    - name: Necromancer_LeftLeg
+      parentName: Necromancer_LeftUpLeg
+      position: {x: -0.028718567, y: -0.36574975, z: 0.0029893864}
+      rotation: {x: 0.24664287, y: 0.072179176, z: 0.005339779, w: 0.9664}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Necromancer_LeftFoot
+      parentName: Necromancer_LeftLeg
+      position: {x: -0.052838616, y: -0.4680569, z: -0.060080163}
+      rotation: {x: -0.10434789, y: 0.29575792, z: 0.025959324, w: 0.94919175}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_LeftToeBase
+      parentName: Necromancer_LeftFoot
+      position: {x: -0.059596762, y: -0.100203045, z: 0.1825518}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightUpLeg
+      parentName: Necromancer_Hips
+      position: {x: 0.10467047, y: -0.07178465, z: -0.008633122}
+      rotation: {x: -0.041995913, y: -0.095871635, z: 0.05938527, w: 0.9927328}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightLeg
+      parentName: Necromancer_RightUpLeg
+      position: {x: 0.028711163, y: -0.36575043, z: 0.0029893708}
+      rotation: {x: 0.2123437, y: 0.094842106, z: -0.09144532, w: 0.96827316}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Necromancer_RightFoot
+      parentName: Necromancer_RightLeg
+      position: {x: 0.05283862, y: -0.46805656, z: -0.06008038}
+      rotation: {x: -0.18374142, y: -0.03385241, z: 0.11816107, w: 0.9752595}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightToeBase
+      parentName: Necromancer_RightFoot
+      position: {x: 0.059596766, y: -0.100203015, z: 0.18255165}
+      rotation: {x: 0, y: -0.00000088432756, z: -0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Necromancer_Spine
+      parentName: Necromancer_Hips
+      position: {x: 0.0000000046746504, y: 0.07, z: 0.000000007664644}
+      rotation: {x: 0.7216777, y: -0.6921732, z: -0.007760645, w: 0.004179427}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Necromancer_chain_left_1
+      parentName: Necromancer_Spine
+      position: {x: 0.06211749, y: 0.16732971, z: 0.015253802}
+      rotation: {x: -0.04842421, y: -0.82881564, z: 0.0325124, w: 0.55647343}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_2
+      parentName: Necromancer_chain_left_1
+      position: {x: -0.065009944, y: 3.5527136e-17, z: 0}
+      rotation: {x: -0.43212792, y: 0.4710677, z: -0.029875018, w: 0.7684193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_3
+      parentName: Necromancer_chain_left_2
+      position: {x: -0.07751122, y: 0, z: 5.684342e-16}
+      rotation: {x: -0.051801905, y: -0.12223805, z: 0.1902603, w: 0.9727155}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_4
+      parentName: Necromancer_chain_left_3
+      position: {x: -0.061857246, y: 2.1316282e-16, z: -3.5527135e-16}
+      rotation: {x: 0.12442949, y: 0.059147876, z: 0.10798234, w: 0.98456013}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_5
+      parentName: Necromancer_chain_left_4
+      position: {x: -0.0553216, y: -1.4210854e-16, z: 1.4210854e-16}
+      rotation: {x: 0.9481731, y: 0.2817691, z: 0.018844483, w: -0.14566691}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_6
+      parentName: Necromancer_chain_left_5
+      position: {x: -0.03347003, y: 8.8817837e-17, z: 2.842171e-16}
+      rotation: {x: 0.55059975, y: 0.20001355, z: 0.73466897, w: -0.34219295}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_7
+      parentName: Necromancer_chain_left_6
+      position: {x: -0.004929187, y: 0.02317921, z: -0.011926149}
+      rotation: {x: 4.1633363e-17, y: 2.0816682e-17, z: -6.938894e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_1
+      parentName: Necromancer_Spine
+      position: {x: 0.04985367, y: -0.07196379, z: -0.11521648}
+      rotation: {x: 0.12747923, y: 0.99179244, z: 0.009570807, w: -0.0022842006}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_2
+      parentName: Necromancer_chain_right_long_1
+      position: {x: -0.09801205, y: -1.0658141e-16, z: 3.5527136e-17}
+      rotation: {x: -0.004502598, y: -0.010549543, z: 0.32816708, w: 0.9445501}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_3
+      parentName: Necromancer_chain_right_long_2
+      position: {x: -0.0548022, y: -4.2632563e-16, z: 3.5527136e-17}
+      rotation: {x: -0.13027894, y: -0.11127153, z: 0.092485376, w: 0.98086315}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_4
+      parentName: Necromancer_chain_right_long_3
+      position: {x: -0.041209653, y: 4.2632563e-16, z: 3.5527136e-17}
+      rotation: {x: -0.07974334, y: -0.093427576, z: -0.23671728, w: 0.9637828}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_5
+      parentName: Necromancer_chain_right_long_4
+      position: {x: -0.0899804, y: -2.842171e-16, z: -1.0658141e-16}
+      rotation: {x: 0.008312508, y: 0.012529323, z: -0.0726254, w: 0.99724597}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_6
+      parentName: Necromancer_chain_right_long_5
+      position: {x: -0.04885173, y: 1.4210854e-16, z: -1.4210854e-16}
+      rotation: {x: 0.033437647, y: 0.07158414, z: 0.05335942, w: 0.99544483}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_7
+      parentName: Necromancer_chain_right_long_6
+      position: {x: -0.060659602, y: -7.105427e-17, z: 1.4210854e-16}
+      rotation: {x: 0.06997968, y: 0.13763389, z: -0.009187855, w: 0.9879653}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_8
+      parentName: Necromancer_chain_right_long_7
+      position: {x: -0.067214005, y: -7.105427e-17, z: 0}
+      rotation: {x: 0.054338038, y: 0.11946924, z: -0.045053434, w: 0.99032557}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_9
+      parentName: Necromancer_chain_right_long_8
+      position: {x: -0.046389844, y: 0, z: 0}
+      rotation: {x: 0.018473504, y: 0.04533679, z: -0.056656428, w: 0.99719274}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_10
+      parentName: Necromancer_chain_right_long_9
+      position: {x: -0.04715081, y: 2.1316282e-16, z: -1.4210854e-16}
+      rotation: {x: -0.005344554, y: -0.050437767, z: -0.011252974, w: 0.99864954}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_11
+      parentName: Necromancer_chain_right_long_10
+      position: {x: -0.04925468, y: -7.105427e-17, z: 0}
+      rotation: {x: -0.0100909965, y: -0.09017954, z: -0.0065706414, w: 0.9958527}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_12
+      parentName: Necromancer_chain_right_long_11
+      position: {x: -0.054396093, y: 0, z: 1.4210854e-16}
+      rotation: {x: 0.0006751461, y: -0.042070564, z: 0.0074529853, w: 0.9990866}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_13
+      parentName: Necromancer_chain_right_long_12
+      position: {x: -0.05197767, y: -3.5527135e-16, z: -1.7763567e-16}
+      rotation: {x: -0.011719985, y: -0.12677345, z: -0.00066028815, w: 0.9918623}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_14
+      parentName: Necromancer_chain_right_long_13
+      position: {x: -0.08654466, y: 2.842171e-16, z: -5.3290704e-17}
+      rotation: {x: 0.01740623, y: 0.041599844, z: 0.021984696, w: 0.9987408}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_15
+      parentName: Necromancer_chain_right_long_14
+      position: {x: -0.09965494, y: -7.105427e-17, z: 1.4210854e-16}
+      rotation: {x: -0.0057070004, y: -0.099085346, z: 0.00553088, w: 0.9950472}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_16
+      parentName: Necromancer_chain_right_long_15
+      position: {x: -0.095571175, y: -2.1316282e-16, z: -1.4210854e-16}
+      rotation: {x: -0.01143687, y: -0.31984252, z: -0.057599287, w: 0.9456492}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_17
+      parentName: Necromancer_chain_right_long_16
+      position: {x: -0.09970481, y: 0, z: 2.8865798e-17}
+      rotation: {x: 0.012665395, y: -0.25437722, z: 0.030194165, w: 0.96655065}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_18
+      parentName: Necromancer_chain_right_long_17
+      position: {x: -0.0950315, y: 7.105427e-17, z: 4.440892e-18}
+      rotation: {x: -0.009359024, y: -0.18783341, z: 0.11795073, w: 0.975048}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_19
+      parentName: Necromancer_chain_right_long_18
+      position: {x: -0.093265444, y: 3.5527135e-16, z: 0}
+      rotation: {x: -0.019542472, y: -0.10823156, z: 0.08471818, w: 0.99031657}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_20
+      parentName: Necromancer_chain_right_long_19
+      position: {x: -0.095926836, y: 1.0658141e-16, z: -6.661338e-18}
+      rotation: {x: 0.017047295, y: -0.004471373, z: 0.005509657, w: 0.99982953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_21
+      parentName: Necromancer_chain_right_long_20
+      position: {x: -0.10128212, y: -3.1974422e-16, z: 3.241851e-16}
+      rotation: {x: 0.004404657, y: -0.020480437, z: -0.014426791, w: 0.99967647}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_long_22
+      parentName: Necromancer_chain_right_long_21
+      position: {x: -0.021742782, y: -0.102226645, z: -0.050085656}
+      rotation: {x: 4.87891e-19, y: -2.439455e-19, z: 3.469447e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_1
+      parentName: Necromancer_Spine
+      position: {x: 0.05906803, y: 0.08347373, z: -0.11985706}
+      rotation: {x: -0.096747056, y: 0.9784892, z: 0.06446258, w: -0.17042147}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_2
+      parentName: Necromancer_chain_left_long_1
+      position: {x: -0.08661536, y: -3.5527136e-17, z: -7.105427e-17}
+      rotation: {x: 0.052721802, y: -0.1521788, z: -0.24190816, w: 0.95683986}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_3
+      parentName: Necromancer_chain_left_long_2
+      position: {x: -0.056660686, y: 3.5527135e-16, z: 5.1070257e-17}
+      rotation: {x: 0.08251953, y: -0.10088043, z: -0.1141619, w: 0.984876}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_4
+      parentName: Necromancer_chain_left_long_3
+      position: {x: -0.07247407, y: -1.4210854e-16, z: -1.0658141e-16}
+      rotation: {x: -0.03408168, y: 0.03610143, z: 0.09518735, w: 0.99422055}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_5
+      parentName: Necromancer_chain_left_long_4
+      position: {x: -0.066730544, y: 2.842171e-16, z: 7.105427e-17}
+      rotation: {x: 0.046548538, y: -0.07998396, z: 0.077133685, w: 0.9927166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_6
+      parentName: Necromancer_chain_left_long_5
+      position: {x: -0.050734524, y: -7.105427e-17, z: 1.7763567e-16}
+      rotation: {x: 0.005803107, y: -0.017461434, z: 0.06075046, w: 0.9979834}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_7
+      parentName: Necromancer_chain_left_long_6
+      position: {x: -0.049674332, y: 0, z: -2.1316282e-16}
+      rotation: {x: -0.0808253, y: 0.20443197, z: -0.0021816147, w: 0.9755358}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_8
+      parentName: Necromancer_chain_left_long_7
+      position: {x: -0.062264685, y: -5.684342e-16, z: 9.103829e-17}
+      rotation: {x: -0.12259157, y: 0.23408014, z: -0.09178672, w: 0.96007967}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_9
+      parentName: Necromancer_chain_left_long_8
+      position: {x: -0.058346108, y: 1.4210854e-16, z: 7.105427e-17}
+      rotation: {x: -0.00499098, y: -0.003098773, z: 0.09323482, w: 0.9956268}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_10
+      parentName: Necromancer_chain_left_long_9
+      position: {x: -0.051875874, y: 7.105427e-17, z: 0}
+      rotation: {x: 0.025208917, y: -0.10838817, z: 0.08490073, w: 0.99015576}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_11
+      parentName: Necromancer_chain_left_long_10
+      position: {x: -0.044195145, y: 7.105427e-17, z: 3.5527136e-17}
+      rotation: {x: 0.0028147378, y: -0.12045596, z: 0.12077024, w: 0.9853411}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_12
+      parentName: Necromancer_chain_left_long_11
+      position: {x: -0.056077525, y: -1.7763567e-16, z: 0}
+      rotation: {x: -0.010607363, y: -0.085644215, z: 0.0036276917, w: 0.9962627}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_13
+      parentName: Necromancer_chain_left_long_12
+      position: {x: -0.051405277, y: 1.7763567e-16, z: -5.3290704e-17}
+      rotation: {x: -0.0063833767, y: -0.023114184, z: -0.07249214, w: 0.9970807}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_14
+      parentName: Necromancer_chain_left_long_13
+      position: {x: -0.087740675, y: -1.4210854e-16, z: -7.105427e-17}
+      rotation: {x: -0.014227532, y: 0.04993264, z: -0.043445747, w: 0.99770576}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_15
+      parentName: Necromancer_chain_left_long_14
+      position: {x: -0.099654205, y: 0, z: 7.105427e-17}
+      rotation: {x: 0.007673056, y: -0.0901533, z: 0.0043749884, w: 0.9958887}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_16
+      parentName: Necromancer_chain_left_long_15
+      position: {x: -0.09557123, y: 2.1316282e-16, z: -5.3290704e-17}
+      rotation: {x: 0.017804207, y: -0.31048158, z: 0.068105616, w: 0.9479693}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_17
+      parentName: Necromancer_chain_left_long_16
+      position: {x: -0.09970486, y: -2.1316282e-16, z: -2.6645352e-17}
+      rotation: {x: -0.0013718356, y: -0.24639006, z: -0.022092083, w: 0.96891797}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_18
+      parentName: Necromancer_chain_left_long_17
+      position: {x: -0.095031515, y: 7.105427e-17, z: -3.1086245e-17}
+      rotation: {x: 0.022073247, y: -0.18050887, z: -0.11259955, w: 0.9768576}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_19
+      parentName: Necromancer_chain_left_long_18
+      position: {x: -0.09326499, y: 0, z: -1.11022296e-17}
+      rotation: {x: 0.031762276, y: -0.10146339, z: -0.08095209, w: 0.99103135}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_20
+      parentName: Necromancer_chain_left_long_19
+      position: {x: -0.095927015, y: -1.0658141e-16, z: -1.11022296e-17}
+      rotation: {x: -0.005218309, y: -0.00034031583, z: -0.0010308352, w: 0.9999858}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_21
+      parentName: Necromancer_chain_left_long_20
+      position: {x: -0.101282574, y: 7.105427e-17, z: -3.375078e-16}
+      rotation: {x: 0.0074338084, y: -0.02051182, z: 0.020694457, w: 0.9995478}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_left_long_22
+      parentName: Necromancer_chain_left_long_21
+      position: {x: -0.08441633, y: -1.4210854e-16, z: -1.9984014e-17}
+      rotation: {x: 3.035766e-18, y: -1.978669e-18, z: -2.7796233e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_1
+      parentName: Necromancer_Spine
+      position: {x: 0.062119998, y: -0.16733, z: 0.0152538}
+      rotation: {x: 0.048426405, y: -0.8288045, z: -0.032515265, w: 0.55648977}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_2
+      parentName: Necromancer_chain_right_1
+      position: {x: -0.06500897, y: 1.0658141e-16, z: 0}
+      rotation: {x: -0.11736201, y: -0.053337507, z: 0.20716602, w: 0.969775}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_3
+      parentName: Necromancer_chain_right_2
+      position: {x: -0.077510945, y: -3.5527136e-17, z: 1.4210854e-16}
+      rotation: {x: 0.047673624, y: -0.22919552, z: -0.44512987, w: 0.8643241}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_4
+      parentName: Necromancer_chain_right_3
+      position: {x: -0.061857704, y: -2.1316282e-16, z: -1.4210854e-16}
+      rotation: {x: -0.11283041, y: 0.060850363, z: -0.3340943, w: 0.9337813}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_5
+      parentName: Necromancer_chain_right_4
+      position: {x: -0.05532125, y: 7.105427e-16, z: -4.2632563e-16}
+      rotation: {x: 0.80036163, y: -0.5635305, z: -0.02521624, w: 0.20302421}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_6
+      parentName: Necromancer_chain_right_5
+      position: {x: -0.033470165, y: 3.907985e-16, z: 0}
+      rotation: {x: 0.0975775, y: -0.19792789, z: 0.6078178, w: 0.76279795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_right_7
+      parentName: Necromancer_chain_right_6
+      position: {x: -0.026735162, y: -3.5527136e-17, z: 1.4210854e-16}
+      rotation: {x: 2.7755576e-17, y: 4.8572257e-17, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_1
+      parentName: Necromancer_Spine
+      position: {x: 0.107035995, y: -0.200065, z: 0.00918879}
+      rotation: {x: 0.14499797, y: 0.89237833, z: -0.076983996, w: -0.42036885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_2
+      parentName: Necromancer_chain_scull_right_1
+      position: {x: -0.066727005, y: 0, z: 0}
+      rotation: {x: -0.041940577, y: -0.28695777, z: 0.017761314, w: 0.9568599}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_3
+      parentName: Necromancer_chain_scull_right_2
+      position: {x: -0.04266735, y: 0, z: 2.1316282e-16}
+      rotation: {x: -0.0047412086, y: -0.01673683, z: 0.11210606, w: 0.993544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_4
+      parentName: Necromancer_chain_scull_right_3
+      position: {x: -0.04686644, y: 2.1316282e-16, z: -2.1316282e-16}
+      rotation: {x: 0.005379092, y: 0.008591979, z: 0.17011395, w: 0.9853723}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_5
+      parentName: Necromancer_chain_scull_right_4
+      position: {x: -0.039671443, y: -2.842171e-16, z: 1.7763567e-16}
+      rotation: {x: -0.18375894, y: -0.32078442, z: -0.1937861, w: 0.90872276}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_6
+      parentName: Necromancer_chain_scull_right_5
+      position: {x: -0.041568227, y: 2.1316282e-16, z: 3.5527135e-16}
+      rotation: {x: -0.046608254, y: -0.12461603, z: 0.047356356, w: 0.9899777}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_7
+      parentName: Necromancer_chain_scull_right_6
+      position: {x: -0.0829508, y: 1.4210854e-16, z: -7.105427e-17}
+      rotation: {x: 0.0056800772, y: -0.38657945, z: -0.37638775, w: 0.84193605}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_8
+      parentName: Necromancer_chain_scull_right_7
+      position: {x: -0.03769938, y: -1.7763567e-16, z: 0}
+      rotation: {x: 0.004743341, y: -0.33669558, z: 0.38481036, w: 0.85938036}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_9
+      parentName: Necromancer_chain_scull_right_8
+      position: {x: -0.030534688, y: 7.9936054e-17, z: -2.1316282e-16}
+      rotation: {x: -0.12738676, y: 0.4247227, z: -0.57626235, w: 0.6865166}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_10
+      parentName: Necromancer_chain_scull_right_9
+      position: {x: -0.054556888, y: -5.3290704e-17, z: -1.4210854e-16}
+      rotation: {x: 0.08083126, y: -0.16813383, z: 0.5064294, w: 0.84185904}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_11
+      parentName: Necromancer_chain_scull_right_10
+      position: {x: -0.02612098, y: 2.4868996e-16, z: 5.684342e-16}
+      rotation: {x: 0.019842831, y: -0.488333, z: -0.11659435, w: 0.86460567}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_12
+      parentName: Necromancer_chain_scull_right_11
+      position: {x: -0.05955612, y: -1.4210854e-16, z: 2.1316282e-16}
+      rotation: {x: 0.06269391, y: -0.18043804, z: -0.15614165, w: 0.9690879}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_13
+      parentName: Necromancer_chain_scull_right_12
+      position: {x: -0.057056148, y: 7.105427e-17, z: -3.1974422e-16}
+      rotation: {x: 0.029287733, y: -0.15209557, z: 0.29565242, w: 0.9426552}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_14
+      parentName: Necromancer_chain_scull_right_13
+      position: {x: -0.06525711, y: -1.7763567e-16, z: -2.1316282e-16}
+      rotation: {x: -0.001630307, y: -0.25842482, z: -0.10353285, w: 0.96046597}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_15
+      parentName: Necromancer_chain_scull_right_14
+      position: {x: -0.046075672, y: -3.5527136e-17, z: 0}
+      rotation: {x: 0.0190466, y: -0.061027262, z: -0.19967999, w: 0.9777734}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_right_16
+      parentName: Necromancer_chain_scull_right_15
+      position: {x: -0.045447845, y: 3.5527135e-16, z: -2.842171e-16}
+      rotation: {x: -1.0408341e-17, y: 1.994932e-17, z: 2.7972416e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_1
+      parentName: Necromancer_Spine
+      position: {x: 0.10703599, y: 0.20006502, z: 0.0091887945}
+      rotation: {x: 0.09876834, y: -0.80938065, z: 0.081797235, w: 0.57311165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_2
+      parentName: Necromancer_chain_scull_left_1
+      position: {x: -0.06672736, y: -7.105427e-17, z: 0}
+      rotation: {x: 0.041940413, y: -0.2869716, z: -0.017756652, w: 0.9568558}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_3
+      parentName: Necromancer_chain_scull_left_2
+      position: {x: -0.04266724, y: 0, z: 0}
+      rotation: {x: 0.004745328, y: -0.016766887, z: -0.11210852, w: 0.9935432}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_4
+      parentName: Necromancer_chain_scull_left_3
+      position: {x: -0.04686618, y: 7.105427e-17, z: -7.105427e-17}
+      rotation: {x: -0.0053641177, y: 0.008548433, z: -0.17010774, w: 0.9853738}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_5
+      parentName: Necromancer_chain_scull_left_4
+      position: {x: -0.039670836, y: 2.842171e-16, z: 1.4210854e-16}
+      rotation: {x: 0.18377069, y: -0.32084, z: 0.19378547, w: 0.9087008}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_6
+      parentName: Necromancer_chain_scull_left_5
+      position: {x: -0.041568454, y: -5.684342e-16, z: 0}
+      rotation: {x: 0.046619445, y: -0.12468634, z: -0.047332715, w: 0.9899695}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_7
+      parentName: Necromancer_chain_scull_left_6
+      position: {x: -0.08295069, y: 7.105427e-17, z: -3.5527135e-16}
+      rotation: {x: -0.005684912, y: -0.38665116, z: 0.37640685, w: 0.84189457}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_8
+      parentName: Necromancer_chain_scull_left_7
+      position: {x: -0.03769925, y: 7.105427e-17, z: -1.4210854e-16}
+      rotation: {x: -0.0047260397, y: -0.33678576, z: -0.3847632, w: 0.85936624}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_9
+      parentName: Necromancer_chain_scull_left_8
+      position: {x: -0.030534651, y: 3.5527136e-17, z: 1.4210854e-16}
+      rotation: {x: 0.12738742, y: 0.42465913, z: 0.57630014, w: 0.68652403}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_10
+      parentName: Necromancer_chain_scull_left_9
+      position: {x: -0.054556534, y: -1.7763568e-17, z: -4.2632563e-16}
+      rotation: {x: -0.08086426, y: -0.1682147, z: -0.50638604, w: 0.8418658}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_11
+      parentName: Necromancer_chain_scull_left_10
+      position: {x: -0.026121326, y: 2.1316282e-16, z: 4.2632563e-16}
+      rotation: {x: -0.019830102, y: -0.48840606, z: 0.11658634, w: 0.8645658}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_12
+      parentName: Necromancer_chain_scull_left_11
+      position: {x: -0.059556082, y: -1.4210854e-16, z: -3.5527135e-16}
+      rotation: {x: -0.06268756, y: -0.18048744, z: 0.15614294, w: 0.9690789}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_13
+      parentName: Necromancer_chain_scull_left_12
+      position: {x: -0.057056367, y: -2.1316282e-16, z: -5.3290704e-17}
+      rotation: {x: -0.029286748, y: -0.1521448, z: -0.2956549, w: 0.94264656}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_14
+      parentName: Necromancer_chain_scull_left_13
+      position: {x: -0.06525669, y: -7.105427e-17, z: -7.105427e-17}
+      rotation: {x: 0.0016419385, y: -0.25844437, z: 0.10351455, w: 0.9604627}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_15
+      parentName: Necromancer_chain_scull_left_14
+      position: {x: -0.046076216, y: 7.105427e-17, z: 2.842171e-16}
+      rotation: {x: -0.01904455, y: -0.061040692, z: 0.19968022, w: 0.97777253}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_16
+      parentName: Necromancer_chain_scull_left_15
+      position: {x: -0.045447666, y: 0, z: 2.842171e-16}
+      rotation: {x: -0.050880525, y: -0.1597714, z: -0.1916695, w: 0.96703005}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_chain_scull_left_17
+      parentName: Necromancer_chain_scull_left_16
+      position: {x: -0.032473523, y: -1.4210854e-16, z: 0}
+      rotation: {x: 1.0408341e-17, y: -8.84709e-17, z: 5.3776428e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_front_shield_1
+      parentName: Necromancer_Spine
+      position: {x: 0.08402891, y: 0.0017207925, z: -0.15047531}
+      rotation: {x: 0.058193527, y: 0.98077095, z: -0.01206935, w: -0.18589312}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_front_shield_2
+      parentName: Necromancer_front_shield_1
+      position: {x: -0.37457213, y: 1.7763568e-17, z: 3.5527136e-17}
+      rotation: {x: 6.8304737e-18, y: 7.0320675e-18, z: 9.367507e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_front_1
+      parentName: Necromancer_Spine
+      position: {x: 0.1002695, y: 0.13039574, z: -0.09993036}
+      rotation: {x: -0.21623197, y: 0.91025615, z: 0.08369935, w: -0.34303346}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_front_2
+      parentName: Necromancer_toga_left_front_1
+      position: {x: -0.1259164, y: 0.013679126, z: 0.0322393}
+      rotation: {x: -0.0037551725, y: 0.085106306, z: 0.0075786193, w: 0.996336}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_front_3
+      parentName: Necromancer_toga_left_front_2
+      position: {x: -0.16510601, y: 7.105427e-17, z: 2.1316282e-16}
+      rotation: {x: 1.0842022e-19, y: 3.3881318e-21, z: -8.6736174e-19, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_back_1
+      parentName: Necromancer_Spine
+      position: {x: 0.066238955, y: 0.11338321, z: 0.10583282}
+      rotation: {x: -0.20437947, y: 0.9642341, z: -0.034994107, w: 0.16509736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_back_2
+      parentName: Necromancer_toga_left_back_1
+      position: {x: -0.13138953, y: 2.1316282e-16, z: -2.1316282e-16}
+      rotation: {x: -0.02970014, y: 0.101181075, z: 0.1311035, w: 0.9857445}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_back_3
+      parentName: Necromancer_toga_left_back_2
+      position: {x: -0.15507613, y: -1.0658141e-16, z: 3.5527136e-17}
+      rotation: {x: 0.01128901, y: -0.0767931, z: 0.0073089083, w: 0.9969564}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_back_4
+      parentName: Necromancer_toga_left_back_3
+      position: {x: -0.33459076, y: -1.0658141e-16, z: -3.5527135e-16}
+      rotation: {x: 4.1199683e-18, y: -2.7633603e-17, z: 1.1384123e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_centre_back_1
+      parentName: Necromancer_Spine
+      position: {x: 0.07047889, y: 0.0036714247, z: 0.13218726}
+      rotation: {x: 0.0023427503, y: 0.9897624, z: 0.00033778106, w: 0.14270537}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_centre_back_2
+      parentName: Necromancer_toga_centre_back_1
+      position: {x: -0.30491555, y: -9.325873e-17, z: -1.4210854e-16}
+      rotation: {x: -0.000059860373, y: 0.0045696013, z: -0.01783177, w: 0.9998306}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_centre_back_3
+      parentName: Necromancer_toga_centre_back_2
+      position: {x: -0.29429305, y: -5.1958436e-16, z: 2.1316282e-16}
+      rotation: {x: 9.215718e-19, y: 1.7520877e-18, z: 3.4739998e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_back_1
+      parentName: Necromancer_Spine
+      position: {x: 0.07919966, y: -0.13391171, z: 0.102352194}
+      rotation: {x: -0.0006343403, y: 0.9856608, z: -0.000108626504, w: 0.16873777}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_back_2
+      parentName: Necromancer_toga_right_back_1
+      position: {x: -0.36646727, y: 1.5987211e-16, z: -2.1316282e-16}
+      rotation: {x: 0.013485052, y: 0.09676945, z: 0.13862702, w: 0.98551327}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_back_3
+      parentName: Necromancer_toga_right_back_2
+      position: {x: -0.20895264, y: 0, z: 7.105427e-17}
+      rotation: {x: -8.673617e-18, y: 1.0842022e-18, z: 2.7105054e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_front_1
+      parentName: Necromancer_Spine
+      position: {x: 0.06748202, y: 0.01402248, z: -0.10900278}
+      rotation: {x: 0.07574078, y: 0.98196465, z: -0.00337346, w: -0.17319778}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_front_2
+      parentName: Necromancer_toga_front_1
+      position: {x: -0.31048936, y: -4.8294702e-17, z: 7.105427e-17}
+      rotation: {x: 0.013608714, y: 0.06734093, z: 0.17983878, w: 0.98129404}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_front_3
+      parentName: Necromancer_toga_front_2
+      position: {x: -0.25175613, y: 7.105427e-17, z: -3.5527135e-16}
+      rotation: {x: 6.938894e-18, y: 1.3010426e-17, z: 1.0842022e-19, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_front_1
+      parentName: Necromancer_Spine
+      position: {x: 0.05890847, y: -0.10016884, z: -0.07041645}
+      rotation: {x: 0.24119458, y: 0.95783454, z: -0.020607395, w: -0.15476911}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_front_2
+      parentName: Necromancer_toga_right_front_1
+      position: {x: -0.27999455, y: 0, z: -2.1316282e-16}
+      rotation: {x: 0.00085660326, y: -0.18018563, z: 0.023264559, w: 0.98335713}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_front_3
+      parentName: Necromancer_toga_right_front_2
+      position: {x: -0.24931386, y: 3.5527135e-16, z: -1.4210854e-16}
+      rotation: {x: -1.0943666e-17, y: -6.8812957e-18, z: 7.708e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_1
+      parentName: Necromancer_Spine
+      position: {x: 0.106151, y: -0.197855, z: 0.0245391}
+      rotation: {x: 0.13229328, y: 0.98892343, z: 0.015067195, w: -0.06558904}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_2
+      parentName: Necromancer_toga_right_1
+      position: {x: -0.21624953, y: -0.0281247, z: -0.027274081}
+      rotation: {x: -0.054940958, y: -0.22958675, z: 0.12300576, w: 0.9639196}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_right_3
+      parentName: Necromancer_toga_right_2
+      position: {x: -0.25817806, y: 3.5527135e-16, z: 3.5527136e-17}
+      rotation: {x: 0, y: -1.7347235e-18, z: 5.89806e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_1
+      parentName: Necromancer_Spine
+      position: {x: 0.09829259, y: 0.19351348, z: 0.017655116}
+      rotation: {x: -0.08252629, y: 0.4647449, z: 0.8680114, w: 0.15413564}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_2
+      parentName: Necromancer_toga_left_1
+      position: {x: -0.22412834, y: -0.06478416, z: 0.02466042}
+      rotation: {x: 0.9633394, y: 0.21505369, z: -0.021087335, w: -0.15901086}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_3
+      parentName: Necromancer_toga_left_2
+      position: {x: -0.304786, y: -8.881784e-18, z: 6.106227e-17}
+      rotation: {x: -0.6055437, y: -0.1192319, z: -0.083735645, w: 0.78236115}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_toga_left_4
+      parentName: Necromancer_toga_left_3
+      position: {x: -0.29093757, y: 5.5892786e-17, z: -5.2735593e-17}
+      rotation: {x: 0.007393871, y: 0.010037631, z: -0.5930345, w: 0.80508053}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Spine1
+      parentName: Necromancer_Spine
+      position: {x: -0.14815101, y: -0.000000012456222, z: -0.0000000049433186}
+      rotation: {x: 0.73457885, y: -0.62013865, z: 0.24265397, w: 0.13015787}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
+    - name: Necromancer_Spine2
+      parentName: Necromancer_Spine1
+      position: {x: -0.0000000061000183, y: 0.14815097, z: -0.0000000020543915}
+      rotation: {x: 0.012955704, y: 0.28025848, z: -0.32109863, w: 0.9045347}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_shtandart_centre
+      parentName: Necromancer_Spine2
+      position: {x: -0.036511272, y: 0.049485296, z: -0.1774995}
+      rotation: {x: 0.94789386, y: -0.31766227, z: 0.019448126, w: -0.014484039}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_scull_mid_1
+      parentName: Necromancer_shtandart_centre
+      position: {x: -0.6081896, y: -1.4210854e-16, z: 0}
+      rotation: {x: 0.33550033, y: 0.07609017, z: 0.09806902, w: 0.9338267}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_scull_mid_2
+      parentName: Necromancer_scull_mid_1
+      position: {x: -0.09003344, y: 0, z: 1.7763568e-17}
+      rotation: {x: -4.8789098e-18, y: 0, z: 2.0708261e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_shtandart_right
+      parentName: Necromancer_shtandart_centre
+      position: {x: -0.02383143, y: -0.02506267, z: -0.0057733417}
+      rotation: {x: -0.0012180519, y: 0.007122346, z: 0.1420905, w: 0.98982733}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_scull_right_1
+      parentName: Necromancer_shtandart_right
+      position: {x: -0.5863358, y: -8.881784e-18, z: 1.0658141e-16}
+      rotation: {x: 0.1463405, y: 0.010796334, z: 0.10528906, w: 0.98355585}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_scull_right_2
+      parentName: Necromancer_scull_right_1
+      position: {x: -0.080134846, y: -1.4432899e-16, z: -2.4868996e-16}
+      rotation: {x: -8.131516e-20, y: 1.4823077e-21, z: 8.4703295e-22, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_shtandart_left
+      parentName: Necromancer_shtandart_centre
+      position: {x: -0.027685475, y: 0.02171756, z: -0.0039668772}
+      rotation: {x: 0.015542892, y: -0.028764065, z: -0.18232907, w: 0.98269385}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_scull_left_1
+      parentName: Necromancer_shtandart_left
+      position: {x: -0.58436686, y: 7.105427e-16, z: -1.0658141e-16}
+      rotation: {x: 0.4271328, y: 0.17337717, z: 0.121525824, w: 0.8790503}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_scull_left_2
+      parentName: Necromancer_scull_left_1
+      position: {x: -0.05569263, y: -1.4210854e-16, z: 1.7763567e-16}
+      rotation: {x: 1.7076184e-18, y: 6.8033686e-18, z: 1.0516761e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_LeftShoulder
+      parentName: Necromancer_Spine2
+      position: {x: -0.11453467, y: 0.041214913, z: 0.000000024678835}
+      rotation: {x: -0.642514, y: 0.29523274, z: 0.060246084, w: 0.70454514}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Necromancer_LeftArm
+      parentName: Necromancer_LeftShoulder
+      position: {x: -0.019851962, y: 0.07003638, z: -0.073726036}
+      rotation: {x: 0.18774702, y: -0.13544238, z: -0.03439702, w: 0.9722259}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000004}
+    - name: Necromancer_LeftForeArm
+      parentName: Necromancer_LeftArm
+      position: {x: -0.09467242, y: 0.06827838, z: -0.27423146}
+      rotation: {x: 0.6425488, y: -0.23802227, z: 0.23480725, w: 0.6894505}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Necromancer_LeftHand
+      parentName: Necromancer_LeftForeArm
+      position: {x: -0.18732221, y: -0.11496607, z: -0.055150196}
+      rotation: {x: 0.5145243, y: 0.16797622, z: 0.4583989, w: 0.70492506}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Necromancer_LeftHandThumb1
+      parentName: Necromancer_LeftHand
+      position: {x: -0.046153106, y: -0.008443031, z: 0.03717015}
+      rotation: {x: -0.4484452, y: -0.8133766, z: -0.30780062, w: 0.206335}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: Necromancer_LeftHandThumb2
+      parentName: Necromancer_LeftHandThumb1
+      position: {x: 0.024334146, y: -0.04905339, z: 0.050534293}
+      rotation: {x: -0.2885411, y: 0.09362617, z: -0.04175855, w: 0.9519634}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Necromancer_LeftHandThumb3
+      parentName: Necromancer_LeftHandThumb2
+      position: {x: 0.020329572, y: -0.067687474, z: 0.01891463}
+      rotation: {x: -0.022144584, y: 0.24002871, z: 0.07961681, w: 0.967242}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_LeftHandThumb4
+      parentName: Necromancer_LeftHandThumb3
+      position: {x: -0.0020203085, y: -0.044355024, z: 0.012179766}
+      rotation: {x: -0.004095428, y: 0.04397949, z: 0.0281335, w: 0.99862784}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_LeftHandIndex1
+      parentName: Necromancer_LeftHand
+      position: {x: -0.17292033, y: -0.0047536106, z: -0.0017018872}
+      rotation: {x: 0.01605573, y: -0.6917016, z: -0.44161716, w: 0.57119644}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: Necromancer_LeftHandIndex2
+      parentName: Necromancer_LeftHandIndex1
+      position: {x: 0.016614564, y: -0.03501836, z: 0.03066923}
+      rotation: {x: -0.03817625, y: 0.30923152, z: 0.075379424, w: 0.9472256}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: Necromancer_LeftHandIndex3
+      parentName: Necromancer_LeftHandIndex2
+      position: {x: -0.003982668, y: -0.025846543, z: 0.020019226}
+      rotation: {x: -0.05006944, y: -0.046242762, z: -0.036226362, w: 0.9970167}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: Necromancer_LeftHandIndex4
+      parentName: Necromancer_LeftHandIndex3
+      position: {x: 0.00016332953, y: -0.044356566, z: 0.027677957}
+      rotation: {x: -0.0035592227, y: 0.050185513, z: 0.030180689, w: 0.9982775}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_LeftHandMiddle1
+      parentName: Necromancer_LeftHand
+      position: {x: -0.16834871, y: -0.024020938, z: -0.0294362}
+      rotation: {x: -0.23324415, y: -0.81755584, z: -0.27032733, w: 0.45179957}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: Necromancer_LeftHandMiddle2
+      parentName: Necromancer_LeftHandMiddle1
+      position: {x: 0.013132002, y: -0.02980166, z: 0.01962889}
+      rotation: {x: -0.013160142, y: 0.32382986, z: -0.058390707, w: 0.94422007}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_LeftHandMiddle3
+      parentName: Necromancer_LeftHandMiddle2
+      position: {x: 0.0016955996, y: -0.031159056, z: 0.021631261}
+      rotation: {x: 0.015025885, y: -0.017005078, z: 0.06417387, w: 0.9976808}
+      scale: {x: 0.9999997, y: 0.99999994, z: 0.99999994}
+    - name: Necromancer_LeftHandMiddle4
+      parentName: Necromancer_LeftHandMiddle3
+      position: {x: -0.0013368945, y: -0.050481815, z: 0.037309807}
+      rotation: {x: -0.0026081598, y: -0.023708247, z: -0.16876458, w: 0.9853678}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Necromancer_LeftHandRing1
+      parentName: Necromancer_LeftHand
+      position: {x: -0.142916, y: -0.041297644, z: -0.046715826}
+      rotation: {x: -0.4491559, y: -0.83532804, z: -0.18960084, w: 0.25404254}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Necromancer_LeftHandRing2
+      parentName: Necromancer_LeftHandRing1
+      position: {x: 0.010200719, y: -0.036348026, z: 0.008808709}
+      rotation: {x: 0.026203988, y: 0.45720816, z: -0.13549758, w: 0.87858665}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Necromancer_LeftHandRing3
+      parentName: Necromancer_LeftHandRing2
+      position: {x: 0.006160558, y: -0.033800688, z: 0.023135774}
+      rotation: {x: 0.02828191, y: -0.022377424, z: 0.054364577, w: 0.99786973}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Necromancer_LeftHandRing4
+      parentName: Necromancer_LeftHandRing3
+      position: {x: 0.0073174248, y: -0.048102774, z: 0.036690082}
+      rotation: {x: -0.007409686, y: -0.034247573, z: -0.08624172, w: 0.99565786}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Necromancer_LeftHandPinky1
+      parentName: Necromancer_LeftHand
+      position: {x: -0.11869702, y: -0.04985125, z: -0.063673444}
+      rotation: {x: -0.37199944, y: -0.8088762, z: -0.27742276, w: 0.36107123}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Necromancer_LeftHandPinky2
+      parentName: Necromancer_LeftHandPinky1
+      position: {x: 0.008642656, y: -0.02705921, z: 0.008383301}
+      rotation: {x: 0.07053482, y: 0.374363, z: -0.118551835, w: 0.9169639}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_LeftHandPinky3
+      parentName: Necromancer_LeftHandPinky2
+      position: {x: 0.007123615, y: -0.024248455, z: 0.019202467}
+      rotation: {x: 0.035602592, y: -0.02438198, z: -0.06577336, w: 0.99690115}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Necromancer_LeftHandPinky4
+      parentName: Necromancer_LeftHandPinky3
+      position: {x: 0.01687005, y: -0.028871207, z: 0.028192202}
+      rotation: {x: -0.021166747, y: -0.040071525, z: -0.07772653, w: 0.9959442}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_RightShoulder
+      parentName: Necromancer_Spine2
+      position: {x: 0.00000008976336, y: 0.12172449, z: 0.000000040142698}
+      rotation: {x: -0.20793591, y: 0.42130485, z: 0.77104324, w: 0.42983395}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_RightArm
+      parentName: Necromancer_RightShoulder
+      position: {x: -0.019847954, y: -0.07003868, z: 0.07372478}
+      rotation: {x: -0.29462373, y: 0.3747414, z: -0.41362476, w: -0.77568054}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Necromancer_RightForeArm
+      parentName: Necromancer_RightArm
+      position: {x: 0.10236759, y: 0.058237147, z: 0.27378264}
+      rotation: {x: -0.2876353, y: -0.04928126, z: -0.3054609, w: 0.90638345}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightHand
+      parentName: Necromancer_RightForeArm
+      position: {x: 0.100870274, y: -0.022111105, z: 0.20170423}
+      rotation: {x: -0.34406906, y: 0.017277004, z: -0.7544439, w: 0.55868816}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: Necromancer_RightHandThumb1
+      parentName: Necromancer_RightHand
+      position: {x: -0.027800018, y: -0.0018454829, z: 0.052978914}
+      rotation: {x: -0.20733804, y: -0.4342134, z: 0.049408033, w: 0.8752305}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightHandThumb2
+      parentName: Necromancer_RightHandThumb1
+      position: {x: 0.02686108, y: -0.043125715, z: 0.054504603}
+      rotation: {x: -0.19099404, y: -0.16340788, z: 0.28879666, w: 0.923805}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightHandThumb3
+      parentName: Necromancer_RightHandThumb2
+      position: {x: 0.0060267304, y: -0.06939481, z: 0.02237604}
+      rotation: {x: -0.039938107, y: 0.25263852, z: -0.060686957, w: 0.9648294}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Necromancer_RightHandThumb4
+      parentName: Necromancer_RightHandThumb3
+      position: {x: 0.0040322416, y: -0.044599757, z: 0.010696032}
+      rotation: {x: 0.0040954677, y: 0.043979485, z: -0.028132591, w: 0.99862784}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Necromancer_RightHandIndex1
+      parentName: Necromancer_RightHand
+      position: {x: 0.03557092, y: 0.0074997223, z: 0.16913141}
+      rotation: {x: 0.1358028, y: 0.4403553, z: -0.4632323, w: -0.7570077}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Necromancer_RightHandIndex2
+      parentName: Necromancer_RightHandIndex1
+      position: {x: 0.021801906, y: -0.041289218, z: 0.016211445}
+      rotation: {x: 0.018060451, y: 0.34593216, z: -0.06287439, w: 0.9359763}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightHandIndex3
+      parentName: Necromancer_RightHandIndex2
+      position: {x: 0.0050083683, y: -0.025888259, z: 0.019732995}
+      rotation: {x: -0.050668575, y: -0.046001114, z: 0.039992936, w: 0.99685365}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Necromancer_RightHandIndex4
+      parentName: Necromancer_RightHandIndex3
+      position: {x: 0.0052566538, y: -0.044906095, z: 0.026256692}
+      rotation: {x: 0.0035601037, y: 0.050186176, z: -0.030179828, w: 0.9982774}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: Necromancer_RightHandMiddle1
+      parentName: Necromancer_RightHand
+      position: {x: 0.06039945, y: -0.014390535, z: 0.1610268}
+      rotation: {x: 0.15473232, y: 0.35577184, z: -0.40998352, w: -0.82546824}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Necromancer_RightHandMiddle2
+      parentName: Necromancer_RightHandMiddle1
+      position: {x: 0.017204285, y: -0.029273255, z: 0.017116368}
+      rotation: {x: 0.01656616, y: 0.28368717, z: 0.057180356, w: 0.9570672}
+      scale: {x: 0.99999964, y: 0.99999976, z: 0.99999976}
+    - name: Necromancer_RightHandMiddle3
+      parentName: Necromancer_RightHandMiddle2
+      position: {x: 0.0014066012, y: -0.03134575, z: 0.021380842}
+      rotation: {x: 0.004875088, y: 0.13708466, z: -0.060581103, w: 0.98869306}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Necromancer_RightHandMiddle4
+      parentName: Necromancer_RightHandMiddle3
+      position: {x: -0.0020246308, y: -0.051445384, z: 0.035937514}
+      rotation: {x: 0.0026077607, y: -0.023706732, z: 0.16876459, w: 0.98536783}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: Necromancer_RightHandRing1
+      parentName: Necromancer_RightHand
+      position: {x: 0.07101855, y: -0.034883473, z: 0.13435909}
+      rotation: {x: 0.17777885, y: 0.36914313, z: -0.40098557, w: -0.8193526}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Necromancer_RightHandRing2
+      parentName: Necromancer_RightHandRing1
+      position: {x: 0.017417943, y: -0.030862242, z: 0.015715059}
+      rotation: {x: -0.027728625, y: 0.4259359, z: 0.13874541, w: 0.89362156}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightHandRing3
+      parentName: Necromancer_RightHandRing2
+      position: {x: -0.009006867, y: -0.03416316, z: 0.021620879}
+      rotation: {x: 0.024076672, y: 0.03338974, z: -0.034140375, w: 0.9985689}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Necromancer_RightHandRing4
+      parentName: Necromancer_RightHandRing3
+      position: {x: -0.012017527, y: -0.049553826, z: 0.033370353}
+      rotation: {x: 0.0074092224, y: -0.034248844, z: 0.08624058, w: 0.9956579}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Necromancer_RightHandPinky1
+      parentName: Necromancer_RightHand
+      position: {x: 0.08218736, y: -0.046594176, z: 0.1081789}
+      rotation: {x: -0.032933734, y: -0.4102229, z: 0.507675, w: 0.7569007}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000002}
+    - name: Necromancer_RightHandPinky2
+      parentName: Necromancer_RightHandPinky1
+      position: {x: 0.013333129, y: -0.021918919, z: 0.014797459}
+      rotation: {x: -0.034698725, y: 0.4501136, z: 0.13277693, w: 0.8823628}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Necromancer_RightHandPinky3
+      parentName: Necromancer_RightHandPinky2
+      position: {x: -0.009465521, y: -0.025261046, z: 0.016725812}
+      rotation: {x: 0.008644508, y: 0.03593611, z: 0.082597084, w: 0.9958974}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Necromancer_RightHandPinky4
+      parentName: Necromancer_RightHandPinky3
+      position: {x: -0.020755846, y: -0.03132841, z: 0.022375638}
+      rotation: {x: 0.021167709, y: -0.040071405, z: 0.07772415, w: 0.9959444}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: transform1
+      parentName: Necromancer_RightHand
+      position: {x: 0.2784795, y: -1.2352155, z: 0.26771593}
+      rotation: {x: -0.14842182, y: -0.30334696, z: 0.33690867, w: 0.8788881}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: scythe_1
+      parentName: transform1
+      position: {x: 0.8508504, y: 1.2647282, z: 0.25201425}
+      rotation: {x: 0.82705647, y: -0.24563527, z: 0.5048311, w: 0.028044645}
+      scale: {x: 1, y: 1, z: 1}
+    - name: scythe_2
+      parentName: scythe_1
+      position: {x: -0.13929215, y: 0.34620383, z: -0.08804326}
+      rotation: {x: 0, y: 0, z: 0.6604503, w: 0.75086975}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Neck
+      parentName: Necromancer_Spine2
+      position: {x: -0.09562361, y: 0.11387396, z: -0.028985709}
+      rotation: {x: 0.02382267, y: -0.32666758, z: 0.5828895, w: 0.74361324}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000004}
+    - name: Necromancer_Head
+      parentName: Necromancer_Neck
+      position: {x: 0.14157131, y: 0.16241935, z: 0.014551751}
+      rotation: {x: -0.08220203, y: -0.1097235, z: -0.29820034, w: 0.9446058}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: Necromancer_Head_sceleton_1
+      parentName: Necromancer_Head
+      position: {x: -0.002013084, y: 0.11352894, z: 0.010604}
+      rotation: {x: -0.67562085, y: 0.67582524, z: 0.23465674, w: 0.17813769}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_2
+      parentName: Necromancer_Head_sceleton_1
+      position: {x: -0.057128794, y: -0.0011478936, z: -0.00006507749}
+      rotation: {x: -0.0018036547, y: -0.054339435, z: 0.014843698, w: 0.9984106}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_3
+      parentName: Necromancer_Head_sceleton_2
+      position: {x: -0.032570284, y: 2.6645352e-17, z: 0}
+      rotation: {x: -1.7347235e-18, y: 1.3904893e-17, z: 3.6185248e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_4
+      parentName: Necromancer_Head_sceleton_1
+      position: {x: -0.0035916222, y: -0.04653739, z: -0.010958682}
+      rotation: {x: -0.20220853, y: -0.5409973, z: 0.18974698, w: 0.79399604}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_5
+      parentName: Necromancer_Head_sceleton_4
+      position: {x: -0.07464905, y: 0.016964855, z: 0.003746032}
+      rotation: {x: 0.017333405, y: 0.32613817, z: -0.4630161, w: 0.82398397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_6
+      parentName: Necromancer_Head_sceleton_5
+      position: {x: -0.084687926, y: 0.011903657, z: 0.010617081}
+      rotation: {x: -2.7755576e-17, y: -5.3776428e-17, z: 1.1188966e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_7
+      parentName: Necromancer_Head_sceleton_1
+      position: {x: 0.0017440853, y: 0.033959307, z: 0.006328973}
+      rotation: {x: -0.38677704, y: 0.81498086, z: 0.12054375, w: -0.4143416}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_8
+      parentName: Necromancer_Head_sceleton_7
+      position: {x: -0.06819746, y: -2.842171e-16, z: 0}
+      rotation: {x: -0.42197728, y: 0.8344595, z: 0.13120902, w: 0.32923663}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_9
+      parentName: Necromancer_Head_sceleton_8
+      position: {x: -0.078269936, y: 0.0037023854, z: 0.00064192247}
+      rotation: {x: 4.1633363e-17, y: 4.8572257e-17, z: 1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_10
+      parentName: Necromancer_Head
+      position: {x: -0.06985237, y: 0.06976419, z: -0.030775292}
+      rotation: {x: 0.029238615, y: 0.12804635, z: 0.17720501, w: 0.9753705}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_11
+      parentName: Necromancer_Head_sceleton_10
+      position: {x: 0.0010005317, y: 0.02541692, z: 0.013907654}
+      rotation: {x: 3.469447e-18, y: -1.5612511e-17, z: 1.3010426e-18, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_12
+      parentName: Necromancer_Head
+      position: {x: 0.013801235, y: 0.06577802, z: -0.053992383}
+      rotation: {x: 0.6171223, y: -0.43263382, z: 0.4850245, w: 0.44355306}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_13
+      parentName: Necromancer_Head_sceleton_12
+      position: {x: -0.055431407, y: 0, z: 0}
+      rotation: {x: 5.551115e-17, y: -1.6306401e-16, z: 5.551115e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_14
+      parentName: Necromancer_Head_sceleton_12
+      position: {x: -0.003147285, y: -0.023834238, z: 0.012290893}
+      rotation: {x: -0.077548504, y: 0.8117686, z: 0.074758425, w: 0.57395923}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_15
+      parentName: Necromancer_Head_sceleton_14
+      position: {x: -0.05836509, y: 0.006841554, z: -0.00067184126}
+      rotation: {x: 0.052073374, y: 0.965796, z: -0.004974795, w: -0.25397196}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_16
+      parentName: Necromancer_Head_sceleton_15
+      position: {x: -0.06270727, y: -0.0059578046, z: -0.0022076129}
+      rotation: {x: 2.3418767e-17, y: -1.1357018e-16, z: 1.179612e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_17
+      parentName: Necromancer_Head_sceleton_12
+      position: {x: -0.0044219224, y: 0.009248121, z: -0.013952205}
+      rotation: {x: 0.72399795, y: -0.67635494, z: -0.07593132, w: 0.11227402}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_18
+      parentName: Necromancer_Head_sceleton_17
+      position: {x: -0.0501499, y: -0.003707638, z: 0.013346234}
+      rotation: {x: 0.7560949, y: -0.59077877, z: 0.1366178, w: 0.24624519}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_19
+      parentName: Necromancer_Head_sceleton_18
+      position: {x: -0.06782777, y: -0.001367181, z: -0.011704213}
+      rotation: {x: 1.3877788e-17, y: 9.7144515e-17, z: -1.110223e-16, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_20
+      parentName: Necromancer_Head
+      position: {x: 0.05590187, y: 0.05313622, z: -0.024813298}
+      rotation: {x: 0.0023824968, y: -0.030610265, z: -0.12208888, w: 0.9920442}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_sceleton_21
+      parentName: Necromancer_Head_sceleton_20
+      position: {x: 0.0062920814, y: 0.044378538, z: -0.0017514597}
+      rotation: {x: 0, y: -7.101524e-18, z: 4.171468e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_right_colchuga_1
+      parentName: Necromancer_Head
+      position: {x: 0.07895259, y: 0.0025364624, z: -0.056154273}
+      rotation: {x: 0.06351563, y: 0.9978344, z: -0.00032125448, w: -0.017093144}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_right_colchuga_2
+      parentName: Necromancer_Head_right_colchuga_1
+      position: {x: -0.02662542, y: -0.15146075, z: 0.000060250502}
+      rotation: {x: 0.048898496, y: 0.102139756, z: 0.75794613, w: 0.6424128}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_right_colchuga_3
+      parentName: Necromancer_Head_right_colchuga_2
+      position: {x: -0.058126952, y: 0.04537574, z: -0.02618003}
+      rotation: {x: -3.469447e-18, y: 8.673617e-18, z: -5.594483e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_back_colchuga_1
+      parentName: Necromancer_Head
+      position: {x: 0.01218996, y: 0.0011429746, z: -0.11068925}
+      rotation: {x: 0.019298246, y: 0.99974966, z: -0.00028853506, w: 0.011323795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_back_colchuga_2
+      parentName: Necromancer_Head_back_colchuga_1
+      position: {x: -0.0035301899, y: -0.122810975, z: 0.0032171016}
+      rotation: {x: -0.000641776, y: -0.08997432, z: 0.0132526215, w: 0.99585575}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_back_colchuga_3
+      parentName: Necromancer_Head_back_colchuga_2
+      position: {x: -0.0016083879, y: -0.08611965, z: 0.034725722}
+      rotation: {x: 6.505213e-19, y: -6.7762636e-21, z: -4.065758e-20, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_left_colchuga_1
+      parentName: Necromancer_Head
+      position: {x: -0.06193756, y: -0.009296641, z: -0.07531646}
+      rotation: {x: -0.099454604, y: 0.99315274, z: 0.008830644, w: -0.060650405}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_left_colchuga_2
+      parentName: Necromancer_Head_left_colchuga_1
+      position: {x: 0.044478137, y: -0.103966035, z: -0.027565314}
+      rotation: {x: -0.007917465, y: 0.010345351, z: -0.39751232, w: 0.9175044}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Head_left_colchuga_3
+      parentName: Necromancer_Head_left_colchuga_2
+      position: {x: 0.0735228, y: 0.012473224, z: 0.020863563}
+      rotation: {x: -0.0000026444945, y: 0.0024039855, z: -0.009783564, w: 0.9999493}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_Reference
+      parentName: Necromancer@atack1(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_HipsEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.038659018, y: 0.7411601, z: -0.11942387}
+      rotation: {x: 0.00054340385, y: 0.1313152, z: -0.046902616, w: 0.9902304}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftAnkleEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: -0.17779714, y: 0.09441959, z: 0.11874975}
+      rotation: {x: -0.0000010065615, y: 0.054652356, z: 0.029999042, w: 0.99805474}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightAnkleEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.22716975, y: 0.09516571, z: -0.4845106}
+      rotation: {x: 0.00000081417966, y: 0.09061143, z: 0.049736332, w: 0.9946436}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftWristEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.2723135, y: 0.84663945, z: -0.10413406}
+      rotation: {x: -0.030094454, y: -0.46597007, z: -0.042023208, w: 0.8832895}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightWristEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.0958485, y: 1.0460445, z: -0.5734953}
+      rotation: {x: -0.1291487, y: 0.30299208, z: 0.140209, w: 0.93373334}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftKneeEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: -0.044710845, y: 0.5377029, z: 0.22489463}
+      rotation: {x: 0.039183374, y: 0.058868703, z: -0.03094037, w: 0.9970165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightKneeEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.2465644, y: 0.38136554, z: -0.10610354}
+      rotation: {x: 0.18352312, y: 0.102196686, z: 0.035702836, w: 0.97703654}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftElbowEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.15468782, y: 0.98583966, z: 0.030535178}
+      rotation: {x: -0.16989075, y: -0.29960844, z: -0.24582395, w: 0.9060588}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightElbowEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: -0.07337036, y: 1.1163534, z: -0.44019118}
+      rotation: {x: 0.11578585, y: 0.22418697, z: 0.050184287, w: 0.96634126}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_ChestOriginEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.06756949, y: 0.88020927, z: -0.122051805}
+      rotation: {x: 0.0037451428, y: 0.13556346, z: -0.03676381, w: 0.9900793}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_ChestEndEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.19552505, y: 1.2481866, z: -0.14395158}
+      rotation: {x: 0.0962354, y: 0.35096192, z: -0.06704695, w: 0.92901516}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftFootEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: -0.1839792, y: -0.009763041, z: 0.3085534}
+      rotation: {x: 0.0016395601, y: 0.054635786, z: 0.02996928, w: 0.99805516}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightFootEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.36603844, y: 0.015177469, z: -0.33878857}
+      rotation: {x: 0.0045156013, y: 0.09053599, z: 0.049599722, w: 0.994647}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftShoulderEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.16273674, y: 1.2834669, z: 0.017080655}
+      rotation: {x: 0.1454401, y: 0.36299804, z: 0.07925443, w: 0.9169506}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightShoulderEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.14255643, y: 1.2685137, z: -0.3021675}
+      rotation: {x: 0.048530336, y: 0.29687738, z: -0.26327834, w: 0.9166205}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_HeadEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.34804198, y: 1.460826, z: -0.13489413}
+      rotation: {x: 0.05115197, y: 0.13682245, z: -0.13371204, w: 0.980196}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHipEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: -0.04958101, y: 0.7605058, z: -0.06655279}
+      rotation: {x: -0.21228877, y: 0.07222713, z: -0.02570313, w: 0.9741951}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHipEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.12689905, y: 0.72181433, z: -0.17229496}
+      rotation: {x: -0.05908001, y: 0.058310524, z: 0.054417092, w: 0.99506193}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandThumbEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.27547473, y: 0.7169323, z: -0.18253326}
+      rotation: {x: -0.0701563, y: 0.33876452, z: -0.2860449, w: 0.8935855}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandIndexEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.22261813, y: 0.7698738, z: -0.21370065}
+      rotation: {x: 0.42720875, y: -0.014802894, z: -0.059700917, w: 0.9020584}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandMiddleEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.22136205, y: 0.7986199, z: -0.20787431}
+      rotation: {x: -0.413361, y: -0.11406961, z: -0.04139139, w: 0.9024453}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandRingEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.19806994, y: 0.79442656, z: -0.20846836}
+      rotation: {x: 0.43023622, y: 0.16998258, z: 0.019620908, w: 0.8863508}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandPinkyEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.22030868, y: 0.7710683, z: -0.17771009}
+      rotation: {x: -0.3661513, y: -0.2596162, z: -0.122768745, w: 0.885133}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandThumbEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.2809594, y: 1.0255653, z: -0.616038}
+      rotation: {x: -0.08074039, y: 0.4484516, z: 0.011363783, w: 0.89008033}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandIndexEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.1896411, y: 1.0636086, z: -0.58064663}
+      rotation: {x: -0.24614012, y: -0.20864512, z: -0.17538144, w: 0.9301202}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandMiddleEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.18662468, y: 1.0444347, z: -0.57803524}
+      rotation: {x: -0.30485433, y: -0.16358715, z: -0.07583605, w: 0.9351749}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandRingEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.18115234, y: 1.0331521, z: -0.5695377}
+      rotation: {x: -0.34918427, y: -0.15830508, z: -0.06945286, w: 0.9209702}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandPinkyEffector
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.23691127, y: 0.986604, z: -0.54385513}
+      rotation: {x: -0.2976332, y: 0.07176178, z: 0.051355872, w: 0.9505932}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_Hips
+      parentName: Necromancer_Ctrl_Reference
+      position: {x: 0.055467032, y: 0.8114423, z: -0.1170883}
+      rotation: {x: -0.011291068, y: 0.2642094, z: -0.09316623, w: 0.9598885}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftUpLeg
+      parentName: Necromancer_Ctrl_Hips
+      position: {x: -0.1046704, y: -0.07178451, z: -0.008633084}
+      rotation: {x: -0.40985638, y: -0.12744059, z: -0.053912483, w: 0.9015931}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftLeg
+      parentName: Necromancer_Ctrl_LeftUpLeg
+      position: {x: -0.028711176, y: -0.36575022, z: 0.0029902542}
+      rotation: {x: 0.4973024, y: -0.017863752, z: 0.028581582, w: 0.8669224}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftFoot
+      parentName: Necromancer_Ctrl_LeftLeg
+      position: {x: -0.052838553, y: -0.4680566, z: -0.060080156}
+      rotation: {x: -0.08733177, y: -0.003059464, z: 0.116529964, w: 0.9893354}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftToeBase
+      parentName: Necromancer_Ctrl_LeftFoot
+      position: {x: -0.05959671, y: -0.10020298, z: 0.18255158}
+      rotation: {x: -1.0629402e-13, y: -0.00000031215603, z: 0.0000003405157, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightUpLeg
+      parentName: Necromancer_Ctrl_Hips
+      position: {x: 0.1046704, y: -0.07178451, z: -0.008633084}
+      rotation: {x: -0.13659212, y: -0.16356565, z: 0.1739844, w: 0.96141475}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightLeg
+      parentName: Necromancer_Ctrl_RightUpLeg
+      position: {x: 0.028711176, y: -0.36575022, z: 0.0029902542}
+      rotation: {x: 0.48507363, y: 0.062825106, z: -0.0009711338, w: 0.87221307}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightFoot
+      parentName: Necromancer_Ctrl_RightLeg
+      position: {x: 0.052838553, y: -0.4680566, z: -0.060080156}
+      rotation: {x: -0.37771934, y: -0.009392748, z: -0.015154513, w: 0.92574847}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightToeBase
+      parentName: Necromancer_Ctrl_RightFoot
+      position: {x: 0.05959671, y: -0.10020298, z: 0.18255158}
+      rotation: {x: -1.5355714e-13, y: -0.00000092796193, z: 0.00000016547783, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_Spine
+      parentName: Necromancer_Ctrl_Hips
+      position: {x: -0, y: 0.07, z: 0}
+      rotation: {x: 0.0025323054, y: 0.008443326, z: 0.02086278, w: 0.9997435}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_Spine1
+      parentName: Necromancer_Ctrl_Spine
+      position: {x: -0, y: 0.14815101, z: 0}
+      rotation: {x: 0.07954678, y: 0.26361784, z: -0.08092143, w: 0.9579299}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_Spine2
+      parentName: Necromancer_Ctrl_Spine1
+      position: {x: -0, y: 0.14815101, z: 1.9721521e-32}
+      rotation: {x: 0.09687148, y: 0.26330325, z: -0.033364072, w: 0.9592571}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftShoulder
+      parentName: Necromancer_Ctrl_Spine2
+      position: {x: -0.07, y: 0.09958343, z: -5.768545e-32}
+      rotation: {x: -0.00000019347006, y: 0.00000041130232, z: -0.0000001960593, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftArm
+      parentName: Necromancer_Ctrl_LeftShoulder
+      position: {x: -0.090117246, y: 0.000001373291, z: -0.051123235}
+      rotation: {x: -0.2469347, y: 0.13184193, z: 0.42498267, w: 0.8608314}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftForeArm
+      parentName: Necromancer_Ctrl_LeftArm
+      position: {x: -0.23678277, y: -0.18089096, z: -0.0063278675}
+      rotation: {x: 0.15690729, y: 0.40010923, z: 0.11415529, w: 0.89569044}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHand
+      parentName: Necromancer_Ctrl_LeftForeArm
+      position: {x: -0.16584788, y: -0.120205306, z: 0.09692017}
+      rotation: {x: 0.38709635, y: 0.357498, z: -0.17138857, w: 0.8324527}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandThumb1
+      parentName: Necromancer_Ctrl_LeftHand
+      position: {x: -0.005319023, y: -0.012035751, z: 0.058394022}
+      rotation: {x: -0.11327523, y: -0.44960234, z: 0.22686811, w: 0.85647964}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandThumb2
+      parentName: Necromancer_Ctrl_LeftHandThumb1
+      position: {x: 0.008570175, y: -0.04534683, z: 0.058500536}
+      rotation: {x: 0.07227751, y: -0.13844205, z: -0.3745396, w: 0.9139638}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandThumb3
+      parentName: Necromancer_Ctrl_LeftHandThumb2
+      position: {x: -0.0047294614, y: -0.0687725, z: 0.024507608}
+      rotation: {x: 0.21530612, y: -0.13315283, z: -0.36061957, w: 0.897701}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandThumb4
+      parentName: Necromancer_Ctrl_LeftHandThumb3
+      position: {x: -0.0055582426, y: -0.044238586, z: 0.011482716}
+      rotation: {x: -0.000000065169075, y: -0.000000057734322, z: -0.000000012490508, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandIndex1
+      parentName: Necromancer_Ctrl_LeftHand
+      position: {x: -0.0993349, y: -0.09109123, z: 0.10845236}
+      rotation: {x: 0.23042019, y: 0.13110696, z: 0.42878845, w: 0.8636307}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandIndex2
+      parentName: Necromancer_Ctrl_LeftHandIndex1
+      position: {x: -0.00796257, y: -0.03809578, z: 0.030466957}
+      rotation: {x: 0.0050513474, y: 0.09909441, z: 0.13102525, w: 0.98640114}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandIndex3
+      parentName: Necromancer_Ctrl_LeftHandIndex2
+      position: {x: -0.0013366699, y: -0.026221465, z: 0.019882735}
+      rotation: {x: 0.069170736, y: 0.36249673, z: 0.59369904, w: 0.71507555}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandIndex4
+      parentName: Necromancer_Ctrl_LeftHandIndex3
+      position: {x: -0.0052738953, y: -0.04439743, z: 0.02710455}
+      rotation: {x: 0.00000082637786, y: 0.00000016748523, z: 0.0000008825284, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandMiddle1
+      parentName: Necromancer_Ctrl_LeftHand
+      position: {x: -0.09551189, y: -0.11574463, z: 0.085237704}
+      rotation: {x: -0.020305913, y: 0.17501396, z: 0.5995548, w: 0.7806996}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandMiddle2
+      parentName: Necromancer_Ctrl_LeftHandMiddle1
+      position: {x: 0.0006622314, y: -0.02962677, z: 0.023826389}
+      rotation: {x: 0.0015430521, y: 0.021095762, z: 0.030656109, w: 0.99930614}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandMiddle3
+      parentName: Necromancer_Ctrl_LeftHandMiddle2
+      position: {x: -0.0022805785, y: -0.031169662, z: 0.021562109}
+      rotation: {x: -0.06236094, y: 0.29533574, z: 0.38905314, w: 0.8703595}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandMiddle4
+      parentName: Necromancer_Ctrl_LeftHandMiddle3
+      position: {x: 0.017300261, y: -0.047943495, z: 0.03666542}
+      rotation: {x: -0.0000010468441, y: -0.0000015690637, z: 0.000000017039358, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandRing1
+      parentName: Necromancer_Ctrl_LeftHand
+      position: {x: -0.07623188, y: -0.12360672, z: 0.056770876}
+      rotation: {x: -0.0130074825, y: 0.00086151744, z: 0.61365443, w: 0.7894671}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandRing2
+      parentName: Necromancer_Ctrl_LeftHandRing1
+      position: {x: 0.00755249, y: -0.03312416, z: 0.018670168}
+      rotation: {x: -0.0026184593, y: 0.017244231, z: 0.027084606, w: 0.99948096}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandRing3
+      parentName: Necromancer_Ctrl_LeftHandRing2
+      position: {x: 0.005231972, y: -0.034430847, z: 0.02242424}
+      rotation: {x: -0.081884764, y: 0.23617734, z: 0.3459831, w: 0.90432894}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandRing4
+      parentName: Necromancer_Ctrl_LeftHandRing3
+      position: {x: 0.017977027, y: -0.046446152, z: 0.035116434}
+      rotation: {x: -0.0000005991495, y: 0.0000007004232, z: -0.000000094943346, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandPinky1
+      parentName: Necromancer_Ctrl_LeftHand
+      position: {x: -0.06347862, y: -0.12557006, z: 0.028828382}
+      rotation: {x: -0.09241662, y: 0.024339788, z: 0.4893835, w: 0.86681634}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandPinky2
+      parentName: Necromancer_Ctrl_LeftHandPinky1
+      position: {x: 0.0067456053, y: -0.023874588, z: 0.016176432}
+      rotation: {x: -0.0046740063, y: 0.008496791, z: 0.01407273, w: 0.99985397}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandPinky3
+      parentName: Necromancer_Ctrl_LeftHandPinky2
+      position: {x: 0.012596893, y: -0.022900848, z: 0.018009406}
+      rotation: {x: -0.13458124, y: 0.16555128, z: 0.2932377, w: 0.93192935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_LeftHandPinky4
+      parentName: Necromancer_Ctrl_LeftHandPinky3
+      position: {x: 0.023375968, y: -0.02686905, z: 0.025388192}
+      rotation: {x: 0.0000007752781, y: -0.0000003279225, z: -0.00000025382946, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightShoulder
+      parentName: Necromancer_Ctrl_Spine2
+      position: {x: 0.07, y: 0.09958343, z: -2.3665827e-32}
+      rotation: {x: -0.00000595206, y: 0.00000034348815, z: -0.00001066079, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightArm
+      parentName: Necromancer_Ctrl_RightShoulder
+      position: {x: 0.090117246, y: 0.000001373291, z: -0.051123235}
+      rotation: {x: 0.32840607, y: -0.14161633, z: -0.20660903, w: 0.91071784}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightForeArm
+      parentName: Necromancer_Ctrl_RightArm
+      position: {x: 0.23678277, y: -0.18089096, z: -0.0063278675}
+      rotation: {x: -0.34573185, y: 0.0026952652, z: 0.5964789, w: 0.7243447}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHand
+      parentName: Necromancer_Ctrl_RightForeArm
+      position: {x: 0.16584788, y: -0.120205306, z: 0.09692017}
+      rotation: {x: -0.4622968, y: 0.35228533, z: -0.21941124, w: 0.7836041}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandThumb1
+      parentName: Necromancer_Ctrl_RightHand
+      position: {x: 0.005319023, y: -0.012035751, z: 0.058394022}
+      rotation: {x: -0.16353028, y: 0.19428404, z: -0.18722223, w: 0.94892544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandThumb2
+      parentName: Necromancer_Ctrl_RightHandThumb1
+      position: {x: -0.008570175, y: -0.04534683, z: 0.058500536}
+      rotation: {x: 0.05187516, y: 0.09936216, z: 0.26880145, w: 0.95665145}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandThumb3
+      parentName: Necromancer_Ctrl_RightHandThumb2
+      position: {x: 0.0047294614, y: -0.0687725, z: 0.024507608}
+      rotation: {x: 0.20154431, y: 0.12060732, z: 0.27459654, w: 0.9324326}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandThumb4
+      parentName: Necromancer_Ctrl_RightHandThumb3
+      position: {x: 0.0055582426, y: -0.044238586, z: 0.011482716}
+      rotation: {x: 2.1344026e-14, y: 1.3239428e-14, z: 0.00000090581995, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandIndex1
+      parentName: Necromancer_Ctrl_RightHand
+      position: {x: 0.0993349, y: -0.09109123, z: 0.10845236}
+      rotation: {x: 0.008543568, y: -0.3692812, z: -0.5606738, w: 0.74108255}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandIndex2
+      parentName: Necromancer_Ctrl_RightHandIndex1
+      position: {x: 0.00796257, y: -0.03809578, z: 0.030466957}
+      rotation: {x: 0.0074401638, y: -0.14597481, z: -0.19300763, w: 0.97024953}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandIndex3
+      parentName: Necromancer_Ctrl_RightHandIndex2
+      position: {x: 0.0013366699, y: -0.026221465, z: 0.019882735}
+      rotation: {x: 0.03730407, y: -0.26019254, z: -0.42935207, w: 0.86404}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandIndex4
+      parentName: Necromancer_Ctrl_RightHandIndex3
+      position: {x: 0.0052738953, y: -0.04439743, z: 0.02710455}
+      rotation: {x: -0.00000007425929, y: 0.0000007269271, z: 0.00000026272576, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandMiddle1
+      parentName: Necromancer_Ctrl_RightHand
+      position: {x: 0.09551189, y: -0.11574463, z: 0.085237704}
+      rotation: {x: -0.10628337, y: -0.36602777, z: -0.5489523, w: 0.74389446}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandMiddle2
+      parentName: Necromancer_Ctrl_RightHandMiddle1
+      position: {x: -0.0006622314, y: -0.02962677, z: 0.023826389}
+      rotation: {x: 0.0015409706, y: -0.021094572, z: -0.030655358, w: 0.9993062}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandMiddle3
+      parentName: Necromancer_Ctrl_RightHandMiddle2
+      position: {x: 0.0022805785, y: -0.031169662, z: 0.021562109}
+      rotation: {x: -0.05874553, y: -0.32642126, z: -0.4326747, w: 0.83832616}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandMiddle4
+      parentName: Necromancer_Ctrl_RightHandMiddle3
+      position: {x: -0.017300261, y: -0.047943495, z: 0.03666542}
+      rotation: {x: 0.00000084481167, y: -0.000000051168044, z: -0.0000003178294, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandRing1
+      parentName: Necromancer_Ctrl_RightHand
+      position: {x: 0.07623188, y: -0.12360672, z: 0.056770876}
+      rotation: {x: -0.12780878, y: -0.22506194, z: -0.5243927, w: 0.81118697}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandRing2
+      parentName: Necromancer_Ctrl_RightHandRing1
+      position: {x: -0.00755249, y: -0.03312416, z: 0.018670168}
+      rotation: {x: -0.002617758, y: -0.017244073, z: -0.027084116, w: 0.99948096}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandRing3
+      parentName: Necromancer_Ctrl_RightHandRing2
+      position: {x: -0.005231972, y: -0.034430847, z: 0.02242424}
+      rotation: {x: -0.13288167, y: -0.38563165, z: -0.58004427, w: 0.70510954}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandRing4
+      parentName: Necromancer_Ctrl_RightHandRing3
+      position: {x: -0.017977027, y: -0.046446152, z: 0.035116434}
+      rotation: {x: 0.00000037881995, y: -0.00000051768177, z: -0.0000010156615, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandPinky1
+      parentName: Necromancer_Ctrl_RightHand
+      position: {x: 0.06347862, y: -0.12557006, z: 0.028828382}
+      rotation: {x: -0.057709116, y: -0.13029961, z: -0.11509348, w: 0.98307943}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandPinky2
+      parentName: Necromancer_Ctrl_RightHandPinky1
+      position: {x: -0.0067456053, y: -0.023874588, z: 0.016176432}
+      rotation: {x: 0.025952231, y: 0.047184125, z: 0.07815665, w: 0.99548566}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandPinky3
+      parentName: Necromancer_Ctrl_RightHandPinky2
+      position: {x: -0.012596893, y: -0.022900848, z: 0.018009406}
+      rotation: {x: -0.19782963, y: -0.2844972, z: -0.48315045, w: 0.8040463}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_RightHandPinky4
+      parentName: Necromancer_Ctrl_RightHandPinky3
+      position: {x: -0.023375968, y: -0.02686905, z: 0.025388192}
+      rotation: {x: -0.00000023370669, y: -0.0000002911296, z: -0.0000024092537, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_Neck
+      parentName: Necromancer_Ctrl_Spine2
+      position: {x: -0.01274492, y: 0.14815094, z: -0.028985774}
+      rotation: {x: 0.010798528, y: -0.25669938, z: 0.009488683, w: 0.9663844}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Necromancer_Ctrl_Head
+      parentName: Necromancer_Ctrl_Neck
+      position: {x: 0.009326032, y: 0.21237487, z: 0.03800136}
+      rotation: {x: 0.0048780083, y: -0.2568309, z: 0.010515105, w: 0.96638685}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -708,21 +3580,20 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 141423
-  packageName: Necromancer low
-  packageVersion: 1.0
-  assetPath: Assets/Necromanser/Animations/Necromancer@atack1.fbx
-  uploadId: 298344
