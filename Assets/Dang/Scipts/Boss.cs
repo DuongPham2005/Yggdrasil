@@ -18,7 +18,7 @@ public class Boss : MonoBehaviour
     [SerializeField] float tornadoKnockback = 5f;
 
     private GameObject player;
-    private Enemy enemyScript; // Lấy máu từ script Enemy
+    private Enemy enemyScript; 
     private bool bloodRainActivated = false;
     private float tornadoTimer;
 
@@ -44,14 +44,14 @@ public class Boss : MonoBehaviour
         float currentHealth = enemyScript.health;
         float maxHealth = enemyScript.maxHealth;
 
-        // Kích hoạt mưa máu khi máu <= 50%
+       
         if (!bloodRainActivated && currentHealth <= maxHealth / 2f)
         {
             CastBloodRain();
             bloodRainActivated = true;
         }
 
-        // Cooldown tung lốc xoáy
+       
         tornadoTimer -= Time.deltaTime;
         if (tornadoTimer <= 0f)
         {
@@ -130,30 +130,55 @@ public class TornadoDamage : MonoBehaviour
     float knockbackForce;
     string targetTag;
 
+    public float damageInterval = 0.5f; 
+    private float lastDamageTime = 0f;
+
     public void Init(float dmg, float knockback, string tag)
     {
         damage = dmg;
         knockbackForce = knockback;
         targetTag = tag;
+
+       
+        Collider col = GetComponent<Collider>();
+        if (col != null)
+        {
+            col.isTrigger = true;
+        }
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.CompareTag(targetTag))
+        if (other.CompareTag(targetTag))
         {
-            Debug.Log("Player bị dính Lốc Xoáy");
-
-            HealthSystem hp = collision.gameObject.GetComponent<HealthSystem>();
-            if (hp != null) hp.TakeDamage(damage);
-
-            Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
-            if (rb != null)
-            {
-                Vector3 dir = (collision.transform.position - transform.position).normalized;
-                rb.AddForce(dir * knockbackForce, ForceMode.Impulse);
-            }
-
-            Destroy(gameObject);
+            DealDamage(other);
         }
+    }
+
+    void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag(targetTag) && Time.time - lastDamageTime >= damageInterval)
+        {
+            DealDamage(other);
+        }
+    }
+
+    void DealDamage(Collider target)
+    {
+        Debug.Log("Player bị dính Lốc Xoáy");
+
+        
+        HealthSystem hp = target.GetComponent<HealthSystem>();
+        if (hp != null) hp.TakeDamage(damage);
+
+        
+        Rigidbody rb = target.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            Vector3 dir = (target.transform.position - transform.position).normalized;
+            rb.AddForce(dir * knockbackForce, ForceMode.Impulse);
+        }
+
+        lastDamageTime = Time.time;
     }
 }
