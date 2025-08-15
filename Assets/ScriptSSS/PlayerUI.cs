@@ -14,6 +14,8 @@ public class PlayerUI : MonoBehaviour
     public Image staminaFillImage;
     public TextMeshProUGUI staminaText;
     
+
+    
     [Header("UI Animation")]
     public float updateSpeed = 5f;
     public bool showText = true;
@@ -147,6 +149,8 @@ public class PlayerUI : MonoBehaviour
             staminaText.text = $"{Mathf.RoundToInt(playerStamina.CurrentStamina)}/{playerStamina.maxStamina}";
         }
     }
+    
+
     
     void OnDestroy()
     {
