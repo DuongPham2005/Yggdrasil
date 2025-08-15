@@ -4,26 +4,16 @@ using System.Collections;
 public class BossSke : MonoBehaviour
 {
     [Header("VFX Prefabs")]
-    public GameObject auraVFX;
-    public GameObject meteorVFX;
     public GameObject fireballVFX;
-
-    [Header("Aura Settings")]
-    public Transform auraSpawnPoint;
-    public float auraDuration = 2f;
-    public float auraScale = 1f;
-
-    [Header("Meteor Settings")]
-    public Transform meteorSpawnPoint;
-    public float meteorDamage = 20f;
-    public float meteorHitRadius = 2f;
-    private float lastMeteorHealthTrigger = 1f;
 
     [Header("Fireball Settings")]
     public Transform fireballSpawnPoint;
     public float fireballSpawnInterval = 10f;
     public float fireballDamage = 15f;
     public float fireballSpeed = 8f;
+
+    [Header("Aggro Settings")]
+    public float aggroRange = 4f; // Vùng để bắn fireball
 
     private Enemy enemyScript; // Boss kế thừa từ Enemy
     private Transform player;
@@ -39,49 +29,14 @@ public class BossSke : MonoBehaviour
     {
         if (enemyScript == null || player == null) return;
 
-        // Tính % máu boss dựa vào Enemy.health
-        float healthPercent = enemyScript.health / enemyScript.maxHealth;
-
-        // Meteor + Aura mỗi khi mất 10% máu
-        if (healthPercent <= lastMeteorHealthTrigger - 0.1f)
-        {
-            lastMeteorHealthTrigger -= 0.1f;
-            StartCoroutine(Skill_AuraMeteor());
-        }
-
-        // Fireball bắn liên tục
-        if (!isSpawningFireball)
+        // Fireball chỉ bắn khi player trong vùng Aggro Range
+        if (!isSpawningFireball && IsPlayerInAggroRange())
         {
             StartCoroutine(Skill_FireballLoop());
         }
     }
 
-    IEnumerator Skill_AuraMeteor()
-    {
-        // Spawn Aura cảnh báo
-        Vector3 auraPos = auraSpawnPoint ? auraSpawnPoint.position : transform.position;
-        Quaternion auraRot = auraSpawnPoint ? auraSpawnPoint.rotation : transform.rotation;
 
-        GameObject aura = Instantiate(auraVFX, auraPos, auraRot);
-        aura.transform.localScale *= auraScale;
-        Debug.Log("Boss tung Aura cảnh báo");
-
-        // Lock vị trí player
-        Vector3 targetPos = player.position;
-
-        yield return new WaitForSeconds(auraDuration);
-
-        // Spawn Meteor
-        Vector3 meteorPos = meteorSpawnPoint ? meteorSpawnPoint.position : targetPos;
-        GameObject meteor = Instantiate(meteorVFX, meteorPos, Quaternion.identity);
-        Debug.Log("Boss triệu hồi Meteor tại: " + meteorPos);
-
-        // Damage nếu player trong bán kính
-        if (Vector3.Distance(player.position, meteorPos) <= meteorHitRadius)
-        {
-            ApplyDamage(player.gameObject, 20f);
-        }
-    }
 
     IEnumerator Skill_FireballLoop()
     {
@@ -115,16 +70,51 @@ public class BossSke : MonoBehaviour
         isSpawningFireball = false;
     }
 
-    // === Trừ máu player qua HealthSystem ===
-    private void ApplyDamage(GameObject target, float damage)
+    // === Kiểm tra player có trong vùng Aggro Range không ===
+    private bool IsPlayerInAggroRange()
     {
-        HealthSystem playerHP = target.GetComponent<HealthSystem>();
-        if (playerHP != null)
+        if (player == null) return false;
+        
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        bool inRange = distanceToPlayer <= aggroRange;
+        
+        // Debug log để kiểm tra
+        if (inRange)
         {
-            playerHP.TakeDamage(damage);
-            Debug.Log("Player nhận " + damage + " damage từ Boss");
+            Debug.Log($"Player trong vùng Aggro Range: {distanceToPlayer:F1}/{aggroRange}");
+        }
+        
+        return inRange;
+    }
+
+    // === Hiển thị vùng Aggro Range trong Scene view (chỉ để debug) ===
+    private void OnDrawGizmosSelected()
+    {
+        // Vẽ vùng Aggro Range
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(transform.position, aggroRange);
+        
+        // Vẽ đường nối đến player nếu có
+        if (player != null)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawLine(transform.position, player.position);
+            
+            // Hiển thị khoảng cách
+            float distance = Vector3.Distance(transform.position, player.position);
+            if (distance <= aggroRange)
+            {
+                Gizmos.color = Color.green; // Xanh khi trong range
+            }
+            else
+            {
+                Gizmos.color = Color.red; // Đỏ khi ngoài range
+            }
+            Gizmos.DrawWireSphere(player.position, 0.5f);
         }
     }
+
+
 
     public class FireballDamage : MonoBehaviour
     {
