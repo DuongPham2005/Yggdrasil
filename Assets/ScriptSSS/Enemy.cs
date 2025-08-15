@@ -6,7 +6,8 @@ using ScriptSSS.Quests; // added
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] float health = 3;
+    [SerializeField] public float health = 3;
+    [SerializeField] public float maxHealth = 3;
     [SerializeField] GameObject hitVFX;
     [SerializeField] GameObject ragdoll;
 
