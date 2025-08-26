@@ -7,7 +7,7 @@ public class Boss : MonoBehaviour
     [SerializeField] GameObject bloodRainPrefab;
     [SerializeField] Transform bloodRainSpawnPoint;
     [SerializeField] float bloodRainDamage = 2f;
-    [SerializeField] float bloodRainTick = 1f;
+    [SerializeField] float bloodRainTick = 3f;
 
     [Header("Tornado Settings")]
     [SerializeField] GameObject tornadoPrefab;
@@ -117,9 +117,9 @@ public class BloodRainDamage : MonoBehaviour
         HealthSystem hp = target.GetComponent<HealthSystem>();
         while (true)
         {
-            Debug.Log("Player đang đứng trong Mưa Máu");
-            if (hp != null) hp.TakeDamage(damage);
-            yield return new WaitForSeconds(tickRate);
+            yield return new WaitForSeconds(3f); 
+            Debug.Log("Player bị mất 2 máu do Mưa Máu");
+            if (hp != null) hp.TakeDamage(2f);   
         }
     }
 }
