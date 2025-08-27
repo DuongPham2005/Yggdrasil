@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/khai/Khai21.unity
     guid: 621569fbe8c153349a5d827d770513dd
   - enabled: 1
+    path: Assets/Scenes/Loader.unity
+    guid: a2bcfd0088dab57498427eb47330d215
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: d899f283fbfb3114383bfecf72114cbf
   m_configObjects: {}
