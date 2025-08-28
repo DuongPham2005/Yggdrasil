@@ -26,8 +26,9 @@ public class HealthSystem : MonoBehaviour
     [Header("Events")]
     public UnityEvent<float> OnHealthChanged;
     public UnityEvent OnPlayerDied;
-    [Header("Death UI Hooks")]
-    [SerializeField] ScriptSSS.SaveLoad.SaveLoadMenu saveLoadMenuOnDeath;
+    
+    [Header("Death UI")]
+    [SerializeField] private GameObject deathPanel; // Panel hiển thị khi chết
     
     private Animator animator;
     private float lastDamageTime;
@@ -44,6 +45,12 @@ public class HealthSystem : MonoBehaviour
         health = maxHealth;
         lastDamageTime = -healthRegenDelay; // Allow immediate regen at start
         UpdateHealthUI();
+        
+        // Ẩn death panel khi bắt đầu game
+        if (deathPanel != null)
+        {
+            deathPanel.SetActive(false);
+        }
     }
     
     void Update()
@@ -132,26 +139,14 @@ public class HealthSystem : MonoBehaviour
             Instantiate(ragdoll, transform.position, transform.rotation);
         }
         
-        // Show Save/Load menu instead of respawning
-        if (saveLoadMenuOnDeath != null)
+        // Show death panel if available
+        if (deathPanel != null)
         {
-            saveLoadMenuOnDeath.Open();
+            deathPanel.SetActive(true);
         }
     }
     
-    public void Revive(float healthAmount = -1)
-    {
-        if (!isDead) return;
-        
-        isDead = false;
-        health = healthAmount > 0 ? healthAmount : maxHealth / 2;
-        lastDamageTime = Time.time;
-        
-        OnHealthChanged?.Invoke(health);
-        UpdateHealthUI();
-        
-        Debug.Log($"Player revived with {health} HP!");
-    }
+
     
     private void UpdateHealthUI()
     {
@@ -182,6 +177,24 @@ public class HealthSystem : MonoBehaviour
         {
             GameObject hit = Instantiate(hitVFX, hitPosition, Quaternion.identity);
             Destroy(hit, 1f);
+        }
+    }
+    
+    // Method để ẩn death panel (gọi khi respawn)
+    public void HideDeathPanel()
+    {
+        if (deathPanel != null)
+        {
+            deathPanel.SetActive(false);
+        }
+    }
+    
+    // Method để hiển thị death panel
+    public void ShowDeathPanel()
+    {
+        if (deathPanel != null)
+        {
+            deathPanel.SetActive(true);
         }
     }
 }

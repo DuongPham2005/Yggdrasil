@@ -67,10 +67,9 @@ public class MenuManager : MonoBehaviour
     }
 
     
-    public void RestartGame(string sceneName = "MainScene")
+    public void RestartGame()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void QuitGame()
