@@ -8,7 +8,7 @@ public class MainMenu : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("Khai21");
+        SceneManager.LoadScene("CutScene");
 
     }
 
